@@ -1,4 +1,4 @@
-# Data Trust Engineering Manifesto
+# Data Trust Engineering Manifesto (DTE)
 
 ## The End of Data Governance
 
