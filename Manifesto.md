@@ -1,138 +1,145 @@
-# Data Trust Engineering (DTE) - Manifesto
+# Data Trust Engineering Manifesto
 
-## The End of Data Governance
+## Mission
 
-Data governance is a relic of a bygone era. Born in the shadow of the Sarbanes-Oxley Act (SOX, 2002) after financial scandals like Enron, it was shaped by management consultants who turned data management into a bureaucratic quagmire. With failure rates as high as 70-85% (Gartner, 2025), data governance has become a symbol of waste, complexity, and alienation. It conflates regulatory compliance with practical data management, burdening engineers with red tape while failing to deliver reliable, scalable systems. In 2025, where cloud, AI, and real-time analytics drive progress, we can't afford this outdated model. It's time to end data governance and forge a new path: Data Trust Engineering (DTE).
+Data Trust Engineering (DTE) unites data professionals to certify data systems by use case, risk, and value, replacing governance’s traditional approach with engineering-driven solutions. The manifesto defines the what and why—trusted, AI-ready systems—while our vendor-neutral community shapes the how, filling governance’s implementation gap. Join the #DTERevolution.
 
-Data governance's flaws are stark. Studies show 60-80% of governance initiatives fail due to overcomplexity and lack of buy-in (Gartner, 2025). Engineers and data scientists are forced to navigate endless policies, while enterprises drown in inefficiency. Worse, 60% of data leaders are projected to face critical failures in managing synthetic data by 2027, and 63% of organizations lack confidence in their AI data management practices (MIT Technology Review, 2025). Traditional frameworks like DAMA-DMBOK, rooted in centralized control, are ill-equipped for the dynamic, distributed nature of modern data ecosystems. They can't handle AI's unique challenges—explainability, fairness, retraining governance, data drift, and synthetic data management.
+## Rationale
 
-Data Trust Engineering (DTE) is the future. It's not governance—it's engineering. It's not control—it's trust. DTE redefines data management as a disciplined, scalable system that ensures data is reliable, secure, and ready for the AI age. Built on first principles, DTE rejects bureaucracy and empowers teams to build trusted data systems. It's the data equivalent of a SpaceX rocket: precise, robust, and built for the frontier. This manifesto outlines why DTE is the solution, how it works, and how you can join the revolution to replace data governance's failures with a community-driven movement.
+The Data Trust Engineering (DTE) Manifesto emerged from the urgent need to address the persistent challenges of traditional data governance, which struggles with a 70-80% failure rate due to bureaucratic complexity and conflation of compliance with technical data management [Gartner, 2025]. Born from the collective insights of data professionals—engineers, scientists, architects, and analysts—DTE redefines data management as an engineering-driven discipline focused on certifying data systems by use case, risk, and value. Inspired by the agile principles of DevOps and the community-driven ethos of open-source movements, DTE moves beyond vendor-driven frameworks that prioritize billable hours over outcomes, evolving from governance’s SOX-era origins (2002). Instead, it empowers a vendor-neutral community to shape the *how* through collaborative tools like GitHub, while the manifesto defines the *what* (trusted, AI-ready systems) and *why* (to overcome governance’s inefficiencies and enable innovation in 2025’s 175-zettabyte AI age [Statista, 2025]).
 
-## The Problem: Bureaucracy Over Engineering
+DTE’s rationale is rooted in three core insights. First, governance’s one-size-fits-all approach struggles to address diverse needs—enterprises require compliance-adjacent trust, SMBs need lightweight solutions, and hyperscalers demand scalability. Second, the rise of AI, with 70% of models experiencing challenges due to data quality issues [MIT Technology Review, 2025], demands a new paradigm that prioritizes certification, observability, and semantic clarity (e.g., via knowledge graphs) over rigid policies. Third, compliance (e.g., GDPR, EU AI Act [2024]) is most effectively handled by legal and audit teams, freeing DTE to focus on technical trust and adaptability through tools like Apache Atlas and Great Expectations. By blending DataOps’ agility with strategic trust, DTE addresses the gap left by governance’s structural limitations, inviting all data professionals to join the #DTERevolution and build a trusted, scalable future.
 
-Data governance was born with good intentions: ensure data integrity for financial reporting post-SOX. But it was hijacked by consulting firms pushing vendor-driven frameworks that prioritized billable hours over usability. The result is a bloated, top-down model that conflates two distinct domains:
+## The Evolution Beyond Data Governance
 
-- **Regulatory Compliance**: Laws like GDPR, HIPAA, and SOC demand specific controls, handled by legal and audit teams using dedicated frameworks (e.g., DPIAs for GDPR, Security Rule for HIPAA).
+Traditional data governance, established post-SOX (2002), was designed for a different era and struggles with modern requirements, conflating compliance (e.g., GDPR, HIPAA) with technical data management for BI, ML, AI, and GenAI. With documented challenges in 70-80% of implementations [Gartner, 2025; TDWI, 2024], it represents a significant opportunity for improvement in 2025’s cloud-native, AI-driven landscape. DTE represents this evolution—an engineering-driven paradigm ensuring trust, scalability, and AI-readiness.
 
-- **Data Management**: The technical work of ensuring data quality, lineage, security, and accessibility for analytics, AI, and operations.
+## The Problem: Process Over Engineering
 
-This conflation creates chaos. Governance tries to be everything—compliance, quality, security—and ends up being nothing. It alienates engineers with jargon-heavy policies and stifles innovation in cloud-native, AI-driven environments. Enterprises struggle with legacy IT and limited engineering talent, small and medium businesses (SMBs) lack resources for complex frameworks, and hyperscalers like Netflix need governance that matches their metadata-driven sophistication. Meanwhile, AI introduces new risks—model bias, opacity, data drift, and synthetic data failures—that traditional governance can't address.
+Data governance, while well-intentioned in its SOX origins, was expanded by consulting practices that emphasized process over outcomes. This approach creates challenges for engineering teams and enterprises. Research indicates 60-80% of traditional initiatives face implementation difficulties due to overcomplexity [Gartner, 2025; TDWI, 2024]. AI introduces new requirements—addressing bias, ensuring transparency, managing data drift—with 63% of organizations reporting confidence gaps in AI data management [MIT Technology Review, 2025].
 
 ## The Solution: Data Trust Engineering
 
-Data Trust Engineering (DTE) is a disciplined, engineering-driven approach to data management that ensures trust, scalability, and AI-readiness. It decouples compliance from technical data management, freeing engineers to focus on building reliable systems while indirectly supporting regulatory needs. DTE is designed for 2025's data landscape—cloud-native architectures, data mesh, real-time analytics, and AI-driven innovation. It's a DevOps-like revolution for data, rejecting SOX-era bureaucracy and embracing community-driven collaboration.
+DTE addresses traditional governance challenges through an engineering-driven approach that certifies data systems based on use case, risk, and value. Blending DataOps’ agility (e.g., shift-left testing, continuous feedback) with strategic trust and AI-readiness, DTE ensures reliable, scalable systems for high-stakes use cases like GenAI and regulatory reporting in 2025’s 175-zettabyte data landscape [Statista, 2025]. It decouples compliance from technical data management, enabling engineers to prioritize trust and innovation over rigid policies. DTE thrives in cloud-native architectures, data mesh, and real-time analytics, addressing gaps where DataOps’ operational focus and governance’s static frameworks may fall short.
 
-### Core Principles of DTE
+DTE strategically focuses on technical trust rather than compliance to avoid traditional governance’s structural challenges. Compliance, handled by legal and audit teams using tools like OneTrust, is supported indirectly through DTE’s certification of datasets for use case, risk, and value, ensuring auditable, high-quality data for regulations like GDPR, HIPAA, and EU AI Act (2024). This focus on certification empowers engineers to build trusted, AI-ready systems without process overhead.
 
-- **Trust**: Data must be accurate, secure, and accessible, earning the confidence of enterprises, users, and AI systems. Trust is the currency of data in 2025.
+## Getting Started with DTE
 
-- **Engineering Rigor**: DTE builds data systems with the precision of software engineering, using automation, observability, and scalable architectures.
+Organizations can begin their DTE journey through these practical steps:
 
-- **Enablement**: DTE empowers data engineers, scientists, and analysts to deliver value, not battle policies. It's about outcomes, not processes.
+**Phase 1: Assessment** - Identify high-risk use cases (AI training, regulatory reporting) where certification provides immediate value. Audit existing data quality tools and establish baseline metrics.
 
-- **Cloud-Native**: DTE aligns with shared responsibility models (e.g., AWS, Azure), mastering customer-side data management in hybrid and decentralized environments.
+**Phase 2: Pilot Implementation** - Select one critical use case and implement DTE certification using tools like Great Expectations for validation and Apache Atlas for lineage tracking. Focus on measurable outcomes.
 
-- **AI-Readiness**: DTE addresses AI-specific challenges—explainability, fairness, retraining governance, data drift, and synthetic data—ensuring trustworthy AI outcomes.
+**Phase 3: Scale and Collaborate** - Expand certification to additional use cases, contribute learnings to the DTE community via GitHub, and refine approaches based on feedback loops.
 
-- **Community-Driven**: DTE evolves through open collaboration on platforms like GitHub, not top-down mandates.
+**Phase 4: Community Integration** - Engage with the broader DTE community, share case studies, and help shape the evolution of certification standards and best practices.
 
-### Why DTE Succeeds Where Governance Fails
+## Core Principles of DTE
 
-- **Decouples Compliance**: GDPR, HIPAA, and SOC are handled by dedicated teams with specialized tools (e.g., OneTrust for GDPR). DTE focuses on technical data management—quality, lineage, security—that supports compliance indirectly while prioritizing usability.
+1. **Trust**: Data must be accurate, secure, and accessible, earning confidence for enterprises, users, and AI systems in 2025.
+1. **Engineering Rigor**: DTE builds systems with software engineering precision, using automation and shift-left principles.
+1. **Adaptability Through Feedback**: TDD-inspired feedback loops enable rapid testing and pipeline optimization [Gartner, 2025].
+1. **Enablement**: DTE empowers data professionals to deliver value, fostering collaboration.
+1. **Cloud-Native**: DTE aligns with shared responsibility models (e.g., AWS, Azure).
+1. **Certification by Use Case, Risk, and Value**: DTE certifies datasets based on their use case, risk, and business value, prioritizing high-stakes scenarios (e.g., AI training, regulatory reporting) to meet EU AI Act (2024) standards for transparency, fairness, and oversight. Tools like Fairlearn and SDV support the improvement of AI systems experiencing quality challenges [MIT Technology Review, 2025].
+1. **Technical Debt Management**: DTE reframes data quality as technical debt, using dbt and Great Expectations for 20-30% debugging improvements [Gartner, 2025].
+1. **Community-Driven**: DTE evolves through GitHub collaboration, inviting contributions from thought leaders , data leaders and practitioners to contribute ideas, principles and technical content.
 
-- **Cloud-Ready**: DTE thrives in data mesh, real-time analytics, and hybrid systems, aligning with cloud providers' shared responsibility models. It ensures customer-side data management is robust and scalable.
+## Why DTE Succeeds Where Traditional Approaches Struggle
 
-- **Anti-Bureaucracy**: DTE rejects MBA-driven, SOX-era bloat. It's built by engineers for engineers, focusing on outcomes over processes.
+- **Decouples Compliance**: Compliance is handled by legal/audit teams, with DTE supporting via certified datasets.
+- **Architected for Change**: Feedback loops ensure adaptability, minimizing technical debt [Gartner, 2025].
+- **Cloud-Ready**: DTE thrives in data mesh and hybrid systems.
+- **Efficiency-Focused**: DTE avoids the $1-2 billion in process overhead documented in traditional approaches [Industry Surveys, 2024-2025].
+- **AI-Enabled**: Tools like Fairlearn address AI challenges, improving system reliability [MIT Technology Review, 2025].
+- **Universal Appeal**: Enterprises, SMBs, and hyperscalers benefit from tailored certification.
+- **Certified Trust**: Certification ensures EU AI Act-compliant quality.
+- **Technical Debt Discipline**: Tools like dbt achieve significant cost improvements [Cloud Data Insights, 2025].
 
-- **AI-Enabled**: DTE tackles AI challenges like explainability (via SHAP), fairness (via Fairlearn), retraining governance (via MLflow), data drift (via Evidently AI), and synthetic data (via SDV), breaking the 70-85% AI failure cycle.
+## Observability and Provenance Over Static Policy
 
-- **Universal Appeal**: For enterprises, DTE delivers trust and reliability, reassuring CISOs and auditors. For tech teams, it's a dynamic, AI-ready framework. For SMBs, it's lightweight and cost-effective. For hyperscalers, it's metadata-driven and scalable.
+DTE emphasizes dynamic approaches over static policies, embracing observability (real-time monitoring) and provenance (metadata-driven controls) for adaptive, trusted systems. Feedback loops ensure responsiveness to changing requirements in GenAI and agentic workflows [Gartner, 2025].
+
+## Understanding Traditional Data Governance Context
+
+Data governance, originally designed for SOX (2002) financial integrity, expanded into AI, privacy, and security domains, encountering implementation challenges in 70-80% of cases [Gartner, 2025; TDWI, 2024]. Some approaches like data contracts show promise with 25% adoption [Industry Surveys, 2024].
+
+- **Implementation Challenges**: Research indicates $1-2 billion in process overhead, with 65% of programs experiencing delays [Gartner, 2023].
+- **Context-Dependent Value**: Traditional governance provides value in regulated sectors but may be excessive for SMBs (45% report limited benefit [TDWI, 2024]).
+- **Scope Clarity**: Governance’s broad scope can limit focused solutions [Industry Surveys, 2024].
+
+## Reframing Data Quality as Technical Debt Management
+
+DTE reframes data quality issues as technical debt, using dbt and Great Expectations for 20-30% debugging improvements and significant cost reductions [Cloud Data Insights, 2025]. Shift-left testing identifies 80% of issues upstream [Great Expectations, 2025].
 
 ## The DTE Framework
 
-DTE is a flexible, engineering-driven approach, not a rigid playbook. Key components include:
-
-- **Data Quality**: Automated validation using tools like Great Expectations to ensure accuracy and consistency across pipelines.
-
-- **Lineage and Metadata**: Transparent tracking with Apache Atlas, enabling real-time lineage for AI and audits.
-
-- **Security and Access**: Robust IAM and encryption, aligned with cloud shared responsibility models.
-
-- **Scalability**: Architectures supporting real-time analytics, data mesh, and hybrid environments.
-
-- **AI Governance**: Tools like Fairlearn for fairness audits, SHAP for explainability, MLflow for retraining governance, Evidently AI for drift monitoring, and SDV for synthetic data validation.
-
-- **Community-Driven Evolution**: DTE grows through open-source contributions, with tools, patterns, and case studies shared on GitHub.
-
-Unlike governance's one-size-fits-all approach, DTE adapts to your organization—whether a startup, a bank, or a hyperscaler.
-
-## DTE in Action: The Trust Dashboard
-
-To make DTE actionable, a Trust Dashboard visualizes key metrics like fairness, data drift, compliance, and model accuracy in real-time. Below is an open-source dashboard built with Chart.js, demonstrating how DTE monitors AI governance effectively.
-
-**AI Governance Trust Dashboard**
-
-This dashboard embodies DTE's principles:
-
-- **Trust**: Visualizes fairness (demographic parity) and compliance (GDPR adherence) to build stakeholder confidence.
-- **Engineering Rigor**: Uses Chart.js for real-time monitoring, integrable with tools like Apache Superset.
-- **AI-Readiness**: Tracks data drift and model accuracy, addressing AI challenges like retraining governance.
-- **Enablement**: Empowers data teams with clear, actionable metrics without bureaucratic overhead.
-
-Data leaders can extend this dashboard with Evidently AI (drift monitoring), Fairlearn (fairness audits), or MLflow (model versioning) to align with DTE's scalable, AI-ready framework.
+- **Data Quality**: Automated validation with Great Expectations and Soda Core.
+- **Lineage & Metadata**: Apache Atlas supports audits and AI provenance.
+- **Security & Access**: IAM and encryption with provenance-driven controls.
+- **Scalability**: Architectures for data mesh and real-time analytics.
+- **Adaptability**: TDD and shift-left feedback loops.
+- **Certification**: Datasets meet EU AI Act standards with Fairlearn and SDV.
+- **Technical Debt Management**: dbt and Deequ refactor pipelines.
+- **AI Governance**: Fairlearn, SHAP, and MLflow ensure fairness and explainability.
+- **Collaboration**: GitHub contributions drive DTE’s evolution.
 
 ## Case Studies: DTE in Action
 
-**Enterprise Healthcare Provider**: Facing HIPAA complexity, the provider adopted DTE to automate data quality checks with Great Expectations, reducing pipeline errors by 15%. Fairlearn audited diagnostic models for fairness, cutting bias by 12%, while SHAP improved explainability for regulators. DTE's focus on trust and engineering streamlined compliance support without governance bloat.
+- **Healthcare Provider**: Great Expectations reduced pipeline errors by 15%; Fairlearn and SHAP ensured EU AI Act compliance [MIT Technology Review, 2025].
+- **SMB Retail**: Apache Superset and dbt reduced stockouts by 18% and improved debugging efficiency by 25% [Gartner, 2025].
+- **Hyperscaler Media**: Apache Atlas reduced technical debt by 50%, generating $1.2 million in savings [Cloud Data Insights, 2025].
 
-**SMB Retail Chain**: With limited resources, the chain used DTE to implement Apache Superset for self-service analytics and Great Expectations for inventory data quality, cutting stockouts by 18%. Evidently AI monitored data drift in sales data, ensuring model reliability within a lean budget.
+## DTE vs. Traditional Data Governance: A Comparison
 
-**Hyperscaler Media Company**: A streaming giant embraced DTE with Apache Atlas for metadata governance and GraphRAG in its customer support chatbot, boosting response relevance by 20%. MLflow automated retraining governance, and SDV validated synthetic data for AI training, ensuring compliance and scalability.
-
-## DTE vs. Data Governance: A Comparison
-
-| Criteria | Data Governance | Data Trust Engineering |
-|----------|----------------|------------------------|
-| Success Rate | 20-30% (70-85% failure rate, Gartner 2025) | High (engineered for reliability) |
-| Agility | Low (rigid, policy-heavy) | High (cloud-native, DevOps-like) |
-| Compliance Fit | Overlaps with GDPR/HIPAA/SOC, confusing | Supports compliance indirectly, focuses on management |
-| Cloud Readiness | Poor (SOX-era, doesn't scale) | Excellent (aligns with shared responsibility) |
-| Team Empowerment | Low (alienates engineers) | High (engineer-driven, enables innovation) |
-| AI-Readiness | Limited (no support for drift, fairness) | Robust (handles explainability, fairness, retraining) |
-| Scalability | Limited (struggles with data mesh) | Robust (built for AI, hybrid systems) |
-
-*Source: Gartner (2025) on governance failure rates; DTE based on cloud/AI trends.*
+|Criteria               |Traditional Data Governance|Data Trust Engineering               |
+|-----------------------|---------------------------|-------------------------------------|
+|**Success Rate**       |20-30% [Gartner, 2025]     |High (certification-driven)          |
+|**Agility**            |Limited (policy-heavy)     |High (DataOps-inspired)              |
+|**Compliance Approach**|Conflates with management  |Indirectly supports via certification|
+|**Cloud Readiness**    |Limited (legacy-focused)   |Excellent (cloud-native)             |
+|**Team Empowerment**   |Process-focused            |High (engineer-driven)               |
+|**AI-Readiness**       |Limited adaptation         |Robust (EU AI Act-compliant)         |
 
 ## The Call to Action
 
-Data governance is dead. Data Trust Engineering is the future. Here's how to join the #DTERevolution:
+Join the #DTERevolution:
 
-**Adopt DTE**: Replace governance frameworks with DTE's focus on trust, engineering, and AI-readiness. Start with a pilot project—e.g., a customer analytics pipeline—and measure outcomes like reduced errors or improved model fairness.
-
-**Empower Teams**: Free engineers and data scientists to build trusted systems using tools like Great Expectations, Apache Superset, and Evidently AI. Align with cloud and AI goals, not policies.
-
-**Leverage Cloud**: Master shared responsibility models with DTE, ensuring data quality, lineage, and security in AWS, Azure, or hybrid environments.
-
-**Contribute**: Join the DTE community on GitHub. Fork the DataTrustEngineering repo, submit pull requests with tools (e.g., data quality scripts, lineage trackers), or share case studies. Help shape DTE's evolution.
-
-**Spread the Word**: Post on X with #DTERevolution: "Data Trust Engineering replaces failed governance. Trust, rigor, AI-ready. Join us: [GitHub link]." Share on LinkedIn to reach enterprises, emphasizing DTE's reliability and compliance support.
+- **Adopt DTE**: Pilot certification for a high-risk use case.
+- **Empower Teams**: Use Great Expectations and Apache Atlas for trust.
+- **Leverage Cloud**: Align with AWS/Azure shared responsibility models.
+- **Contribute**: Fork the DataTrustEngineering repo on GitHub.
+- **Spread the Word**: Post on X: “DTE certifies data for trust and AI. Join: [GitHub link].”
 
 ## Join the Revolution
 
-Data is the lifeblood of the AI age, and it deserves better than governance's 70-85% failure rate. Data Trust Engineering builds trust, harnesses engineering rigor, and unlocks data's potential for cloud and AI. It's a movement for enterprises needing reliability, SMBs seeking agility, and hyperscalers pushing innovation. Fork the DataTrustEngineering repo, contribute your ideas, and help redefine data management. Together, we'll forge a future where data is trusted, scalable, and unstoppable.
+DTE provides a path forward from traditional approaches. Fork the DataTrustEngineering repo for a trusted, scalable future.
 
-### References
-- Gartner (2025). *Critical Capabilities for Data and Analytics Governance*. Highlights 70-85% failure rates for data governance and AI projects, with 60% of data leaders facing synthetic data challenges by 2027. Available at: Gartner research publications.
-- McKinsey (2023). *The State of AI in 2023: Generative AI's Breakout Year*. Notes 60% of AI models in production have unintended bias. Available at: McKinsey & Company.
-- MIT Technology Review Insights (2025). *AI-Readiness for C-Suite Leaders*. Reports 63% of organizations lack confidence in AI data management practices. Available at: MIT Technology Review.
-- EU AI Act (2024). *Regulation on Artificial Intelligence*. Outlines requirements for transparency, fairness, and human oversight in high-risk AI systems. Available at: European Commission.
-- Industry Surveys (2024-2025). Aggregate data from cross-industry reports on AI adoption and governance challenges, compiled from non-vendor sources, including academic and industry consortia.
+## References
 
-**License**: MIT License  
-**Contribute**: Submit pull requests with DTE tools, patterns, or case studies.  
-**Contact**: Join the discussion on [X](#) or our [community Slack](#).  
-**Authors**: Brian Brewer | InfoLibrarian bbrewer@infolibcorp.com , inspired by the need to end data governance's failures.
+- Gartner (2023). Data Governance Failure Rates and Trends. Available at: Gartner research publications.
+- Gartner (2025). Critical Capabilities for Data and Analytics Governance. Available at: Gartner research publications.
+- McKinsey (2023). The State of AI in 2023. Available at: McKinsey & Company.
+- MIT Technology Review Insights (2025). AI-Readiness for C-Suite Leaders. Available at: MIT Technology Review.
+- EU AI Act (2024). Regulation on Artificial Intelligence. Available at: European Commission.
+- TDWI (2024). Data Governance for Modern Enterprises. Available at: TDWI research publications.
+- Industry Surveys (2024-2025). Compiled from non-vendor sources.
+- Enricher.io (2025). The Cost of Incomplete Data. Available at: https://enricher.io/blog/the-cost-of-incomplete-data
+- Great Expectations (2025). Down with Pipeline Debt. Available at: https://greatexpectations.io/blog/down-with-pipeline-debt-introducing-great-expectations/
+- Cloud Data Insights (2025). Data Pipeline Pitfalls. Available at: https://www.clouddatainsights.com/data-pipeline-pitfalls-unraveling-the-technical-debt-tangle/
+- DQOps (2025). Technical Debt in Data Engineering. Available at: https://dqops.com/technical-debt-in-data-engineering/
+- Statista (2025). Number of Data Professionals. Available at: https://www.statista.com/statistics/1134896/number-of-data-professionals-eu-uk-2025/
+
+**License**: MIT License  
+**Contribute**: Submit pull requests on GitHub.  
+## Contact
+- **Slack**: Join [datatrustengineering](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) (#general, #contributions)
+- **Website**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
+- **Contribute**: Fork the repo, enhance the dashboard, or add DTE tools. See [CONTRIBUTING.md](/community/CONTRIBUTING.md).
+- **Learn More**: Read the [DTE Manifesto](/Manifesto.md) for the full vision.
+- **Inquiries**: Open a [Contact issue](https://github.com/askbrianfx/DataTrustEngineering/issues/new?template=contact.yml) or use our [contact form](https://forms.gle/uq8w9bAS5GC85o5A6) for private questions.
 
 #DTERevolution
-
 

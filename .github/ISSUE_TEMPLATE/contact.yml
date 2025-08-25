@@ -1,0 +1,39 @@
+```yaml
+name: Contact
+description: Reach out to the Data Trust Engineering maintainers
+title: "Contact: "
+labels: ["contact"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out to **Data Trust Engineering (DTE)**! Please provide details below to help us respond quickly. For community discussions, join our [Slack](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) (#general, #contributions).
+  - type: input
+    id: purpose
+    attributes:
+      label: Purpose
+      description: What do you need? (e.g., collaboration, question about the manifesto, enterprise inquiry)
+      placeholder: e.g., Question about Trust Dashboard integration
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide context, links, repos, or other relevant information.
+      placeholder: e.g., Interested in contributing a data quality script, need guidance on setup.
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How urgent is your request?
+      options: ["Low", "Normal", "High"]
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        For private inquiries, use our [contact form](https://forms.gle/GyhcRmzU15QspDZHA). For security or Code of Conduct issues, see [SECURITY.md](/SECURITY.md).
+```

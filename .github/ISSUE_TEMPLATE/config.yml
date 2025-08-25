@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Join Slack
+    url: https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw
+    about: Best place for quick questions and discussion
+  - name: Contact Form
+    url: https://forms.gle/GyhcRmzU15QspDZHA
+    about: Use this form for private or enterprise inquiries
+  - name: Security Reports
+    url: https://forms.gle/j4MNMCVj3u1dBczA6
+    about: Report vulnerabilities or Code of Conduct issues privately
