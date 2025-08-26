@@ -35,6 +35,15 @@ jobs:
           hugo-version: 'latest'
           extended: true
           
+      - name: Create deployment config
+        run: |
+          # Create a deployment-specific config with correct baseURL
+          cp config.toml config.deploy.toml
+          # Replace baseURL for GitHub Pages deployment
+          sed -i 's|baseURL = "/"|baseURL = "https://datatrustengineering.github.io/DataTrustEngineering/"|' config.deploy.toml
+          echo "Deployment config created with baseURL for GitHub Pages"
+          cat config.deploy.toml | grep baseURL
+          
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
@@ -43,11 +52,11 @@ jobs:
           echo "Current directory: $(pwd)"
           echo "Files in directory: $(ls -la)"
           echo "Hugo version: $(hugo version)"
-          echo "Building with config: config.toml"
+          echo "Building with deployment config: config.deploy.toml"
           hugo \
             --gc \
             --minify \
-            --config config.toml
+            --config config.deploy.toml
           echo "Build complete. Contents of public/:"
           ls -la public/
             
