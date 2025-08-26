@@ -9,6 +9,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read
 
 concurrency:
   group: "pages"
@@ -22,8 +23,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+          # Use GITHUB_TOKEN for organization repos
           token: ${{ secrets.GITHUB_TOKEN }}
-          # For organization repositories, ensure proper permissions
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
