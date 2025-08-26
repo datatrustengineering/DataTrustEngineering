@@ -95,6 +95,7 @@ a:hover {
   box-shadow: 0 0 8px rgba(0, 87, 216, 0.5); /* Neon glow */
 }
 
+
 .button:hover {
   background: #007bff; /* Lighter cobalt */
   transform: translateY(-2px);
@@ -169,6 +170,10 @@ a:hover {
 .section.comparison tr:hover {
   background: #1c2526; /* Subtle hover effect */
 }
+
+/* space around buttons so wrapped rows aren't tight */
+.section .button { margin: 6px 10px 0 0; }
+
 
 /* Lists */
 ul:not(.timeline ul) {
