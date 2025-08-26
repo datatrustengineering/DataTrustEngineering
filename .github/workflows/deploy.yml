@@ -47,8 +47,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --config config.toml \
-            --verbose
+            --config config.toml
           echo "Build complete. Contents of public/:"
           ls -la public/
             
