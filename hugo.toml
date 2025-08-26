@@ -1,0 +1,60 @@
+baseURL = "https://datatrustengineering.github.io/DataTrustEngineering/"
+languageCode = "en-us"
+title = "Data Trust Engineering | datatrustmanifesto.org"
+
+[params]
+description = "Data Trust Engineering (DTE): Certify data systems for trust and AI-readiness. Join the #DTERevolution!"
+keywords = "data trust engineering, AI governance, DataOps, data certification"
+
+[module]
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "."
+    target = "content"
+    includeFiles = ["Manifesto.md", "README.md", "DEPLOYMENT.md", "SUPPORT.md", "SECURITY.md"]
+  [[module.mounts]]
+    source = "community"
+    target = "content/community"
+    includeFiles = ["CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "GOVERNANCE.md", "CONTRIBUTORS.md"]
+  [[module.mounts]]
+    source = "docs"
+    target = "content/docs"
+    includeFiles = ["case-studies/template.md", "patterns/data-quality-guide.md"]
+  [[module.mounts]]
+    source = "tools"
+    target = "content/tools"
+    includeFiles = ["data-trust-dashboard/DTE_Trust_Dashboard.html", "lineage-tracker/lineage-script.py"]
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Manifesto"
+  url = "/Manifesto"
+  weight = 2
+[[menu.main]]
+  name = "Trust Dashboard"
+  url = "/tools/data-trust-dashboard/DTE_Trust_Dashboard"
+  weight = 3
+[[menu.main]]
+  name = "Contribute"
+  url = "https://github.com/datatrustengineering/DataTrustEngineering"
+  weight = 4
+[[menu.main]]
+  name = "Slack"
+  url = "https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw"
+  weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

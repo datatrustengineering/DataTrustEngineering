@@ -43,7 +43,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.deployment.outputs.page_url }}/"
+            --config hugo.toml
             
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
