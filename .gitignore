@@ -1,62 +1,62 @@
-      # Hugo static site generator
-   public/
-   resources/_gen/
-   .hugo_build.lock
-   content/
-   themes/
-   # config.toml  # Uncomment if config.toml is intentional for Hugo
-   # layouts/     # Uncomment if layouts/ is intentional for Hugo
-   # static/      # Uncomment if static/ is intentional for Hugo
+# Hugo static site generator
+public/
+resources/_gen/
+.hugo_build.lock
+content/
+themes/
+# config.toml  # Uncomment if config.toml is intentional for Hugo
+# layouts/     # Uncomment if layouts/ is intentional for Hugo
+# static/      # Uncomment if static/ is intentional for Hugo
 
-   # Python virtual environments
-   venv/
-   .venv/
-   env/
-   *.venv
+# Python virtual environments
+venv/
+.venv/
+env/
+*.venv
 
-   # Python bytecode and cache
-   __pycache__/
-   *.pyc
-   *.pyo
-   *.pyd
-   .Python
-   *.egg-info/
-   *.egg
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+*.egg
 
-   # Jupyter/Notebook files
-   *.ipynb
-   .ipynb_checkpoints/
-   *.ipynb_checkpoints
-   */share/jupyter/
-   jupyterlab-plotly/
-   pydeck/
+# Jupyter/Notebook files
+*.ipynb
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*/share/jupyter/
+jupyterlab-plotly/
+pydeck/
 
-   # Streamlit cache
-   .streamlit/
-   streamlit/
+# Streamlit cache
+.streamlit/
+streamlit/
 
-   # IDE and editor files
-   .vscode/
-   .idea/
-   *.swp
-   *.swo
-   *~
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-   # macOS system files
-   .DS_Store
-   */.DS_Store
+# macOS system files
+.DS_Store
+*/.DS_Store
 
-   # Miscellaneous build and license files
-   *.js.LICENSE.txt
-   *.js.map
-   third-party-licenses.json
-   remoteEntry.*.js
-   style.js
-   extension.js
-   extensionRequires.js
+# Miscellaneous build and license files
+*.js.LICENSE.txt
+*.js.map
+third-party-licenses.json
+remoteEntry.*.js
+style.js
+extension.js
+extensionRequires.js
 
-   # Logs and temporary files
-   *.log
-   *.tmp
-   *.bak
-   status.txt
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+status.txt
