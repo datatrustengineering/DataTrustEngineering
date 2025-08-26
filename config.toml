@@ -1,4 +1,4 @@
-baseURL = "https://datatrustengineering.github.io/DataTrustEngineering/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Data Trust Engineering | datatrustmanifesto.org"
 
@@ -44,7 +44,7 @@ keywords = "data trust engineering, AI governance, DataOps, data certification"
   weight = 3
 [[menu.main]]
   name = "Contribute"
-  url = "https://github.com/askbrianfx/DataTrustEngineering"
+  url = "https://github.com/datatrustengineering/DataTrustEngineering"
   weight = 4
 [[menu.main]]
   name = "Slack"
