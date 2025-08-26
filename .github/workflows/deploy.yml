@@ -53,12 +53,19 @@ jobs:
           echo "Files in directory: $(ls -la)"
           echo "Hugo version: $(hugo version)"
           echo "Building with deployment config: config.deploy.toml"
+          echo "Static files before build:"
+          ls -la static/
+          ls -la static/css/
           hugo \
             --gc \
             --minify \
             --config config.deploy.toml
           echo "Build complete. Contents of public/:"
           ls -la public/
+          echo "CSS files in public:"
+          find public -name "*.css" -type f
+          echo "Checking if CSS was copied:"
+          ls -la public/css/ || echo "No public/css directory"
             
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
