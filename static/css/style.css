@@ -1,0 +1,250 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body: Dark cobalt-inspired background */
+body {
+  background: #1a1a1a; /* Near-black for modern look */
+  color: #d4d4d4; /* Light gray for readability */
+  font-family: 'JetBrains Mono', 'Fira Code', monospace; /* Developer-friendly font */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Container: Centered content with max width */
+.container {
+  max-width: 900px;
+  margin: 80px auto 20px;
+  padding: 0 20px;
+}
+
+/* Header: Fixed, horizontal nav with cobalt gradient */
+header {
+  background: linear-gradient(90deg, #002b6b, #1a1a1a); /* Cobalt blue to dark */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 87, 216, 0.2);
+}
+
+/* Navigation: Horizontal menu */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #00d787; /* Neon green for links */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #40ffa0; /* Brighter green on hover */
+}
+
+/* Headings */
+h1 {
+  color: #ffffff; /* White for emphasis */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: #00d787; /* Neon green for section headers */
+  font-size: 1.8rem;
+  margin: 20px 0 10px;
+}
+
+/* Paragraphs */
+p {
+  color: #d4d4d4;
+  margin-bottom: 15px;
+}
+
+/* Links */
+a {
+  color: #0057d8; /* Cobalt blue for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #40c4ff; /* Lighter blue on hover */
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0057d8; /* Cobalt blue */
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 8px rgba(0, 87, 216, 0.5); /* Neon glow */
+}
+
+.button:hover {
+  background: #007bff; /* Lighter cobalt */
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.7);
+}
+
+/* Section */
+.section {
+  margin: 30px 0;
+}
+
+/* Timeline Section */
+.section.timeline ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-left: 20px;
+}
+
+.section.timeline ul li {
+  margin: 15px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+.section.timeline ul li:before {
+  content: '•';
+  color: #00d787; /* Neon green bullet */
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+}
+
+.section.timeline ul li strong {
+  color: #ffffff; /* White for years */
+}
+
+.section.timeline p {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Comparison Table Section */
+.section.comparison table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  background: #0d1117; /* Dark code block, GitHub-like */
+  box-shadow: inset 0 0 10px rgba(0, 87, 216, 0.3); /* Subtle neon glow */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.section.comparison th,
+.section.comparison td {
+  padding: 12px;
+  text-align: left;
+  border: 0.5px solid #00d787; /* Thinner neon green borders */
+  color: #d4d4d4; /* Light gray text */
+}
+
+.section.comparison th {
+  background: #002b6b; /* Cobalt blue header */
+  color: #ffffff; /* White for contrast */
+  font-weight: 600;
+}
+
+.section.comparison tr:nth-child(even) {
+  background: #141922; /* Slightly lighter dark for alternating rows */
+}
+
+.section.comparison tr:hover {
+  background: #1c2526; /* Subtle hover effect */
+}
+
+/* Lists */
+ul:not(.timeline ul) {
+  list-style: none;
+  padding: 0;
+}
+
+li:not(.timeline ul li) {
+  margin: 10px 0;
+  color: #d4d4d4;
+}
+
+/* ASCII Art (pre) */
+pre {
+  background: #0d1117; /* Dark code block, GitHub-like */
+  color: #00d787; /* Neon green for code */
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 87, 216, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #8b949e; /* Muted gray for footer */
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 100px;
+    padding: 0 15px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .section.timeline ul li {
+    padding-left: 20px;
+  }
+
+  .section.comparison table {
+    font-size: 0.9rem;
+  }
+
+  .section.comparison th,
+  .section.comparison td {
+    padding: 8px;
+    border: 0.5px solid #00d787; /* Thinner borders on mobile */
+  }
+}
+
+/* Ensure content is not hidden behind fixed header */
+main {
+  padding-top: 60px; /* Match header height */
+}

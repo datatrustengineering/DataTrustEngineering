@@ -1,3 +1,7 @@
+---
+title: Contributors
+---
+
 # Contributors
 
 Thank you to everyone shaping the #DTERevolution! Contributors are listed below:

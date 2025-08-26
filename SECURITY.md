@@ -1,3 +1,7 @@
+---
+title: Security
+---
+
 # Security Policy
 
 At **Data Trust Engineering (DTE)**, we prioritize the security of our artifacts, such as the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html), and the trust of our community. If you discover a security vulnerability or need to report a Code of Conduct violation privately, please follow these steps.

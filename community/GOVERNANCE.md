@@ -1,3 +1,7 @@
+---
+title: Governance
+---
+
 # Governance of Data Trust Engineering (DTE)
 
 The **Data Trust Engineering (DTE)** project is a community-driven movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness, as outlined in the [Data Trust Engineering Manifesto](/Manifesto.md). Inspired by the [DataOps Manifesto](https://dataopsmanifesto.org)’s principles of collaboration and agility, DTE evolves through open-source contributions on GitHub, starting with artifacts like the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html). This `GOVERNANCE.md` file defines how our community makes decisions, manages contributions, and resolves conflicts to ensure a transparent, inclusive, and productive #DTERevolution.

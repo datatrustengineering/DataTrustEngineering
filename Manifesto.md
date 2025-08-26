@@ -1,3 +1,7 @@
+---
+title: DTE Manifesto
+---
+
 # Data Trust Engineering Manifesto
 
 ## Mission
@@ -39,7 +43,7 @@ Organizations can begin their DTE journey through these practical steps:
 ## Core Principles of DTE
 
 1. **Trust**: Data must be accurate, secure, and accessible, earning confidence for enterprises, users, and AI systems in 2025.
-1. **Engineering Rigor**: DTE builds systems with software engineering precision, using automation and shift-left principles.
+1. **Engineering Rigor**: DTE builds systems with software engineering precision, using automation, shift-left and first principles.
 1. **Adaptability Through Feedback**: TDD-inspired feedback loops enable rapid testing and pipeline optimization [Gartner, 2025].
 1. **Enablement**: DTE empowers data professionals to deliver value, fostering collaboration.
 1. **Cloud-Native**: DTE aligns with shared responsibility models (e.g., AWS, Azure).
@@ -102,6 +106,7 @@ DTE reframes data quality issues as technical debt, using dbt and Great Expectat
 |**Cloud Readiness**    |Limited (legacy-focused)   |Excellent (cloud-native)             |
 |**Team Empowerment**   |Process-focused            |High (engineer-driven)               |
 |**AI-Readiness**       |Limited adaptation         |Robust (EU AI Act-compliant)         |
+
 
 ## The Call to Action
 

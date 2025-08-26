@@ -1,3 +1,7 @@
+---
+title: Contributing Guide
+---
+
 # Contributing to Data Trust Engineering (DTE)
 
 Welcome to the **Data Trust Engineering (DTE)** community! We're building a movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness. Inspired by the [DataOps Manifesto](https://dataopsmanifesto.org)’s agility and collaboration, DTE invites data professionals, enterprises, SMBs, and hyperscalers to contribute to our open-source ecosystem. Whether you're enhancing the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html), proposing new artifacts, or sharing case studies, your contributions shape the #DTERevolution.

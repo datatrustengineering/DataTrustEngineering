@@ -1,3 +1,7 @@
+---
+title: Support
+---
+
 # Support for Data Trust Engineering (DTE)
 
 Welcome to **Data Trust Engineering (DTE)**! We’re here to help you engage with our community, contribute to artifacts like the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html), or learn about our mission to certify data systems by use case, risk, and value. Inspired by the [DataOps Manifesto](https://dataopsmanifesto.org), we value collaboration and agility. Here’s how to get help:
