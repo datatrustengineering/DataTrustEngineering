@@ -40,10 +40,15 @@ Explore [UseCases.md](UseCases.md) to see how to apply DTE principles with open-
 
 ## Getting Started
 
+### Quick Start
 1. **Clone the Repo**:
    ```bash
-   git clone https://github.com/[YourUsername]/DataTrustEngineering.git
+   git clone https://github.com/askbrianfx/DataTrustEngineering.git
    ```
+
+### Live Demo
+- **Trust Dashboard**: [Try it live](https://datatrustengineering.github.io/DataTrustEngineering/tools/data-trust-dashboard/DTE_Trust_Dashboard.html)
+- **Full Site**: [datatrustmanifesto.org](https://datatrustmanifesto.org) (coming soon)
 
 2. **Explore the Trust Dashboard**:
    - Navigate to `/tools/data-trust-dashboard`.
