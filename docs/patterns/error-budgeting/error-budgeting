@@ -1,0 +1,56 @@
+---
+title: Error Budgeting Guide
+type: "page"
+layout: "single"
+markup: "markdown"
+---
+
+# Error Budgeting (DTE Pattern)
+
+## Mission
+In Data Trust Engineering (DTE), **error budgets** define the acceptable margin of failure for trust metrics (freshness, null %, contract violations). They make tradeoffs explicit, ensuring **teams know when to pause feature work** and prioritize reliability.
+
+---
+
+## Design Patterns for Error Budgeting
+
+### 1) Error Budget Burn
+- Track error rates (e.g., contract violations per 1k records, freshness SLO breaches).
+- Burn through an agreed **budget** before halting releases.
+
+### 2) Trust SLO Integration
+- Connect error budgets to **Trust SLAs/SLOs** (freshness, null %, duplicates).
+- Visualize in dashboards alongside reliability metrics.
+
+### 3) Automated Gating
+- CI/CD checks fail if error budget is exceeded.
+- PagerDuty/Slack alerts notify teams of budget burn.
+
+### 4) Adaptive Response
+- When budget is healthy → allow feature velocity.
+- When budget breached → dedicate cycles to debt reduction.
+
+---
+
+## Example Error Budget Spec (YAML)
+
+```yaml
+slo:
+  freshness_p95: "≤ 60m"
+  null_rate: "≤ 0.5%"
+  contract_violations: "≤ 0.1%"
+error_budget:
+  burn_window: "30d"
+  threshold: "80%"  # if 80% burned, stop feature releases
+alerting:
+  channels: ["#data-trust", "#oncall"]
+```
+
+---
+
+## Tooling
+- **dbt source freshness** for staleness budgets  
+- **Great Expectations** for contract violations  
+- **Superset/Metabase** dashboards to track error budget burn  
+
+> Error budgets transform reliability from a debate into a **contract between teams and reality**.

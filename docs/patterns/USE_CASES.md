@@ -7,11 +7,38 @@ markup: "markdown"
 
 ## Data Trust Engineering (DTE) Use Cases and Trust Dashboard
 
-Welcome to the **Data Trust Engineering (DTE) Use Cases** and **Trust Dashboard**, flagship artifacts of the Data Trust Engineering movement. These open-source tools and examples embody DTE’s principles of trust, engineering rigor, and AI-readiness as outlined in the [Data Trust Manifesto](../Manifesto.md).
+Welcome to the **Data Trust Engineering (DTE) Use Cases** and **Trust Dashboard**, flagship artifacts of the Data Trust Engineering movement. These open-source tools and examples embody DTE’s principles of trust, engineering rigor, and AI-readiness as outlined in the [Data Trust Manifesto](../Manifesto).
 
 Traditional data governance fails **70–85% of the time** (Gartner, 2025) due to bureaucracy, policy-heavy models, and conflation of compliance with technical data management. DTE replaces these approaches with engineering-driven, vendor-neutral artifacts that demonstrate practical, reproducible trust in data systems.  
 
 ---
+
+## Mission for Examples & Design Patterns
+
+The examples in this guide are designed as **illustrations, not end-to-end products**. Each one shows how DTE principles can be applied in practice using open-source components. Think of them as **recipes** that teams can fork, adapt, and extend—not polished systems.
+
+Over time, these examples will also evolve into a library of **design patterns for Trust Engineering**.  
+- Patterns for **shift-left quality** (contracts at ingestion)  
+- Patterns for **lineage and observability** (OpenLineage integration, monitoring pipelines in real time)  
+- Patterns for **AI trust** (fairness, explainability, drift checks)  
+- Patterns for **AI evaluations** (systematic LLM/RAG evals, confidence scoring, guardrail testing)  
+- Patterns for **observability** (metrics, logging, tracing tied to trust indicators)  
+- Patterns for **technical debt management** (dbt tests, Great Expectations)  
+
+The goal is to provide **starting points** and **reusable patterns** that make trust engineering approachable, repeatable, and community-driven.
+
+---
+
+## Purpose of the Use Cases
+
+These use cases are not full-blown projects or attempts to rebuild the entire ecosystem of governance and AI tools. The ecosystem is already too large and fragmented. Instead, the purpose is to act as a guide with examples, showing how open-source components can be applied to real trust problems.
+
+- **Baseline, not best-in-class**: The goal is not to compete with enterprise tools, but to set a baseline reference that’s easy to understand and extend.  
+- **Trust Dashboard as MVP**: This is the anchor artifact — a lightweight starting point that demonstrates DTE principles (trust, rigor, AI-readiness) in a tangible way.  
+- **Examples, not platforms**: Each use case is a recipe (e.g., data contracts at ingestion, lineage with OpenLineage, fairness checks with Fairlearn), not a production-ready service.  
+- **Community-first**: The structure invites contributions, but the priority is to show how to start, not to provide a polished ecosystem out of the gate.  
+
+
 
 ## The DTE Trust Dashboard
 
@@ -248,7 +275,35 @@ with DAG("data_trust_pipeline", start_date=datetime(2025,1,1), schedule_interval
 
 ### 8. Dashboards & Reports
 Visualize metrics with lineage.  
-**Artifact**: [Metabase](https://github.com/metabase/metabase) + [Apache Atlas](https://github.com/apache/atlas).  
+**Artifact**: [Metabase](https://github.com/metabase/metabase) + [OpenLineage](https://github.com/OpenLineage/OpenLineage).  
+
+```python
+from openlineage.client import OpenLineageClient
+from openlineage.client.run import RunEvent, RunState, Run, Job, Dataset
+from datetime import datetime
+
+# Initialize OpenLineage client
+client = OpenLineageClient(url="http://localhost:5000", api_key="")
+
+# Define a job and dataset
+job = Job(namespace="dte.trust.dashboard", name="user_events_pipeline")
+dataset = Dataset(namespace="dte.trust.dashboard", name="user_events")
+
+# Create lineage event
+event = RunEvent(
+    eventType=RunState.COMPLETE,
+    eventTime=datetime.utcnow().isoformat(),
+    run=Run(runId="1234-5678-90"),
+    job=job,
+    inputs=[dataset],
+    outputs=[dataset]
+)
+
+# Emit lineage event
+client.emit(event)
+
+print("Lineage event emitted to OpenLineage for user_events_pipeline")
+
 
 ---
 
@@ -376,7 +431,7 @@ models:
 ---
 
 ## License
-MIT License — see [LICENSE.md](../LICENSE.md).
+MIT License — see [LICENSE.md](../LICENSE).
 
 ---
 

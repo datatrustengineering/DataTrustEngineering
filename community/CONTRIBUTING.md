@@ -1,10 +1,8 @@
 ---
-title: Contributing Guide
+title: Contributing to Data Trust Engineering (DTE)
 ---
 
-# Contributing to Data Trust Engineering (DTE)
-
-Welcome to the **Data Trust Engineering (DTE)** community! We're building a movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness. Inspired by the [DataOps Manifesto](https://dataopsmanifesto.org)’s agility and collaboration, DTE invites data professionals, enterprises, SMBs, and hyperscalers to contribute to our open-source ecosystem. Whether you're enhancing the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html), proposing new artifacts, or sharing case studies, your contributions shape the #DTERevolution.
+Welcome to the **Data Trust Engineering (DTE)** community! We're building a movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness. Inspired by the [DataTrustManifesto.org](https://datatrustmanifesto.org)’s agility and collaboration, DTE invites data professionals, enterprises, SMBs, and hyperscalers to contribute to our open-source ecosystem. Whether you're enhancing the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard), proposing new artifacts, or sharing case studies, your contributions shape the #DTERevolution.
 
 This guide explains how to contribute to the `DataTrustEngineering` repository, ensuring a productive, inclusive community. Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) or our [Slack org]([Slack Invite Link]).
 
@@ -19,15 +17,15 @@ This guide explains how to contribute to the `DataTrustEngineering` repository, 
 
 ## Code of Conduct
 
-All contributors must follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md), based on the Contributor Covenant. Be respectful, constructive, and focused on DTE’s mission to certify data systems by use case, risk, and value. Harassment, off-topic rants, or disruptive behavior will be addressed by maintainers to keep our community welcoming.
+All contributors must follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT), based on the Contributor Covenant. Be respectful, constructive, and focused on DTE’s mission to certify data systems by use case, risk, and value. Harassment, off-topic rants, or disruptive behavior will be addressed by maintainers to keep our community welcoming.
 
 ## What Can You Contribute?
 
-DTE is a community-driven movement, and we welcome contributions that align with our [Manifesto](/Manifesto.md) and advance trust, engineering rigor, and AI-readiness. Examples include:
+DTE is a community-driven movement, and we welcome contributions that align with our [Manifesto](/Manifesto) and advance trust, engineering rigor, and AI-readiness. Examples include:
 
 - **Artifacts**: Tools and scripts for data quality (e.g., Great Expectations configs), lineage (e.g., Apache Atlas scripts), or AI governance (e.g., Fairlearn integrations). See `/tools`.
 - **Manifesto Updates**: Refine or propose principles in `/Manifesto.md` to strengthen DTE’s vision.
-- **Case Studies**: Share real-world DTE applications (e.g., “Reduced AI bias by 15%”) in `/docs/case-studies`. Use our [template](/docs/case-studies/template.md).
+- **Case Studies**: Share real-world DTE applications (e.g., “Reduced AI bias by 15%”) in `/docs/case-studies`. Use our [template](/docs/case-studies/template).
 - **Patterns and Guides**: Document DTE best practices (e.g., data quality patterns) in `/docs/patterns`.
 - **Trust Dashboard Enhancements**: Add metrics, APIs (e.g., Evidently AI, MLflow), or UI improvements to `/tools/data-trust-dashboard`.
 - **Documentation**: Improve clarity, fix typos, or add tutorials in `/docs`.
@@ -37,7 +35,7 @@ DTE is a community-driven movement, and we welcome contributions that align with
 ## How to Contribute
 
 1. **Explore the Repo**:
-   - Read the [README.md](/README.md) and [Manifesto.md](/Manifesto.md) to understand DTE’s goals.
+   - Read the [README.md](/README) and [Manifesto.md](/Manifesto) to understand DTE’s goals.
    - Check `/tools` and `/docs` for existing artifacts and inspiration.
 
 2. **Discuss Your Idea**:
@@ -71,7 +69,7 @@ We review PRs to ensure alignment with DTE’s principles (trust, certification,
 
 2. **Review Process**:
    - Maintainers will review within 5-7 days, checking for:
-     - Alignment with the [Manifesto](/Manifesto.md).
+     - Alignment with the [DTE Manifesto](/Manifesto).
      - Code/documentation quality (e.g., markdown linting, functional scripts).
      - Relevance to DTE’s goals (e.g., supports certification, cloud-native architectures).
    - Expect feedback (e.g., “Can you add an example for SMBs?”). Revise as needed.
@@ -89,7 +87,7 @@ We review PRs to ensure alignment with DTE’s principles (trust, certification,
 - **Stay On-Topic**: Contributions should support DTE’s focus on certifying data systems for trust, AI-readiness, and cloud scalability. Off-topic ideas (e.g., unrelated tech policies) may be redirected.
 - **Be Collaborative**: Engage in GitHub Discussions or Slack (#contributions) before submitting large PRs to align with community goals.
 - **Respect Feedback**: Maintainers may request changes to ensure quality. Respond constructively to keep the #DTERevolution moving forward.
-- **Avoid Chaos**: Follow the [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md). Disruptive behavior (e.g., spamming issues) may lead to warnings or blocks.
+- **Avoid Chaos**: Follow the [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT). Disruptive behavior (e.g., spamming issues) may lead to warnings or blocks.
 
 ## Recognition
 
@@ -104,8 +102,8 @@ Your contributions shape DTE! We recognize contributors by:
 ## Contact
 - **Slack**: Join [datatrustengineering](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) (#general, #contributions)
 - **Website**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
-- **Contribute**: Fork the repo, enhance the dashboard, or add DTE tools. See [CONTRIBUTING.md](/community/CONTRIBUTING.md).
-- **Learn More**: Read the [DTE Manifesto](/Manifesto.md) for the full vision.
+- **Contribute**: Fork the repo, enhance the dashboard, or add DTE tools. See [CONTRIBUTING.md](/community/CONTRIBUTING).
+- **Learn More**: Read the [DTE Manifesto](/Manifesto) for the full vision.
 - **Inquiries**: Open a [Contact issue](https://github.com/askbrianfx/DataTrustEngineering/issues/new?template=contact.yml) or use our [contact form](https://forms.gle/S7V4zySe7gPqq56f8) for private questions.
 
 Thank you for joining the #DTERevolution! Let’s certify data systems for a trusted, AI-ready future.

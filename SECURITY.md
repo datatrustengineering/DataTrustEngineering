@@ -4,7 +4,7 @@ title: Security
 
 # Security Policy
 
-At **Data Trust Engineering (DTE)**, we prioritize the security of our artifacts, such as the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html), and the trust of our community. If you discover a security vulnerability or need to report a Code of Conduct violation privately, please follow these steps.
+At **Data Trust Engineering (DTE)**, we prioritize the security of our artifacts, such as the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard), and the trust of our community. If you discover a security vulnerability or need to report a Code of Conduct violation privately, please follow these steps.
 
 ## Reporting a Vulnerability
 - **Submit Privately**: Use our [security form](https://forms.gle/3fvhL9cqNiqe8VbV6) to report vulnerabilities or sensitive issues (e.g., data exposure in a script, Code of Conduct violations).
@@ -16,7 +16,7 @@ At **Data Trust Engineering (DTE)**, we prioritize the security of our artifacts
 - **Do Not**: Disclose vulnerabilities publicly (e.g., GitHub Issues, Slack) until resolved.
 
 ## Community Guidelines
-- Follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+- Follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT).
 - For general inquiries, use [Slack](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) or a [Contact issue](https://github.com/askbrianfx/DataTrustEngineering/issues/new?template=contact.yml).
 - Visit [datatrustmanifesto.org](https://datatrustmanifesto.org) for more.
 

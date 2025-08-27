@@ -1,0 +1,23 @@
+profiles:
+  low_risk:
+    description: "Low-stakes use cases (internal analytics, non-customer facing)."
+    cadence: "weekly"
+    gates:
+      drift_psi_max: 0.30
+    checks: [drift, golden_set]
+  medium_risk:
+    description: "Moderate impact (marketing rankers, UX personalization)."
+    cadence: "daily"
+    gates:
+      drift_psi_max: 0.20
+      fairness_gap_max: 0.08
+    checks: [drift, fairness, golden_set, hallucination]
+  high_risk:
+    description: "High-stakes (eligibility, safety-critical flags)."
+    cadence: "per_change"
+    gates:
+      drift_psi_max: 0.10
+      fairness_gap_max: 0.05
+      hallucination_rate_max: 0.02
+      citation_coverage_min: 0.95
+    checks: [drift, fairness, golden_set, hallucination, citations, adversarial]

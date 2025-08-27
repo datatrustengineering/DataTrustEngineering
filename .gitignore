@@ -60,3 +60,28 @@ extensionRequires.js
 *.tmp
 *.bak
 status.txt
+
+# -------------------------------------------------------------------
+# Data Trust Engineering (DTE) repo specific ignores
+# -------------------------------------------------------------------
+
+# Ignore generated artifacts (but keep structure if needed)
+evals/artifacts/*
+!evals/artifacts/README.md
+!evals/artifacts/index.schema.json
+
+# Explicit subfolders (for clarity)
+evals/artifacts/evidence/*
+evals/artifacts/safety/*
+evals/artifacts/tmp/*
+
+# AI eval outputs
+*.jsonl
+*.npy
+*.html
+*.png
+
+# Build/deploy leftovers
+dist/
+build/
+.eggs/

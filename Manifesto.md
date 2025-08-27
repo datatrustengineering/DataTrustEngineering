@@ -153,8 +153,8 @@ DTE provides a path forward from traditional approaches. Fork the DataTrustEngin
 ## Contact
 - **Slack**: Join [datatrustengineering](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) (#general, #contributions)
 - **Website**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
-- **Contribute**: Fork the repo, enhance the dashboard, or add DTE tools. See [CONTRIBUTING.md](/community/CONTRIBUTING.md).
-- **Learn More**: Read the [DTE Manifesto](/Manifesto.md) for the full vision.
+- **Contribute**: Fork the repo, enhance the dashboard, or add DTE tools. See [CONTRIBUTING.md](/community/CONTRIBUTING).
+- **Learn More**: Read the [DTE Manifesto](/Manifesto) for the full vision.
 - **Inquiries**: Open a [Contact issue](https://github.com/askbrianfx/DataTrustEngineering/issues/new?template=contact.yml) or use our [contact form](https://forms.gle/uq8w9bAS5GC85o5A6) for private questions.
 
 #DTERevolution

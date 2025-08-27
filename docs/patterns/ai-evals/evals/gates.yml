@@ -1,0 +1,7 @@
+gates:
+  fairness_gap_max: 0.05
+  drift_psi_max: 0.10
+  hallucination_rate_max: 0.02
+  rag:
+    citation_coverage_min: 0.95
+    em_mean_min: 0.80
