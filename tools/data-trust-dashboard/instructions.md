@@ -88,3 +88,14 @@ This guide explains how to run the Data Trust Engineering (DTE) Trust Dashboard 
 - For further assistance, contact the Data Trust Engineering team or refer to the [Data Trust Manifesto](/Manifesto.md).
 
 *Last updated: August 26, 2025, 01:44 PM EDT*
+
+# DOCKER Build and run
+```
+docker-compose up --build
+```
+
+# Or with Docker directly
+```
+docker build -t dte-dashboard .
+docker run -p 8501:8501 dte-dashboard
+```
