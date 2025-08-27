@@ -8,9 +8,6 @@ markup: "markdown"
 ## Data Trust Engineering (DTE) Use Cases and Trust Dashboard
 
 Welcome to the **Data Trust Engineering (DTE) Use Cases** and **Trust Dashboard**, flagship artifacts of the Data Trust Engineering movement. These open-source tools and examples embody DTE’s principles of trust, engineering rigor, and AI-readiness as outlined in the [Data Trust Manifesto](../Manifesto).
-
-Traditional data governance fails **70–85% of the time** (Gartner, 2025) due to bureaucracy, policy-heavy models, and conflation of compliance with technical data management. DTE replaces these approaches with engineering-driven, vendor-neutral artifacts that demonstrate practical, reproducible trust in data systems.  
-
 ---
 
 ## Mission for Examples & Design Patterns

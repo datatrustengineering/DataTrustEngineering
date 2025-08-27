@@ -32,7 +32,7 @@ Access at: http://localhost:1313
 ## GitHub Pages Deployment
 
 ### 1. Enable GitHub Pages
-1. Go to your repository: `https://github.com/askbrianfx/DataTrustEngineering`
+1. Go to your repository: `https://github.com/datatrustengineering/DataTrustEngineering`
 2. Navigate to **Settings** → **Pages**
 3. Set **Source** to "GitHub Actions"
 4. Ensure the repository is public (required for free GitHub Pages)
@@ -86,7 +86,7 @@ hugo --minify
 ### Option 3: GitHub Pages Subdomain
 Keep current configuration:
 ```toml
-baseURL = "https://askbrianfx.github.io"
+baseURL = "https://datatrustengineering.github.io"
 ```
 
 ## Post-Deployment Verification

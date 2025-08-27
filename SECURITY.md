@@ -17,7 +17,7 @@ At **Data Trust Engineering (DTE)**, we prioritize the security of our artifacts
 
 ## Community Guidelines
 - Follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT).
-- For general inquiries, use [Slack](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) or a [Contact issue](https://github.com/askbrianfx/DataTrustEngineering/issues/new?template=contact.yml).
+- For general inquiries, use [Slack](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) or a [Contact issue](https://github.com/datatrustengineering/DataTrustEngineering/issues/new?template=contact.yml).
 - Visit [datatrustmanifesto.org](https://datatrustmanifesto.org) for more.
 
 Thank you for helping keep DTE secure and trusted!

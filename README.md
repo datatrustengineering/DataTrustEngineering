@@ -1,7 +1,7 @@
 # Data Trust Engineering (DTE)
 
-[![GitHub Stars](https://img.shields.io/github/stars/[YourUsername]/DataTrustEngineering)](https://github.com/[YourUsername]/DataTrustEngineering/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/[YourUsername]/DataTrustEngineering)](https://github.com/[YourUsername]/DataTrustEngineering/network)
+[![GitHub Stars](https://img.shields.io/github/stars/datatrustengineering/DataTrustEngineering)](https://github.com/[YourUsername]/DataTrustEngineering/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/datatrustengineering/DataTrustEngineering)](https://github.com/[YourUsername]/DataTrustEngineering/network)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE.md)
 [![#DTERevolution](https://img.shields.io/badge/Join-%23DTERevolution-brightgreen)](https://x.com/hashtag/DTERevolution)
 
@@ -43,7 +43,7 @@ Explore [UseCases.md](UseCases.md) to see how to apply DTE principles with open-
 ### Quick Start
 1. **Clone the Repo**:
    ```bash
-   git clone https://github.com/askbrianfx/DataTrustEngineering.git
+   git clone https://github.com/datatrustengineeringx/DataTrustEngineering.git
    ```
 
 ### Live Demo
@@ -101,16 +101,8 @@ DTE overcomes governance’s failures with:
 
 ## Community and Support
 
-## Contact
-- **Slack**: Join [datatrustengineering](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) (#general, #contributions)
-- **Website**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
-- **Contribute**: Fork the repo, enhance the dashboard, or add DTE tools. See [CONTRIBUTING.md](/community/CONTRIBUTING.md).
-- **Learn More**: Read the [DTE Manifesto](/Manifesto.md) for the full vision.
-- **Inquiries**: Open a [Contact issue](https://github.com/askbrianfx/DataTrustEngineering/issues/new?template=contact.yml) or use our [contact form](https://forms.gle/uq8w9bAS5GC85o5A6) for private questions.
-
 ## Acknowledgments
 
-DTE builds on the [DataOps Manifesto](https://dataopsmanifesto.org)’s agility and collaboration. Thanks to the DataOps community and contributors shaping DTE.
 
 **Authors**: Brian Brewer | Founder | https://www.infolibcorp.com
 

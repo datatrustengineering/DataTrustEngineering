@@ -110,6 +110,20 @@ Traditional data governance fails 70-85% of the time (Gartner, 2025) due to bure
 
 This project is licensed under the MIT License. See [LICENSE.md](/LICENSE) for details.
 
+## Community Resources
+
+- [DTE Manifesto](manifesto.md): Our vision for trusted, AI-ready data systems.  
+- [Contributing Guide](community/CONTRIBUTING.md): How to submit artifacts, case studies, or updates.  
+- [Code of Conduct](community/CODE_OF_CONDUCT.md): Standards for a respectful community.  
+- [Governance](community/GOVERNANCE.md): How we make decisions and manage contributions.  
+- [Case Study Template](docs/case-studies/template.md): Share your DTE success story.  
+- [Contributors](community/CONTRIBUTORS.md): Meet the community shaping DTE.  
+- [Support](SUPPORT.md): How to get help or contact us.  
+- [Security](SECURITY.md): Report vulnerabilities or sensitive issues.  
+- [Report Issues & Propose Features](https://github.com/datatrustengineering/DataTrustEngineering/issues): Submit bug reports or suggest new artifacts.  
+
+
+
 ## Acknowledgments
 
 The DTE Trust Dashboard is a cornerstone of the [Data Trust Manifesto](https://datatrustmanifesto.org), driving a collaborative, automation-driven approach to data management. We thank the DTE community for inspiring and contributing to the #DTERevolution.

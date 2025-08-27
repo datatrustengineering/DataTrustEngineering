@@ -43,12 +43,4 @@ If you have ideas for a fix, share them! (e.g., “Check if data is undefined be
 
 ---
 
-**Community Guidelines**:
-- Follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
-- Discuss in [Slack]([Slack Invite Link]) (#trust-dashboard or #contributions) or X (#DTERevolution) for quick feedback.
-## Contact
-- **Slack**: Join [datatrustengineering](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) (#general, #contributions)
-- **Website**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
-- **Contribute**: Fork the repo, enhance the dashboard, or add DTE tools. See [CONTRIBUTING.md](/community/CONTRIBUTING.md).
-- **Learn More**: Read the [DTE Manifesto](/Manifesto.md) for the full vision.
-- **Inquiries**: Open a [Contact issue](https://github.com/askbrianfx/DataTrustEngineering/issues/new?template=contact.yml) or use our [contact form](https://forms.gle/mgQ7aRsXcaaFDTwf8) for private questions.
+

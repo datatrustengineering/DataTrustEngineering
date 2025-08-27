@@ -12,7 +12,8 @@ This section is a **cookbook of practical patterns** — not policies, not frame
 Each pattern includes **open-source code examples** you can fork, adapt, and extend.  
 
 The goal is to provide a **baseline of engineering recipes** for building trusted data and AI systems.  
-These are **not full-blown platforms** — they’re **guideposts and starting points** to help teams escape governance theater and build **trust you can prove**.
+These are **not full-blown platforms** — they’re **guideposts and starting points** to help teams move beyond policy-heavy governance and focus on building **trust you can prove**.
+
 
 ---
 

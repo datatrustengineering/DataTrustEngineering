@@ -4,7 +4,7 @@ title: Governance of Data Trust Engineering (DTE)
 
 
 
-The **Data Trust Engineering (DTE)** project is a community-driven movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness, as outlined in the [Data Trust Engineering Manifesto](/Manifesto.md). Inspired by the [DataOps Manifesto](https://dataopsmanifesto.org)’s principles of collaboration and agility, DTE evolves through open-source contributions on GitHub, starting with artifacts like the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard). This `GOVERNANCE.md` file defines how our community makes decisions, manages contributions, and resolves conflicts to ensure a transparent, inclusive, and productive #DTERevolution.
+The **Data Trust Engineering (DTE)** project is a community-driven movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness, as outlined in the [Data Trust Engineering Manifesto](/Manifesto.md). DTE evolves through open-source contributions on GitHub, starting with artifacts like the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard). This `GOVERNANCE.md` file defines how our community makes decisions, manages contributions, and resolves conflicts to ensure a transparent, inclusive, and productive #DTERevolution.
 
 Learn more at [datatrustmanifesto.org](https://datatrustmanifesto.org) or join our [Slack org]([Slack Invite Link]).
 
@@ -128,11 +128,3 @@ As DTE grows, this governance model will evolve:
 - **Updates**: Major changes (e.g., adding new maintainer roles) require 7-10 days of community discussion and 2+ maintainer approvals.
 - **Organization Transition**: If the community scales, we may move the repo to a GitHub Organization for shared ownership, with roles defined here.
 
-## Contact
-- **Slack**: Join [datatrustengineering](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) (#general, #contributions)
-- **Website**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
-- **Contribute**: Fork the repo, enhance the dashboard, or add DTE tools. See [CONTRIBUTING.md](/community/CONTRIBUTING).
-- **Learn More**: Read the [DTE Manifesto](/Manifesto) for the full vision.
-- **Inquiries**: Open a [Contact issue](https://github.com/askbrianfx/DataTrustEngineering/issues/new?template=contact.yml) or use our [contact form](https://forms.gle/S7V4zySe7gPqq56f8) for private questions.
-
-Thank you for shaping DTE’s future. Let’s certify data systems for a trusted, AI-ready world!
