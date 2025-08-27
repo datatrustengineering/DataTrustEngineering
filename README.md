@@ -1,7 +1,7 @@
 # Data Trust Engineering (DTE)
 
-[![GitHub Stars](https://img.shields.io/github/stars/datatrustengineering/DataTrustEngineering)](https://github.com/[YourUsername]/DataTrustEngineering/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/datatrustengineering/DataTrustEngineering)](https://github.com/[YourUsername]/DataTrustEngineering/network)
+[![GitHub Stars](https://img.shields.io/github/stars/datatrustengineering/DataTrustEngineering)](https://github.com/datatrustengineering/DataTrustEngineering/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/datatrustengineering/DataTrustEngineering)](https://github.com/datatrustengineering/DataTrustEngineering/network)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE.md)
 [![#DTERevolution](https://img.shields.io/badge/Join-%23DTERevolution-brightgreen)](https://x.com/hashtag/DTERevolution)
 
@@ -36,7 +36,7 @@ The **DTE Trust Dashboard** kicks off our open-source journey, visualizing AI go
 
 Find it in `/tools/data-trust-dashboard/DTE_Trust_Dashboard.html`. More artifacts—like data quality patterns and trust evals—are on the way!
 
-Explore [UseCases.md](UseCases.md) to see how to apply DTE principles with open-source code.
+Explore [USE_CASES.md](/docs/patterns/USE_CASES.md) to see how to apply DTE principles with open-source code.
 
 ## Getting Started
 
@@ -68,7 +68,7 @@ Explore [UseCases.md](UseCases.md) to see how to apply DTE principles with open-
 
 - `/Manifesto.md`: The *Data Trust Engineering Manifesto*.
 - `/tools`: Artifacts like `/tools/data-trust-dashboard`.
-- `/docs`: Case studies, patterns (e.g., `/docs/patterns/data-quality-guide.md`).
+- `/docs`: Case studies, patterns (e.g., `/docs/patterns/USE_CASES.md`).
 - `/community`: Contribution guidelines, code of conduct.
 - `/LICENSE.md`: MIT License.
 
@@ -79,6 +79,7 @@ Help shape DTE’s future! Contribute:
 - **Artifacts**: Data quality scripts, lineage trackers, or AI tools to `/tools`.
 - **Manifesto Updates**: Refine principles in `/Manifesto.md`.
 - **Case Studies**: Share success stories in `/docs/case-studies`.
+- **Use Cases**: Explore [USE_CASES.md](/docs/patterns/USE_CASES.md) to see how to apply DTE principles with open-source code.
 
 Start with “good first issues” (e.g., typo fixes) or discuss ideas in GitHub Discussions. See [CONTRIBUTING.md](/community/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
 

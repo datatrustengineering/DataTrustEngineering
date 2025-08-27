@@ -7,7 +7,7 @@ markup: "markdown"
 
 ## Data Trust Engineering (DTE) Use Cases and Trust Dashboard
 
-Welcome to the **Data Trust Engineering (DTE) Use Cases** and **Trust Dashboard**, flagship artifacts of the Data Trust Engineering movement. These open-source tools and examples embody DTE’s principles of trust, engineering rigor, and AI-readiness as outlined in the [Data Trust Manifesto](../Manifesto).
+Welcome to the **Data Trust Engineering (DTE) Use Cases** and **Trust Dashboard**, flagship artifacts of the Data Trust Engineering movement. These open-source tools and examples embody DTE’s principles of trust, engineering rigor, and AI-readiness as outlined in the [Data Trust Manifesto](../Manifesto.md).
 ---
 
 ## Mission for Examples & Design Patterns
@@ -428,7 +428,7 @@ models:
 ---
 
 ## License
-MIT License — see [LICENSE.md](../LICENSE).
+MIT License — see [LICENSE.md](../LICENSE.md).
 
 ---
 

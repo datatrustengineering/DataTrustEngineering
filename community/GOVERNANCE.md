@@ -24,7 +24,7 @@ DTE’s governance is rooted in the manifesto’s core principles:
 - **Transparency**: Decisions are made openly, with clear rationale shared in GitHub Issues, Discussions, or Slack.
 - **Collaboration**: Contributions from data professionals, enterprises, SMBs, and hyperscalers shape DTE’s evolution.
 - **Alignment**: All decisions support DTE’s mission to certify data systems by use case, risk, and value, ensuring trust and AI-readiness.
-- **Inclusivity**: We welcome diverse perspectives while maintaining focus, as enforced by our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT).
+- **Inclusivity**: We welcome diverse perspectives while maintaining focus, as enforced by our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
 - **Agility**: Inspired by DataOps, we prioritize rapid feedback and iterative improvements.
 
 ## Roles and Responsibilities
@@ -32,8 +32,8 @@ DTE’s governance is rooted in the manifesto’s core principles:
 - **Maintainers**:
   - **Who**: Initially, Brian Brewer (bbrewer@infolibcorp.com) and future trusted contributors elevated based on active participation.
   - **Responsibilities**:
-    - Review and merge pull requests (PRs) for alignment with the [Manifesto](/Manifesto).
-    - Moderate discussions, issues, and PRs per [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT).
+    - Review and merge pull requests (PRs) for alignment with the [Manifesto](/Manifesto.md).
+    - Moderate discussions, issues, and PRs per [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
     - Make final decisions on contributions and conflicts, seeking community input where possible.
     - Update repo structure, roadmap, and governance as DTE grows.
   - **Selection**: New maintainers are nominated by existing maintainers based on consistent, high-quality contributions (e.g., multiple merged PRs) and community trust. Nominations are discussed in GitHub Discussions and confirmed by consensus.
@@ -41,7 +41,7 @@ DTE’s governance is rooted in the manifesto’s core principles:
 - **Contributors**:
   - **Who**: Anyone who submits PRs, issues, or participates in Discussions/Slack, from beginners to experts.
   - **Responsibilities**:
-    - Follow [CONTRIBUTING.md](/community/CONTRIBUTING) and [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT).
+    - Follow [CONTRIBUTING.md](/community/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
     - Propose artifacts (e.g., data quality scripts), case studies, or manifesto updates that advance DTE’s mission.
     - Engage respectfully and respond to feedback during PR reviews.
 
@@ -64,7 +64,7 @@ Decisions in DTE are made through a **consensus-driven model**, inspired by open
    - Maintainers moderate to keep discussions on-topic and respectful.
 
 3. **Decision**:
-   - For minor changes (e.g., typo fixes, small PRs), maintainers approve or reject based on alignment with the [Manifesto](/Manifesto).
+   - For minor changes (e.g., typo fixes, small PRs), maintainers approve or reject based on alignment with the [Manifesto](/Manifesto.md).
    - For major changes (e.g., new principles, governance updates), maintainers seek community input for 5-7 days via Discussions or Slack. If consensus isn’t reached, maintainers make the final call, explaining the rationale publicly.
    - Example: Adding a new manifesto principle requires 2+ maintainer approvals and community feedback.
 
@@ -73,7 +73,7 @@ Decisions in DTE are made through a **consensus-driven model**, inspired by open
 
 ## Pull Request (PR) Review and Approval
 
-PRs are the primary way to contribute to DTE (e.g., artifacts, case studies, manifesto updates). The process follows [CONTRIBUTING.md](/community/CONTRIBUTING):
+PRs are the primary way to contribute to DTE (e.g., artifacts, case studies, manifesto updates). The process follows [CONTRIBUTING.md](/community/CONTRIBUTING.md):
 
 1. **Submission**:
    - Contributors fork the repo, create a branch, and submit a PR with a clear description (e.g., “Add Great Expectations script for data quality”).
@@ -95,14 +95,14 @@ PRs are the primary way to contribute to DTE (e.g., artifacts, case studies, man
    - Rejected PRs receive polite feedback (e.g., “This is great but outside DTE’s focus on technical trust”).
 
 5. **Merge**:
-   - Approved PRs are merged into the main branch, with contributors credited in [CONTRIBUTORS.md](/CONTRIBUTORS).
+   - Approved PRs are merged into the main branch, with contributors credited in [CONTRIBUTORS.md](/CONTRIBUTORS.md).
 
 ## Conflict Resolution
 
 Conflicts may arise over PRs, principles, or community interactions. We resolve them transparently:
 - **Step 1: Discussion**:
   - Address conflicts in GitHub Issues, Discussions, or Slack (#general or #contributions).
-  - Maintainers moderate to ensure respectful dialogue per [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT).
+  - Maintainers moderate to ensure respectful dialogue per [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
 - **Step 2: Mediation**:
   - If consensus isn’t reached within 5 days, maintainers propose a solution (e.g., trial period for a new principle).
   - Community input is sought via Discussions or Slack.
@@ -110,7 +110,7 @@ Conflicts may arise over PRs, principles, or community interactions. We resolve 
   - Maintainers make the final call, documenting the rationale in the relevant Issue or Discussion.
   - Example: If two contributors disagree on a PR’s wording, maintainers may merge a compromise version after discussion.
 - **Step 4: Enforcement**:
-  - Violations of the Code of Conduct (e.g., harassment) are addressed with warnings, content removal, or bans, as outlined in [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT).
+  - Violations of the Code of Conduct (e.g., harassment) are addressed with warnings, content removal, or bans, as outlined in [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
 
 ## Community Engagement
 
@@ -119,7 +119,7 @@ DTE thrives on community input. To participate:
 - **Slack**: Join [datatrustengineering]([Slack Invite Link]) for real-time collaboration (#contributions, #trust-dashboard).
 - **X**: Share your contributions with #DTERevolution or tag @bbrewer_infolib.
 - **Good First Issues**: Start with tasks tagged “good first issue” (e.g., typo fixes, case studies) to build skills and join the community.
-- **Recognition**: Contributors are listed in [CONTRIBUTORS.md](/CONTRIBUTORS) and highlighted in Slack or X for impactful work.
+- **Recognition**: Contributors are listed in [CONTRIBUTORS.md](/CONTRIBUTORS.md) and highlighted in Slack or X for impactful work.
 
 ## Evolving Governance
 

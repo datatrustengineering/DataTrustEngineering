@@ -4,7 +4,7 @@ Welcome to the **Data Trust Engineering (DTE) Trust Dashboard**, a flagship arti
 
 ## About Data Trust Engineering (DTE)
 
-Data Trust Engineering (DTE) is a revolutionary, engineering-driven approach to data management that represents a complete pivot from traditional data governance frameworks. Unlike governance’s bureaucratic, process-heavy models, which conflate compliance (e.g., GDPR, HIPAA, SOC, EU AI Act) with technical data management, DTE decouples these concerns entirely. Compliance is handled by legal and audit teams using tools like OneTrust, freeing DTE to focus on certifying datasets for trust, quality, lineage, security, and AI-readiness. This shift addresses the 70-80% failure rate of traditional governance [Gartner, 2025] by prioritizing technical trust over rigid policies, enabling scalable, cloud-native, and AI-ready systems. Built on the [Data Trust Manifesto](https://datatrustmanifesto.org)’s principles—trust, engineering rigor, adaptability, enablement, cloud-native design, certification by use case/risk/value, technical debt management, and community collaboration—DTE empowers data professionals to deliver reliable systems for high-stakes use cases like AI training and regulatory reporting in 2025’s 175-zettabyte data landscape [Statista, 2025]. By leveraging tools like Fairlearn, Evidently AI, and MLflow, DTE certifies datasets based on their specific use case, risk profile, and business value, fostering a vendor-neutral, community-driven evolution of data management. Read the full [DTE Manifesto](/Manifesto) to join the #DTERevolution.
+Data Trust Engineering (DTE) is a revolutionary, engineering-driven approach to data management that represents a complete pivot from traditional data governance frameworks. Unlike governance’s bureaucratic, process-heavy models, which conflate compliance (e.g., GDPR, HIPAA, SOC, EU AI Act) with technical data management, DTE decouples these concerns entirely. Compliance is handled by legal and audit teams using tools like OneTrust, freeing DTE to focus on certifying datasets for trust, quality, lineage, security, and AI-readiness. This shift addresses the 70-80% failure rate of traditional governance [Gartner, 2025] by prioritizing technical trust over rigid policies, enabling scalable, cloud-native, and AI-ready systems. Built on the [Data Trust Manifesto](https://datatrustmanifesto.org)’s principles—trust, engineering rigor, adaptability, enablement, cloud-native design, certification by use case/risk/value, technical debt management, and community collaboration—DTE empowers data professionals to deliver reliable systems for high-stakes use cases like AI training and regulatory reporting in 2025’s 175-zettabyte data landscape [Statista, 2025]. By leveraging tools like Fairlearn, Evidently AI, and MLflow, DTE certifies datasets based on their specific use case, risk profile, and business value, fostering a vendor-neutral, community-driven evolution of data management. Read the full [DTE Manifesto](/Manifesto.md) to join the #DTERevolution.
 
 ## The DTE Trust Dashboard 
 
@@ -99,12 +99,7 @@ Traditional data governance fails 70-85% of the time (Gartner, 2025) due to bure
    - Customize data sources by updating `app.py` with API calls (e.g., Fairlearn, Evidently AI, MLflow).
 
 ## Community and Support
-
-- **Slack**: Join [datatrustengineering](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw) (#general, #contributions)
-- **Website**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
-- **Contribute**: Fork the repo, enhance the dashboard, or add DTE tools. See [CONTRIBUTING.md](/community/CONTRIBUTING).
-- **Learn More**: Read the [DTE Manifesto](/Manifesto.md) for the full vision.
-- **Inquiries**: Open a [Contact issue](https://github.com/DataTrustEngineering/DataTrustEngineering/issues/new?template=contact.yml) or use our [contact form](https://forms.gle/S7V4zySe7gPqq56f8) for private questions.
+See [CONTACT.md](/CONTACT.md).
 
 ## License
 

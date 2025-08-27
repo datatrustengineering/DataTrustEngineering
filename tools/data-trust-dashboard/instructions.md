@@ -85,6 +85,6 @@ This guide explains how to run the Data Trust Engineering (DTE) Trust Dashboard 
 
 ## Notes
 - The app is designed for local use but can be deployed to Streamlit Community Cloud by pushing `app.py` and `requirements.txt` to a GitHub repository.
-- For further assistance, contact the Data Trust Engineering team or refer to the [Data Trust Manifesto](/Manifesto).
+- For further assistance, contact the Data Trust Engineering team or refer to the [Data Trust Manifesto](/Manifesto.md).
 
 *Last updated: August 26, 2025, 01:44 PM EDT*
