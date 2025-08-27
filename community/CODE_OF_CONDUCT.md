@@ -1,4 +1,3 @@
-```markdown
 ---
 title: Code of Conduct
 ---
@@ -30,7 +29,7 @@ Examples of unacceptable behavior include:
 Project maintainers are responsible for clarifying the standards of acceptable behavior and taking appropriate, fair corrective action in response to any instances of unacceptable behavior. Maintainers have the right and responsibility to:
 - Remove, edit, or reject comments, commits, code, issues, pull requests, or other contributions that violate this Code of Conduct.
 - Lock conversations or block contributors temporarily or permanently for inappropriate behavior.
-- Ensure contributions align with DTE’s mission, as defined in the [Manifesto](/Manifesto) and [Contributing guidelines](/community/CONTRIBUTING).
+- Ensure contributions align with DTE’s mission, as defined in the [Manifesto](/Manifesto) and [Contributing guidelines](/community/CONTRIBUTING.md).
 
 ## Scope
 
