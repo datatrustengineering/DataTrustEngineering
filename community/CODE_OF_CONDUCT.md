@@ -6,7 +6,7 @@ title: Code of Conduct
 
 In the interest of fostering an open and welcoming environment, we, the **Data Trust Engineering (DTE)** community, pledge to make participation in our project and community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-Our mission is to replace traditional data governance with engineering-driven trust, certification, and AI-readiness, as outlined in the [Data Trust Engineering Manifesto](/Manifesto). Inspired by the collaborative spirit of the [DataTrustManifesto](https://datatrustmanifesto.org), we aim to build a community where data professionals, enterprises, SMBs, and hyperscalers collaborate to certify data systems by use case, risk, and value. This Code of Conduct ensures our community remains respectful, productive, and aligned with the #DTERevolution.
+Our mission is to replace traditional data governance with engineering-driven trust, certification, and AI-readiness, as outlined in the [Data Trust Engineering Manifesto](/Manifesto.md). Inspired by the collaborative spirit of the [DataTrustManifesto](https://datatrustmanifesto.org), we aim to build a community where data professionals, enterprises, SMBs, and hyperscalers collaborate to certify data systems by use case, risk, and value. This Code of Conduct ensures our community remains respectful, productive, and aligned with the #DTERevolution.
 
 ## Our Standards
 
@@ -29,7 +29,7 @@ Examples of unacceptable behavior include:
 Project maintainers are responsible for clarifying the standards of acceptable behavior and taking appropriate, fair corrective action in response to any instances of unacceptable behavior. Maintainers have the right and responsibility to:
 - Remove, edit, or reject comments, commits, code, issues, pull requests, or other contributions that violate this Code of Conduct.
 - Lock conversations or block contributors temporarily or permanently for inappropriate behavior.
-- Ensure contributions align with DTE’s mission, as defined in the [Manifesto](/Manifesto) and [Contributing guidelines](/community/CONTRIBUTING.md).
+- Ensure contributions align with DTE’s mission, as defined in the [Manifesto](/Manifesto.md) and [Contributing guidelines](/community/CONTRIBUTING.md).
 
 ## Scope
 
