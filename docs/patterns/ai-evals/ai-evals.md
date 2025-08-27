@@ -115,7 +115,7 @@ python evals_harness.py
 
 ## Advanced Extensions
 
-See `/evals/` for advanced examples:  
+See `tools/ai-evals/evals/` for advanced examples:  
 - Risk-tiered profiles (`eval_profiles.yml`)  
 - Evidence pack schema (JSON)  
 - RAG/GraphRAG evals (`rag_eval.py`)  
