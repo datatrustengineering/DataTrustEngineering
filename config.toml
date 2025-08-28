@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://datatrustmanifesto.org/"
 languageCode = "en-us"
 title = "Data Trust Engineering | datatrustmanifesto.org"
 

@@ -40,8 +40,11 @@ jobs:
           # Create a deployment-specific config with correct baseURL
           cp config.toml config.deploy.toml
           # Replace baseURL for GitHub Pages deployment
-          sed -i 's|baseURL = "/"|baseURL = "https://datatrustengineering.github.io/DataTrustEngineering/"|' config.deploy.toml
-          echo "Deployment config created with baseURL for GitHub Pages"
+          # sed -i 's|baseURL = "/"|baseURL = "https://datatrustengineering.github.io/DataTrustEngineering/"|' config.deploy.toml
+          # echo "Deployment config created with baseURL for GitHub Pages"
+          sed -i 's|baseURL = "https://datatrustmanifesto.org/"|baseURL = "https://datatrustmanifesto.org/"|' config.deploy.toml
+          echo "Deployment config created with baseURL for custom domain"
+          
           cat config.deploy.toml | grep baseURL
           
       - name: Build with Hugo
