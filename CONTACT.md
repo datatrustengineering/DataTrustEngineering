@@ -10,4 +10,4 @@ Connect with the Data Trust Engineering (DTE) community to contribute, ask quest
 - **Inquiries**: Open a [Contact issue](https://github.com/datatrustengineering/DataTrustEngineering/issues/new?template=contact.yml) or use our [contact form](https://forms.gle/LvYDSkBFvKpAc9af8)
 - **Issues**: [Report Issues & Propose Features](https://github.com/datatrustengineering/DataTrustEngineering/issues): Submit bug reports or suggest new artifacts
 - **Website**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
-- **Contribute**: Fork the repo or enhance the dashboard. See [Contributing Guide](/community/CONTRIBUTING.md)
+- **Contribute**: Fork the repo or enhance the dashboard. See [Contributing Guide](/CONTRIBUTING.md)

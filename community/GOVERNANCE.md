@@ -23,7 +23,7 @@ DTE's governance is guided by practical principles that support effective commun
 - **Transparency**: Decisions are made openly, with clear rationale documented in GitHub Issues and Discussions.
 - **Collaboration**: Community members from diverse backgrounds contribute tools, patterns, and documentation.
 - **Alignment**: All decisions support DTE's focus on practical engineering approaches to data trust.
-- **Inclusivity**: We welcome diverse perspectives while maintaining productive focus, as outlined in our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+- **Inclusivity**: We welcome diverse perspectives while maintaining productive focus, as outlined in our [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
 - **Agility**: We prioritize responsive feedback and iterative improvements to serve community needs.
 
 ## Roles and Responsibilities
@@ -32,7 +32,7 @@ DTE's governance is guided by practical principles that support effective commun
   - **Who**: Initially, Brian Brewer (bbrewer@infolibcorp.com) and future contributors elevated based on sustained community contributions.
   - **Responsibilities**:
     - Review and merge pull requests (PRs) for alignment with community standards.
-    - Moderate discussions, issues, and PRs per [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+    - Moderate discussions, issues, and PRs per [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
     - Make final decisions on contributions and conflicts, incorporating community input.
     - Maintain repository structure and documentation as the community grows.
   - **Selection**: New maintainers are nominated by existing maintainers based on consistent, valuable contributions and community trust. Nominations are discussed in GitHub Discussions and confirmed by consensus.
@@ -40,7 +40,7 @@ DTE's governance is guided by practical principles that support effective commun
 - **Contributors**:
   - **Who**: Anyone who submits PRs, issues, or participates in Discussions/Slack, from newcomers to experienced practitioners.
   - **Responsibilities**:
-    - Follow [CONTRIBUTING.md](/community/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+    - Follow [CONTRIBUTING.md](/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
     - Propose artifacts, patterns, or documentation improvements that benefit the community.
     - Engage constructively and respond to feedback during PR reviews.
 
@@ -72,7 +72,7 @@ DTE uses a **consensus-oriented approach** to balance community input with pract
 
 ## Pull Request (PR) Review and Approval
 
-PRs are the primary way to contribute to DTE. The process follows [CONTRIBUTING.md](/community/CONTRIBUTING.md):
+PRs are the primary way to contribute to DTE. The process follows [CONTRIBUTING.md](/CONTRIBUTING.md):
 
 1. **Submission**:
    - Contributors submit PRs with clear descriptions.
@@ -102,7 +102,7 @@ Conflicts are resolved transparently and constructively:
 
 - **Step 1: Discussion**:
   - Address conflicts in GitHub Issues, Discussions, or community channels.
-  - Maintainers facilitate respectful dialogue per [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+  - Maintainers facilitate respectful dialogue per [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
 
 - **Step 2: Mediation**:
   - If consensus isn't reached within 5 days, maintainers propose solutions.
@@ -113,7 +113,7 @@ Conflicts are resolved transparently and constructively:
   - Example: Technical disagreements may be resolved through compromise or additional review.
 
 - **Step 4: Enforcement**:
-  - Code of Conduct violations are addressed with appropriate actions as outlined in [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+  - Code of Conduct violations are addressed with appropriate actions as outlined in [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md).
 
 ## Community Engagement
 

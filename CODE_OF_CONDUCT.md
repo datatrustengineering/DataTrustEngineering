@@ -56,7 +56,7 @@ responsibility to:
   inappropriate behavior.  
 - Ensure contributions align with DTE’s mission, as defined in the  
   [Manifesto](/Manifesto.md) and  
-  [Contributing guidelines](/community/CONTRIBUTING.md).  
+  [Contributing guidelines](/CONTRIBUTING.md).  
 
 ## Scope
 

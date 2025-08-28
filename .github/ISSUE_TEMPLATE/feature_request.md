@@ -9,7 +9,7 @@ assignees: ''
 
 ## Feature Request
 
-Thank you for contributing to **Data Trust Engineering (DTE)**! This template helps propose new features, such as enhancements to the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html), new artifacts (e.g., data quality scripts, lineage trackers), or updates to the [Manifesto](/Manifesto.md). Please provide clear details to align with our mission to certify data systems by use case, risk, and value. See [CONTRIBUTING.md](/community/CONTRIBUTING.md) for more.
+Thank you for contributing to **Data Trust Engineering (DTE)**! This template helps propose new features, such as enhancements to the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html), new artifacts (e.g., data quality scripts, lineage trackers), or updates to the [Manifesto](/Manifesto.md). Please provide clear details to align with our mission to certify data systems by use case, risk, and value. See [CONTRIBUTING.md](/CONTRIBUTING.md) for more.
 
 ### Description
 What feature or enhancement are you proposing? (e.g., “Add WebSocket support to Trust Dashboard for real-time updates,” “New manifesto principle on data sovereignty.”)

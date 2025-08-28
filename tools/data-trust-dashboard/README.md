@@ -84,7 +84,7 @@ Help improve the DTE Trust Dashboard! We welcome community contributions that en
 - Integration with additional monitoring tools.
 - Performance optimizations and accessibility improvements.
 
-See [CONTRIBUTING.md](/community/CONTRIBUTING.md) for guidelines. Submit pull requests to `/tools/data-trust-dashboard` or start a discussion on GitHub.
+See [CONTRIBUTING.md](/CONTRIBUTING.md) for guidelines. Submit pull requests to `/tools/data-trust-dashboard` or start a discussion on GitHub.
 
 ## Why It Matters
 
@@ -127,8 +127,8 @@ This project is licensed under the MIT License. See [LICENSE.md](/LICENSE) for d
 ## Community Resources
 
 - [DTE Manifesto](/Manifesto.md): Core principles and philosophy.
-- [Contributing Guide](/community/CONTRIBUTING.md): How to contribute effectively.
-- [Code of Conduct](/community/CODE_OF_CONDUCT.md): Community standards.
+- [Contributing Guide](/CONTRIBUTING.md): How to contribute effectively.
+- [Code of Conduct](/CODE_OF_CONDUCT.md): Community standards.
 - [Governance](/community/GOVERNANCE.md): Decision-making processes.
 - [Case Study Template](/docs/case-studies/template.md): Share implementation experiences.
 - [Report Issues](https://github.com/datatrustengineering/DataTrustEngineering/issues): Bug reports and feature requests.

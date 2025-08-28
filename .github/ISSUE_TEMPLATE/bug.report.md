@@ -9,7 +9,7 @@ assignees: ''
 
 ## Bug Report
 
-Thank you for helping improve **Data Trust Engineering (DTE)**! This template helps us address issues in artifacts like the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html) or documentation. Please provide clear details to ensure quick resolution, aligning with our mission to certify data systems for trust and AI-readiness. See [CONTRIBUTING.md](/community/CONTRIBUTING.md) for more.
+Thank you for helping improve **Data Trust Engineering (DTE)**! This template helps us address issues in artifacts like the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html) or documentation. Please provide clear details to ensure quick resolution, aligning with our mission to certify data systems for trust and AI-readiness. See [CONTRIBUTING.md](/CONTRIBUTING.md) for more.
 
 ### Describe the Bug
 A clear description of the issue (e.g., “Trust Dashboard chart fails to load data”).

@@ -20,8 +20,8 @@ Welcome to **Data Trust Engineering (DTE)**! We’re here to help you engage wit
   - Report privately via our [security form](https://forms.gle/BkMJNgfbMuavkUKc8). See [SECURITY.md](/SECURITY.md).
 
 ## Guidelines
-- Follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md) for respectful interactions.
-- Check [CONTRIBUTING.md](/community/CONTRIBUTING) for contribution details.
+- Follow our [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) for respectful interactions.
+- Check [CONTRIBUTING.md](/CONTRIBUTING) for contribution details.
 - Visit [datatrustmanifesto.org](https://datatrustmanifesto.org) for more resources.
 
 Thank you for joining the #DTERevolution!

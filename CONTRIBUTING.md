@@ -17,7 +17,7 @@ This guide explains how to contribute to the `DataTrustEngineering` repository, 
 
 ## Code of Conduct
 
-All contributors must follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md), based on the Contributor Covenant. Be respectful, constructive, and focused on DTE's mission to provide practical engineering patterns for data trust. Harassment, off-topic discussions, or disruptive behavior will be addressed by maintainers to keep our community welcoming.
+All contributors must follow our [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md), based on the Contributor Covenant. Be respectful, constructive, and focused on DTE's mission to provide practical engineering patterns for data trust. Harassment, off-topic discussions, or disruptive behavior will be addressed by maintainers to keep our community welcoming.
 
 ## What Can You Contribute?
 
@@ -88,7 +88,7 @@ We review PRs to ensure alignment with DTE's principles and community standards.
 - **Stay On-Topic**: Contributions should support DTE's focus on practical data trust engineering. Off-topic ideas may be redirected to more appropriate forums.
 - **Be Collaborative**: Engage in GitHub Discussions or community channels before submitting large changes to align with shared goals.
 - **Respect Feedback**: Maintainers may request changes to ensure quality and consistency. Respond constructively to help improve the contribution.
-- **Avoid Chaos**: Follow the [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md). Disruptive behavior may lead to warnings or temporary blocks.
+- **Avoid Chaos**: Follow the [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md). Disruptive behavior may lead to warnings or temporary blocks.
 
 ## Recognition
 

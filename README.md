@@ -24,6 +24,14 @@ This repo hosts the **Manifesto**, **Patterns**, and the **Trust Dashboard** MVP
 - 🧭 **Patterns**: [docs/patterns/README.md](docs/patterns/README.md)
 - 📊 **Trust Dashboard(s)**: [tools/data-trust-dashboard](tools/data-trust-dashboard)
 
+## Follow & Join
+- ⭐ **Star** the repo to show support
+- 👀 **Watch** (Releases only or All activity)
+- 🍴 **Fork** to experiment
+- 💬 **Discuss** in [GitHub Discussions](./discussions) or join our [Slack](https://datatrustengineering.slack.com/ssb/redirect)
+- 📦 **Try it**: see [QUICK_START.md](./QUICK_START.md)
+- 🙌 **Contribute**: read [CONTRIBUTING.md](./CONTRIBUTING.md)
+
 
 **Data Trust Engineering (DTE)** is a community-driven approach that empowers data teams to build trusted, AI-ready systems through practical engineering patterns and open-source collaboration. Born from the *Data Trust Engineering Manifesto*, DTE provides actionable frameworks for certifying data systems by use case, risk, and value, blending DataOps principles with hands-on implementation. Our first artifact, the **DTE Trust Dashboard**, demonstrates real-time data and AI trust monitoring—more tools are coming from our community! Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) and fuel the #DTERevolution.
 
@@ -96,7 +104,7 @@ Help build the DTE ecosystem! Our community welcomes contributions that advance 
 - **Case Studies**: Real-world implementations and lessons learned
 - **Code Examples**: Working implementations that others can fork and adapt
 
-Start with "good first issues" or join our community discussions. See [CONTRIBUTING.md](/community/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md) for guidelines.
+Start with "good first issues" or join our community discussions. See [CONTRIBUTING.md](/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) for guidelines.
 
 ## Roadmap
 
