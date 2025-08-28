@@ -12,98 +12,101 @@
 Certify Data. Build Trust. Shape the Future.
 ```
 
-**Data Trust Engineering (DTE)** is a movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness. Born from the *Data Trust Engineering Manifesto*, DTE certifies data systems by use case, risk, and value, blending DataOps’ agility (inspired by [datatrustmanifesto.org](https://datatrustmanifesto.org)) with community collaboration. Our first artifact, the **DTE Trust Dashboard**, visualizes AI governance metrics—more are coming! Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) and fuel the #DTERevolution.
+**Data Trust Engineering (DTE)** is a community-driven approach that empowers data teams to build trusted, AI-ready systems through practical engineering patterns and open-source collaboration. Born from the *Data Trust Engineering Manifesto*, DTE provides actionable frameworks for certifying data systems by use case, risk, and value, blending DataOps principles with hands-on implementation. Our first artifact, the **DTE Trust Dashboard**, demonstrates real-time AI governance monitoring—more tools are coming from our community! Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) and fuel the #DTERevolution.
 
 ## Why DTE?
 
-Traditional data governance, rooted in SOX (2002), conflates compliance (GDPR, HIPAA) with technical management, failing 70-80% of the time [Gartner, 2025]. With AI models facing 70% data quality challenges [MIT Technology Review, 2025], DTE redefines data management through:
-- **Certification**: Validate datasets for use case, risk, and value, supporting EU AI Act (2024) compliance indirectly.
-- **Engineering Rigor**: Build trusted systems with tools like Great Expectations and Apache Atlas.
-- **AI-Readiness**: Address fairness, drift, and retraining for GenAI and analytics.
-- **Cloud-Native**: Thrive in data mesh and hybrid architectures (AWS, Azure).
-- **Community-Driven**: Evolve via GitHub contributions, not vendor-driven frameworks.
+Traditional data governance often struggles with complexity, conflating compliance requirements with technical data management and creating barriers for engineering teams. Organizations face challenges when AI models encounter data quality issues or when scaling data trust across cloud environments. DTE addresses these practical challenges through:
 
-DTE serves enterprises needing trust, SMBs seeking agility, hyperscalers scaling metadata, and data professionals driving innovation.
+- **Certification**: Practical validation patterns for datasets by use case, risk, and business value, supporting compliance goals indirectly.
+- **Engineering Rigor**: Hands-on tools and patterns using Great Expectations, Apache Atlas, and other open-source frameworks.
+- **AI-Readiness**: Proven approaches for fairness monitoring, drift detection, and model governance.
+- **Cloud-Native**: Patterns that scale across data mesh architectures and hybrid cloud environments.
+- **Community-Driven**: Open-source evolution through GitHub contributions and collaborative problem-solving.
+
+DTE serves organizations of all sizes—from enterprises building regulatory reporting systems to SMBs seeking practical data trust solutions to data teams driving innovation with AI.
 
 ## Our First Artifact: DTE Trust Dashboard
 
-The **DTE Trust Dashboard** kicks off our open-source journey, visualizing AI governance metrics with [Chart.js](https://www.chartjs.org):
-- **Fairness**: Demographic parity scores (Fairlearn-compatible).
-- **Data Drift**: Real-time drift tracking (Evidently AI-compatible).
-- **Compliance**: GDPR adherence metrics.
-- **Accuracy**: Model performance monitoring (MLflow-compatible).
+The **DTE Trust Dashboard** demonstrates DTE principles in action, providing interactive visualization of AI trust metrics built with [Chart.js](https://www.chartjs.org) and [Plotly](https://plotly.com):
 
+- **AI Fairness**: Demographic parity monitoring across protected attributes (integrates with Fairlearn).
+- **Data Drift**: Real-time drift tracking and alerts (compatible with Evidently AI).
+- **Model Performance**: Accuracy, F1 score, and AUC-ROC monitoring (integrates with MLflow).
+- **Guardrails**: Multi-dimensional view of trust principles and safety metrics.
 
-Find it in `/tools/data-trust-dashboard/DTE_Trust_Dashboard.html`. More artifacts—like data quality patterns and trust evals—are on the way!
+Find it in `/tools/data-trust-dashboard/`. This working dashboard serves as a foundation for community contributions and demonstrates how DTE patterns can be implemented in practice.
 
-Explore [USE_CASES.md](/docs/patterns/USE_CASES.md) to see how to apply DTE principles with open-source code.
+Explore [USE_CASES.md](/docs/patterns/USE_CASES.md) to see how DTE principles translate into actionable code examples.
 
 ## Getting Started
 
 ### Quick Start
 1. **Clone the Repo**:
    ```bash
-   git clone https://github.com/datatrustengineeringx/DataTrustEngineering.git
+   git clone https://github.com/datatrustengineering/DataTrustEngineering.git
+   cd DataTrustEngineering
    ```
 
 ### Live Demo
 - **Trust Dashboard**: [Try it live](https://datatrustengineering.github.io/DataTrustEngineering/tools/data-trust-dashboard/DTE_Trust_Dashboard.html)
-- **Full Site**: [datatrustmanifesto.org](https://datatrustmanifesto.org) (coming soon)
+- **Full Site**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
 
 2. **Explore the Trust Dashboard**:
-   - Navigate to `/tools/data-trust-dashboard`.
-   - Open `DTE_Trust_Dashboard.html` in a browser.
-   - Host on GitHub Pages or a server for team access.
-   - Customize with APIs (e.g., Evidently AI, MLflow).
+   - Navigate to `/tools/data-trust-dashboard`
+   - Run the interactive Streamlit version: `streamlit run app.py`
+   - View the static HTML version in any browser
+   - Customize with your own data sources and metrics
 
 3. **Read the Manifesto**:
-   - See `/Manifesto.md` for DTE’s vision and principles.
+   - See `/Manifesto.md` for DTE's core principles and philosophy.
 
 4. **Integrate Tools**:
-   - **Data Quality**: Great Expectations, Soda Core.
-   - **Lineage**: Apache Atlas for metadata.
-   - **AI Governance**: Fairlearn, SHAP, MLflow, SDV.
+   - **Data Quality**: Great Expectations, Soda Core for validation
+   - **Lineage**: Apache Atlas, OpenLineage for metadata tracking
+   - **AI Governance**: Fairlearn, SHAP, MLflow for model monitoring
 
 ## Repository Structure
 
-- `/Manifesto.md`: The *Data Trust Engineering Manifesto*.
-- `/tools`: Artifacts like `/tools/data-trust-dashboard`.
-- `/docs`: Case studies, patterns (e.g., `/docs/patterns/USE_CASES.md`).
-- `/community`: Contribution guidelines, code of conduct.
-- `/LICENSE.md`: MIT License.
-
+- `/Manifesto.md`: DTE's core philosophy and principles
+- `/tools`: Working artifacts and code examples
+- `/docs`: Patterns, guides, and practical implementations
+- `/community`: Contribution guidelines and governance
+- `/LICENSE.md`: MIT License for open collaboration
 
 ## Contributing
 
-Help shape DTE’s future! Contribute:
-- **Artifacts**: Data quality scripts, lineage trackers, or AI tools to `/tools`.
-- **Manifesto Updates**: Refine principles in `/Manifesto.md`.
-- **Case Studies**: Share success stories in `/docs/case-studies`.
-- **Use Cases**: Explore [USE_CASES.md](/docs/patterns/USE_CASES.md) to see how to apply DTE principles with open-source code.
+Help build the DTE ecosystem! Our community welcomes contributions that advance practical data trust engineering:
 
-Start with “good first issues” (e.g., typo fixes) or discuss ideas in GitHub Discussions. See [CONTRIBUTING.md](/community/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+- **Artifacts**: Data quality tools, lineage trackers, or AI monitoring scripts in `/tools`
+- **Patterns**: Documentation of proven approaches in `/docs/patterns`
+- **Case Studies**: Real-world implementations and lessons learned
+- **Code Examples**: Working implementations that others can fork and adapt
+
+Start with "good first issues" or join our community discussions. See [CONTRIBUTING.md](/community/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md) for guidelines.
 
 ## Roadmap
 
-- **Q4 2025**: Add data quality pattern and lineage tracker artifacts; enhance Trust Dashboard with WebSocket updates.
-- **Q1 2026**: Publish case studies in `/docs/case-studies`.
-- **Q2 2026**: Expand [datatrustmanifesto.org](https://datatrustmanifesto.org) with tutorials and community hub.
+- **Q4 2025**: Expand data quality patterns; add lineage tracking examples
+- **Q1 2026**: Community case studies and real-world implementations
+- **Q2 2026**: Enhanced documentation and contributor resources
 
 ## Why It Matters
 
-DTE overcomes governance’s failures with:
-- **Certified Trust**: trust datasets.
-- **Engineering Excellence**: 20-30% debugging improvements [Gartner, 2025].
-- **Community Power**: Collaborative evolution via GitHub and Slack.
+DTE provides practical value through:
+
+- **Proven Patterns**: Community-tested approaches for common data trust challenges
+- **Engineering Focus**: Code-first solutions that integrate into existing workflows
+- **Open Collaboration**: Shared knowledge and tools that benefit the entire ecosystem
+- **Measurable Impact**: Demonstrated improvements in data quality and AI reliability
 
 ## License
 
-[MIT License](/LICENSE.md).
+[MIT License](/LICENSE.md) - encouraging open collaboration and reuse.
 
 ## Community and Support
 
 ## Acknowledgments
-
 
 **Authors**: Brian Brewer | Founder | https://www.infolibcorp.com
 
