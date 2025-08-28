@@ -1,12 +1,10 @@
 # Data Trust Engineering (DTE)
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/dte-lockup-green.png">
-    <img src="assets/dte-banner-green.png" alt="Data Trust Engineering — Build Trust in Data & AI" width="900">
-  </picture>
+  <img src="static/assets/dte-lockup-green.png"
+       alt="Data Trust Engineering — Build Trust in Data & AI"
+       style="max-width:100%; height:auto; display:block; margin:0 auto;">
 </p>
-
 
 
 [![Stars](https://img.shields.io/github/stars/datatrustengineering/DataTrustEngineering?style=social)](https://github.com/datatrustengineering/DataTrustEngineering/stargazers)
