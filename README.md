@@ -1,5 +1,18 @@
 # Data Trust Engineering (DTE)
 
+<!-- Add this at the top of README.md -->
+<div align="center">
+  <h1>🎉 Data Trust Engineering - Soft Launch!</h1>
+  <p><strong>We're live!</strong> Try our working trust dashboard and join the community.</p>
+  <a href="#getting-started">Get Started</a> • 
+  <a href="https://github.com/datatrustengineering/DataTrustEngineering/discussions">Join Discussion</a> • 
+  <a href="QUICK_START.md">Quick Start Guide</a>
+</div>
+
+---
+
+<!-- Rest of your existing README -->
+
 <p align="center">
   <img src="static/assets/dte-lockup-green.png"
        alt="Data Trust Engineering — Build Trust in Data & AI"
