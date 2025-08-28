@@ -1,14 +1,84 @@
+{{ define "meta" }}
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="Data Trust Engineering (DTE)">
+  <meta property="og:description" content="A community-driven movement extending governance with practical, engineering patterns. Certify data by use case, risk, and value—making trust measurable and AI-ready.">
+  <meta property="og:image" content="{{ "/assets/dte-banner-green.png" | absURL }}">
+
+  <!-- SEO -->
+  <meta name="description" content="DTE extends governance with engineering-driven patterns—certifying data systems by use case, risk, and value for AI-ready trust.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Data Trust Engineering (DTE)">
+  <meta name="twitter:description" content="DTE extends governance foundations with open-source, engineering-driven patterns—certifying data by use case, risk, and value for measurable trust.">
+  <meta name="twitter:image" content="{{ "/assets/dte-banner-green.png" | absURL }}">
+{{ end }}
+
 {{ define "main" }}
 <div class="container">
-  <pre>
- ____  _______
-|    ||       | 
-|____||_______|
-Certify Data. Build Trust. Shape the Future.
-  </pre>
-<h1>Data Trust Engineering (DTE)</h1>
-  <p><strong>Engineering Trust for AI-Ready Data.</strong> Data Trust Engineering (DTE) is a movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness. Born from the <em>Data Trust Engineering Manifesto</em>, DTE certifies data systems by use case, risk, and value through community collaboration, sidestepping bureaucratic governance. By decoupling from compliance and leveraging modern engineering best practices, DTE offers a modern replacement for data governance. Our first artifact, the <strong>DTE Trust Dashboard</strong>, visualizes AI governance metrics—more are coming! Join us at <a href="https://datatrustmanifesto.org">datatrustmanifesto.org</a> and fuel the #DTERevolution.</p>
+  <p align="center">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/dte-lockup-green.png">
+        <img src="/assets/dte-banner-green.png" alt="Data Trust Engineering — Build Trust in Data & AI" width="900">
+      </picture>
+    </p>
+  </p>
+  
 
+<h1>Data Trust Engineering (DTE)</h1>
+<!-- Homepage Hero Subheading -->
+<h2 class="hero-subheading">
+  <strong>Data Trust Engineering (DTE)</strong> extends the foundations of governance by certifying data systems by use case, risk, and value—making trust measurable, repeatable, and AI-ready through open-source, engineering-driven practices.
+</h2>
+
+<style>
+.hero-subheading {
+  font-size: 1.5rem;          /* Larger than body, smaller than H1 */
+  font-weight: 400;           /* Keep it lighter than the main hero heading */
+  margin-top: 1rem;
+  color: #374151;             /* Tailwind gray-700 equivalent (good contrast on light) */
+  line-height: 1.4;
+  max-width: 900px;           /* Keeps text from stretching too wide */
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-subheading {
+    color: #d1d5db;           /* Tailwind gray-300 for dark mode */
+  }
+}
+</style>
+
+<div class="takeaway" role="note" aria-label="Key takeaway">
+  <strong>Key Takeaway:</strong>
+  Governance defines the “why.” DTE delivers the “how”—certifying data and pipelines by use case, risk, and value so trust becomes measurable, repeatable, and AI-ready.
+</div>
+
+<style>
+.takeaway {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1rem 1.125rem;
+  border-left: 4px solid #16a34a; /* accent */
+  border-radius: 10px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  background: #f7f7f7;
+}
+@media (prefers-color-scheme: dark) {
+  .takeaway {
+    background: #1f2937;
+    border-left-color: #22c55e;
+  }
+}
+</style>
+
+  <p><strong>Data Trust Engineering (DTE)</strong> is a community-driven movement that helps data teams build trusted, AI-ready systems through practical engineering patterns and open-source collaboration. Born from the <em>Data Trust Engineering Manifesto</em>, DTE offers actionable frameworks to certify data and pipelines by use case, risk, and value—blending DataOps principles with hands-on implementation across cloud and hybrid environments.</p>
+  <p>Our vendor-neutral community shares tools, patterns, and real-world experience to make trust measurable and repeatable. The first artifact, the <strong>DTE Trust Dashboard</strong>, demonstrates real-time data and AI trust monitoring—with more community-built tools on the way. Join us, contribute on GitHub, and be part of the #DTERevolution.</p>
+  
   <div class="section">
     <h2>Join the #DTERevolution</h2>
     <a href="{{ "manifesto" | relURL }}" class="button">Read the Manifesto</a>
@@ -17,21 +87,21 @@ Certify Data. Build Trust. Shape the Future.
     <a href="https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw" class="button">Join Slack</a>
   </div>
 
-    <div class="section timeline">
-  <h2>Evolution of Data Governance: From Enron to a Catch-All</h2>
-  <ul>
-    <li><strong>2001: Enron Scandal</strong> — Corporate fraud shakes investor trust worldwide.</li>
-    <li><strong>2002: Sarbanes–Oxley Act (SOX)</strong> — Establishes stronger controls, accountability, and independent oversight (PCAOB).</li>
-    <li><strong>2003–2008: Consulting Expansion</strong> — Major firms (PwC, Deloitte, Accenture) extend governance concepts from finance into master data, metadata, and quality management.</li>
-    <li><strong>2009: DAMA-DMBOK & Gartner Models</strong> — Formal frameworks and enterprise maturity models take hold, setting a common vocabulary for governance (DAMA, Gartner, IBM, CMMI, EDM).</li>
-    <li><strong>2010s–2020s: Cloud & Big Data Era</strong> — Governance expands to cover privacy, security, and AI ethics, while vendors rebrand catalogs, lineage, and quality tools as “data governance.”</li>
-    <li><strong>Today: A Catch-All Term</strong> — Governance is invoked to mean everything from compliance to AI fairness. This breadth has made the term broad but often difficult to apply in practice.</li>
-  </ul>
-  <p><strong>Where do we go from here?</strong> Data Trust Engineering (DTE) reframes the challenge: moving from governing data in the abstract to <em>certifying it</em> by use case, risk, and value — delivering trusted, AI-ready systems.</p>
+  <div class="section timeline">
+    <h2>The Evolution of Data Governance</h2>
+    <ul>
+      <li><strong>2001: Enron Scandal</strong> — Corporate fraud shakes investor trust worldwide.</li>
+      <li><strong>2002: Sarbanes–Oxley Act (SOX)</strong> — Establishes stronger controls, accountability, and independent oversight (PCAOB).</li>
+      <li><strong>2003–2008: Consulting Expansion</strong> — Major firms (PwC, Deloitte, Accenture) extend governance concepts from finance into master data, metadata, and quality management.</li>
+      <li><strong>2009: DAMA-DMBOK & Gartner Models</strong> — Formal frameworks and enterprise maturity models take hold, setting a common vocabulary for governance (DAMA, Gartner, IBM, CMMI, EDM).</li>
+      <li><strong>2010s–2020s: Cloud & Big Data Era</strong> — Governance expands to cover privacy, security, and AI ethics, while vendors rebrand catalogs, lineage, and quality tools under the governance banner.</li>
+      <li><strong>Today</strong> — Governance continues to play a vital role, but its broad scope often makes it difficult for teams to apply consistently across fast-moving, cloud-native and AI environments.</li>
+    </ul>
+    <p><strong>Where do we go from here?</strong> Data Trust Engineering (DTE) builds on these foundations by shifting focus from governing data in the abstract to <em>certifying it</em> by use case, risk, and value — enabling trusted, AI-ready systems that complement compliance goals.</p>
   </div>
-
-   <div class="section comparison">
-    <h2>Why DTE Outshines Traditional Data Governance</h2>
+  
+  <div class="section comparison">
+    <h2>How DTE Extends Traditional Data Governance</h2>
     <table>
       <thead>
         <tr>
@@ -42,38 +112,43 @@ Certify Data. Build Trust. Shape the Future.
       </thead>
       <tbody>
         <tr>
-          <td>Success Rate</td>
-          <td>20-30% [Gartner, 2025]</td>
-          <td>High (certification-driven)</td>
+          <td>Approach</td>
+          <td>Process-heavy frameworks</td>
+          <td>Engineering-driven patterns</td>
         </tr>
         <tr>
-          <td>Agility</td>
-          <td>Limited (policy-heavy)</td>
-          <td>High (DataOps-inspired)</td>
+          <td>Implementation</td>
+          <td>Top-down mandates</td>
+          <td>Collaborative, iterative</td>
         </tr>
         <tr>
-          <td>Compliance Approach</td>
-          <td>Conflates with management</td>
-          <td>Indirectly supports via certification</td>
+          <td>Compliance</td>
+          <td>Direct ownership</td>
+          <td>Indirect support through technical excellence</td>
         </tr>
         <tr>
-          <td>Cloud Readiness</td>
-          <td>Limited (legacy-focused)</td>
-          <td>Excellent (cloud-native)</td>
+          <td>Adaptability</td>
+          <td>Limited by rigid policies</td>
+          <td>Flexible, feedback-driven</td>
         </tr>
         <tr>
-          <td>Team Empowerment</td>
-          <td>Process-focused</td>
-          <td>High (engineer-driven)</td>
+          <td>Team Focus</td>
+          <td>Process documentation</td>
+          <td>Engineering delivery</td>
         </tr>
         <tr>
-          <td>AI-Readiness</td>
-          <td>Limited adaptation</td>
-          <td>Robust (risk-tiered assurance EU AI Act readiness)</td>
+          <td>AI Integration</td>
+          <td>Afterthought</td>
+          <td>Built-in monitoring and validation</td>
         </tr>
       </tbody>
     </table>
+    <p><em>Together, traditional governance provides the strategic “why,” while Data Trust Engineering delivers the operational “how” — turning intent into measurable, certifiable outcomes in real systems.</em></p>
+
   </div>
+
+  
+
 
   <!-- How to Contribute Section -->
 <section id="contribute">

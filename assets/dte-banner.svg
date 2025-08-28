@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="200" viewBox="0 0 1024 200" role="img" aria-label="datatrustengineering - Building Trust in Data">
+  <title>datatrustengineering — Building Trust in Data</title>
+  <style>
+    .green{fill:#1b7f2a}
+    .stroke{stroke:#1b7f2a;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .title{font:700 54px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;fill:#1b7f2a}
+    .tag{font:600 22px/1.1 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;letter-spacing:2px;fill:#1b7f2a}
+  </style>
+  <!-- simple emblem: circle + hexagon (clean, geometric) -->
+  <g transform="translate(40,40)">
+    <circle cx="60" cy="60" r="56" class="stroke"/>
+    <polygon points="60,14 97,36 97,84 60,106 23,84 23,36" class="stroke"/>
+  </g>
+  <!-- divider -->
+  <line x1="160" y1="16" x2="160" y2="184" class="stroke"/>
+  <!-- wordmark -->
+  <text x="190" y="88" class="title">datatrustengineering</text>
+  <text x="190" y="130" class="tag">BUILDING TRUST IN DATA</text>
+</svg>

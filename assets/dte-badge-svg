@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="DTE">
+  <defs>
+    <clipPath id="r"><rect x="0" y="0" width="256" height="256" rx="36"/></clipPath>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="256" height="256" fill="#1b7f2a"/>
+    <text x="50%" y="56%" text-anchor="middle"
+          font-family="system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif"
+          font-weight="900" font-size="108" fill="#ffffff" dy="10">DTE</text>
+  </g>
+</svg>

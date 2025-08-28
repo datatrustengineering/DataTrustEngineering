@@ -1,14 +1,37 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ .Site.Params.description }}">
-  <meta name="keywords" content="{{ .Site.Params.keywords }}">
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>
+    {{ if .IsHome }}
+      {{ .Site.Title }}
+    {{ else }}
+      {{ .Title }} | {{ .Site.Title }}
+    {{ end }}
+  </title>
+
+  {{ block "meta" . }}
+    <!-- Defaults (used only if a page/layout doesn't override this block) -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{ with .Site.Params.og_image }}
+      <meta property="og:image" content="{{ . | absURL }}">
+    {{ end }}
+    <meta name="twitter:card" content="summary_large_image">
+  {{ end }}
+
+  <link rel="icon" href="{{ "/favicon.ico" | absURL }}">
+  <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | absURL }}">
+
   <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
+  
 <body>
   <header>
     <nav>

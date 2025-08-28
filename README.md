@@ -1,18 +1,33 @@
 # Data Trust Engineering (DTE)
 
-[![GitHub Stars](https://img.shields.io/github/stars/datatrustengineering/DataTrustEngineering)](https://github.com/datatrustengineering/DataTrustEngineering/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/datatrustengineering/DataTrustEngineering)](https://github.com/datatrustengineering/DataTrustEngineering/network)
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE.md)
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/dte-lockup-green.png">
+    <img src="assets/dte-banner-green.png" alt="Data Trust Engineering — Build Trust in Data & AI" width="900">
+  </picture>
+</p>
+
+
+
+[![Stars](https://img.shields.io/github/stars/datatrustengineering/DataTrustEngineering?style=social)](https://github.com/datatrustengineering/DataTrustEngineering/stargazers)
+[![Watchers](https://img.shields.io/github/watchers/datatrustengineering/DataTrustEngineering?style=social)](https://github.com/datatrustengineering/DataTrustEngineering/watchers)
+[![Forks](https://img.shields.io/github/forks/datatrustengineering/DataTrustEngineering?style=social)](https://github.com/datatrustengineering/DataTrustEngineering/network/members)
+[![Issues](https://img.shields.io/github/issues/datatrustengineering/DataTrustEngineering)](https://github.com/datatrustengineering/DataTrustEngineering/issues)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 [![#DTERevolution](https://img.shields.io/badge/Join-%23DTERevolution-brightgreen)](https://x.com/hashtag/DTERevolution)
+[![Slack](https://img.shields.io/badge/Slack-join%20the%20community-4A154B?logo=slack&logoColor=white)](https://join.slack.com/t/datatrustengineering/shared_invite/...)
 
-```
- ____  _______
-|    ||       | 
-|____||_______|
-Certify Data. Build Trust. Shape the Future.
-```
+**Data Trust Engineering (DTE)** is a vendor-neutral, engineering-first approach to building *trusted, AI-ready* data systems.  
+This repo hosts the **Manifesto**, **Patterns**, and the **Trust Dashboard** MVP.
 
-**Data Trust Engineering (DTE)** is a community-driven approach that empowers data teams to build trusted, AI-ready systems through practical engineering patterns and open-source collaboration. Born from the *Data Trust Engineering Manifesto*, DTE provides actionable frameworks for certifying data systems by use case, risk, and value, blending DataOps principles with hands-on implementation. Our first artifact, the **DTE Trust Dashboard**, demonstrates real-time AI governance monitoring—more tools are coming from our community! Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) and fuel the #DTERevolution.
+- 🌐 **Site**: https://datatrustmanifesto.org/
+- 📜 **Manifesto**: [Manifesto.md](Manifesto.md)
+- 🧭 **Patterns**: [docs/patterns/README.md](docs/patterns/README.md)
+- 📊 **Trust Dashboard(s)**: [tools/data-trust-dashboard](tools/data-trust-dashboard)
+
+
+**Data Trust Engineering (DTE)** is a community-driven approach that empowers data teams to build trusted, AI-ready systems through practical engineering patterns and open-source collaboration. Born from the *Data Trust Engineering Manifesto*, DTE provides actionable frameworks for certifying data systems by use case, risk, and value, blending DataOps principles with hands-on implementation. Our first artifact, the **DTE Trust Dashboard**, demonstrates real-time data and AI trust monitoring—more tools are coming from our community! Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) and fuel the #DTERevolution.
 
 ## Why DTE?
 
@@ -49,7 +64,7 @@ Explore [USE_CASES.md](/docs/patterns/USE_CASES.md) to see how DTE principles tr
    ```
 
 ### Live Demo
-- **Trust Dashboard**: [Try it live](https://datatrustengineering.github.io/DataTrustEngineering/tools/data-trust-dashboard/DTE_Trust_Dashboard.html)
+- **Trust Dashboard**: [Try it live](https://www.datatrustmanifesto.org/tools/data-trust-dashboard/dte_trust_dashboard/)
 - **Full Site**: [datatrustmanifesto.org](https://datatrustmanifesto.org)
 
 2. **Explore the Trust Dashboard**:
@@ -104,7 +119,6 @@ DTE provides practical value through:
 
 [MIT License](/LICENSE.md) - encouraging open collaboration and reuse.
 
-## Community and Support
 
 ## Acknowledgments
 

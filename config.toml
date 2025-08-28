@@ -1,10 +1,11 @@
 baseURL = "https://datatrustmanifesto.org/"
 languageCode = "en-us"
-title = "Data Trust Engineering | datatrustmanifesto.org"
+title = "Data Trust Engineering"
 
 [params]
 description = "Data Trust Engineering (DTE): Certify data systems for trust and AI-readiness. Join the #DTERevolution!"
 keywords = "data trust engineering, AI governance, DataOps, data certification"
+site_domain = "datatrustmanifesto.org"
 
 # Custom mounts to preserve existing file structure (Serving in Hugo Site which renders the .md as pages)
 [[module.mounts]]
@@ -15,7 +16,6 @@ keywords = "data trust engineering, AI governance, DataOps, data certification"
   source = "tools"
   target = "content/tools"
   includeFiles = ["data-trust-dashboard/DTE_Trust_Dashboard.html", "lineage-tracker/lineage-script.py"]
-
 [[menu.main]]
   name = "Home"
   url = "/"
