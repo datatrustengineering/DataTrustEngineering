@@ -1,49 +1,47 @@
 ---
-title: Design Patterns for Data & AI Technical Debt
+title: Data Debt Guide (DTE Pattern)
 type: "page"
 layout: "single"
 markup: "markdown"
 ---
 
-# Data Debt in Data & AI Systems
+# Data Debt Guide (DTE Pattern)
 
-Technical debt is inevitable in every engineering discipline — data and AI are no exception. The purpose of this section is not to eliminate debt, but to **make it visible, measurable, and manageable**. 
+## Mission
 
-In traditional governance, debt hides in endless policies and committees. In **Data Trust Engineering (DTE)**, debt is treated like code: tracked, budgeted, and paid down through engineering discipline and automation.
+In Data Trust Engineering (DTE), **data quality is reframed as technical debt** — visible, measurable, and fixable — rather than an abstract governance checkbox.
+The mission of this guide is to provide **lightweight, open-source recipes** for embedding quality checks directly into pipelines and products, aligned with the [DTE Manifesto](../Manifesto.md).
 
-## Mission of This Section
+The goal is not to replicate vendor platforms, but to **set a baseline**: practical, repeatable patterns that anyone can fork, extend, and adapt to their own systems.
 
-- **Expose Invisible Debt**: Shine light on the hidden costs of pipeline fragility, schema drift, model decay, and “hero debugging.”  
-- **Provide Practical Patterns**: Offer lightweight, reproducible design patterns that teams can apply incrementally.  
-- **Baseline, Not Framework**: These are **guides and recipes**, not full-blown products. The goal is to show where to start, not to replace the entire ecosystem.  
-- **Engineer-First**: Patterns focus on **observability, contracts, lineage, and SLOs**, not on policy enforcement or compliance checklists.  
+---
 
 ## Why It Matters
 
-- **70–85% of governance programs fail** (Gartner, 2025), often because they ignore technical debt until it’s too late.  
-- AI systems add new forms of debt: drift, bias, fairness regressions.  
-- Without clear **trust SLOs and error budgets**, teams ship features while debt compounds silently.  
+- Many organizations struggle with governance complexity, often because they ignore technical debt until it becomes problematic.
+- AI systems add new forms of debt: drift, bias, fairness regressions.
+- Without clear **trust SLOs and error budgets**, teams ship features while debt compounds silently.
 
 ---
 
 ## Design Patterns: Technical Debt in Data & AI
 
-Below are practical design patterns that help manage technical debt in pipelines, models, and contracts while maintaining delivery velocity. Each pattern is:  
-- **Lightweight** (Markdown, dbt tests, Great Expectations suites)  
-- **Observable** (Superset/Metabase dashboards, OpenLineage events)  
-- **Community-Driven** (fork and adapt, PR improvements)  
+Below are practical design patterns that help manage technical debt in pipelines, models, and contracts while maintaining delivery velocity. Each pattern is:
+- **Lightweight** (Markdown, dbt tests, Great Expectations suites)
+- **Observable** (Superset/Metabase dashboards, OpenLineage events)
+- **Community-Driven** (fork and adapt, PR improvements)
 
 > 💡 These patterns form the **baseline playbook** for DTE teams. They are not mandates, but starting points for contributors to extend.
 
 
 # Design Patterns: Technical Debt in Data & AI
 
-Technical debt isn’t a moral failing; it’s a budget. These patterns make debt **visible, measurable, and payable**—without halting delivery.
+Technical debt isn't a moral failing; it's a budget. These patterns make debt **visible, measurable, and payable**—without halting delivery.
 
 ## 1) Data Debt Ledger
 **Problem:** Invisible debt accumulates across pipelines, models, and contracts.  
 **Pattern:** Maintain a lightweight, git-tracked `DATA_DEBT.md` (one per domain) listing items, impact, principal, interest (ongoing cost), and a due date.  
-**Signals:** MTTR ↑, ad-hoc fixes ↑, “hero debugging” stories.  
+**Signals:** MTTR ↑, ad-hoc fixes ↑, "hero debugging" stories.  
 **Artifacts:** Markdown ledger + GitHub Issues labels `debt/*`.
 
 ## 2) Contract Drift Guard (Shift-Left)
@@ -54,7 +52,7 @@ Technical debt isn’t a moral failing; it’s a budget. These patterns make deb
 
 ## 3) Schema Freeze Windows
 **Problem:** Breaking changes land during peak loads.  
-**Pattern:** Calendarized “freeze windows” + `dbt` CI rule requiring `BREAKING_CHANGE_APPROVED=true`.  
+**Pattern:** Calendarized "freeze windows" + `dbt` CI rule requiring `BREAKING_CHANGE_APPROVED=true`.  
 **Signals:** Incidents during release windows, weekend pages.  
 **Artifacts:** `dbt` pre-commit + release calendar.
 
@@ -84,20 +82,20 @@ Technical debt isn’t a moral failing; it’s a budget. These patterns make deb
 
 ## 8) Freshness & Staleness Budgets
 **Problem:** Silent data rot.  
-**Pattern:** Define freshness budgets per product; alert when exceeded; degrade gracefully (label as “stale”).  
+**Pattern:** Define freshness budgets per product; alert when exceeded; degrade gracefully (label as "stale").  
 **Signals:** Freshness p95, stale-data reads.  
 **Artifacts:** `dbt source freshness`, dashboard badges.
 
 ## 9) Lineage-Verified Changes
 **Problem:** Hidden blast radius.  
 **Pattern:** **OpenLineage** events in CI: compute impact set from lineage; require approvals when blast radius > threshold.  
-**Signals:** Post-deploy breakages in “unknown” downstreams.  
+**Signals:** Post-deploy breakages in "unknown" downstreams.  
 **Artifacts:** OpenLineage emitter + CI guard.
 
 ## 10) Canonicalization & De-Dup
 **Problem:** Divergent entity definitions inflate debt.  
 **Pattern:** Centralize entity resolution (keys, survivorship rules), emit **golden tables** with provenance.  
-**Signals:** Conflicting KPIs, “two truths” debates.  
+**Signals:** Conflicting KPIs, "two truths" debates.  
 **Artifacts:** Canonical model + dedupe rules in dbt.
 
 ## 11) Observability Budget
@@ -108,23 +106,68 @@ Technical debt isn’t a moral failing; it’s a budget. These patterns make deb
 
 ## 12) Teardown Sprints (2–4 Weeks)
 **Problem:** Compounded complexity; progress stalls.  
-**Pattern:** Focused “teardown & simplify” sprints: remove dead code, reduce DAG depth, collapse over-abstractions, archive orphan tables.  
+**Pattern:** Focused "teardown & simplify" sprints: remove dead code, reduce DAG depth, collapse over-abstractions, archive orphan tables.  
 **Signals:** Lead time ↑, failed runs ↑, engineer sentiment ↓.  
 **Artifacts:** Before/after metrics: DAG depth, model count, build time.
 
 ---
 
 ## Minimal Metrics to Track (Debt KPIs)
-- **Contract violation rate** (per 1k msgs)  
-- **Freshness p95** / **SLO breaches**  
-- **Flaky test rate** & **time-to-signal**  
-- **Orphan/unused tables %**  
-- **Duplicate natural keys %**  
-- **Incident MTTR** and **change failure rate**  
+- **Contract violation rate** (per 1k msgs)
+- **Freshness p95** / **SLO breaches**
+- **MTTR** and **change failure rate**
+- **Debt velocity** (new debt created vs. paid down)
 
-## Lightweight Tooling (Open Source)
-- **dbt tests** (`not_null`, `unique`, custom macros)  
-- **Great Expectations** (expectations + suites)  
-- **OpenLineage** (lineage & blast radius checks)  
-- **YData Profiling** (profiling → confidence indicators)  
-- **Superset/Metabase** (Trust SLO dashboards)  
+---
+
+## Quick Start: Great Expectations
+
+Use [Great Expectations](https://github.com/great-expectations/great_expectations) to add validation at the point of ingestion or transformation.
+
+```python
+import great_expectations as ge
+import pandas as pd
+
+# Sample dataframe
+df = pd.DataFrame({
+    "id": [1, 2, 2, None],
+    "value": [10, 20, None, 40]
+})
+
+# Wrap dataframe with Great Expectations
+gdf = ge.from_pandas(df)
+
+# Example expectations
+results = [
+    gdf.expect_column_values_to_be_unique("id").validate(),
+    gdf.expect_column_values_to_not_be_null("value").validate()
+]
+
+print(results)
+```
+
+---
+
+## How to Use These Patterns
+
+1. **Pick a Pattern** → Start small (e.g., add freshness checks or contracts at ingestion).
+2. **Fork & Adapt** → Use the open-source examples, swap in your stack.
+3. **Contribute** → Extend a pattern or propose a new one via PR.
+
+---
+
+## Why This Matters
+
+Many organizations struggle with governance complexity, often because they ignore technical debt until it becomes problematic. These patterns provide practical approaches to make debt visible, measurable, and manageable—without halting delivery.
+
+---
+
+## References
+
+- Great Expectations (2025). Down with Pipeline Debt. Available at: https://greatexpectations.io/blog/down-with-pipeline-debt-introducing-great-expectations/
+- Cloud Data Insights (2025). Data Pipeline Pitfalls. Available at: https://www.clouddatainsights.com/data-pipeline-pitfalls-unraveling-the-technical-debt-tangle/
+- DQOps (2025). Technical Debt in Data Engineering. Available at: https://dqops.com/technical-debt-in-data-engineering/
+
+*Built with Data Trust Engineering principles of practical collaboration.*
+
+#DTERevolution

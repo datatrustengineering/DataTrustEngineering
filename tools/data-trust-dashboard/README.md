@@ -1,28 +1,30 @@
 # Data Trust Engineering (DTE) Trust Dashboard
 
-Welcome to the **Data Trust Engineering (DTE) Trust Dashboard**, a flagship artifact of the *Data Trust Engineering* movement. This open-source dashboard visualizes key AI governance metrics in real-time, embodying DTE’s principles of trust, engineering rigor, and AI-readiness as outlined in the [Data Trust Manifesto](https://datatrustmanifesto.org). The dashboard empowers data teams to build trusted, scalable systems, addressing the 70-85% failure rates of traditional data governance (Gartner, 2025).
+Welcome to the **Data Trust Engineering (DTE) Trust Dashboard**, a practical open-source tool that demonstrates DTE principles through interactive data visualization. This dashboard provides hands-on examples of monitoring AI governance metrics, helping data teams implement trust and reliability in their AI systems.
 
 ## About Data Trust Engineering (DTE)
 
-Data Trust Engineering (DTE) is a revolutionary, engineering-driven approach to data management that represents a complete pivot from traditional data governance frameworks. Unlike governance’s bureaucratic, process-heavy models, which conflate compliance (e.g., GDPR, HIPAA, SOC, EU AI Act) with technical data management, DTE decouples these concerns entirely. Compliance is handled by legal and audit teams using tools like OneTrust, freeing DTE to focus on certifying datasets for trust, quality, lineage, security, and AI-readiness. This shift addresses the 70-80% failure rate of traditional governance [Gartner, 2025] by prioritizing technical trust over rigid policies, enabling scalable, cloud-native, and AI-ready systems. Built on the [Data Trust Manifesto](https://datatrustmanifesto.org)’s principles—trust, engineering rigor, adaptability, enablement, cloud-native design, certification by use case/risk/value, technical debt management, and community collaboration—DTE empowers data professionals to deliver reliable systems for high-stakes use cases like AI training and regulatory reporting in 2025’s 175-zettabyte data landscape [Statista, 2025]. By leveraging tools like Fairlearn, Evidently AI, and MLflow, DTE certifies datasets based on their specific use case, risk profile, and business value, fostering a vendor-neutral, community-driven evolution of data management. Read the full [DTE Manifesto](/Manifesto.md) to join the #DTERevolution.
+Data Trust Engineering (DTE) provides practical patterns and tools that help data teams implement trust and reliability in AI and analytics systems. DTE offers engineering-driven approaches that work alongside existing data governance frameworks, focusing on actionable implementations rather than theoretical frameworks. By emphasizing collaboration and shared knowledge, DTE helps organizations build more reliable AI systems through proven patterns and community-developed tools.
 
-## The DTE Trust Dashboard 
+## The DTE Trust Dashboard
 
-The DTE Trust Dashboard is a practical, open-source tool that brings DTE to life. It offers two implementations:
+The DTE Trust Dashboard is a working example that demonstrates practical monitoring approaches. It offers two implementations:
+
 - **HTML Version** (`DTE_Trust_Dashboard.html`): Built with [Chart.js](https://www.chartjs.org) for lightweight, static visualization.
 - **Streamlit Version** (`app.py`): Built with [Streamlit](https://streamlit.io) and [Plotly](https://plotly.com) for interactive, Python-based visualization.
 
-Both versions monitor key AI governance metrics:
+Both versions demonstrate key monitoring approaches:
+
 - **AI Fairness**: Bar chart showing fairness scores across protected attributes (e.g., gender, age), ensuring equitable outcomes. Integrates with [Fairlearn](https://fairlearn.org).
 - **Model Explainability**: Bar chart visualizing feature importance across models, enhancing transparency. Compatible with [Evidently AI](https://evidentlyai.com).
-- **Guardrails Adherence**: Radar chart visualizing adherence to DTE principles (trust, certification, observability) across privacy, ethics, robustness, transparency, and accountability. Supports certification by use case, risk, and value, per the Data Trust Manifesto.
+- **Guardrails Adherence**: Radar chart visualizing adherence to DTE principles (trust, certification, observability) across privacy, ethics, robustness, transparency, and accountability.
 - **GenAI Safety**: Bar chart monitoring toxicity, bias, hallucination, privacy leakage, and factual accuracy for generative AI. Integrates with Evidently AI.
 - **Model Performance**: Line chart tracking accuracy, F1 score, and AUC-ROC over time, ensuring reliability. Integrates with [MLflow](https://mlflow.org).
 
-**Data Trust Integration**:
-- **Trust**: Transparent, real-time metrics build confidence for enterprises, users, and AI systems (Data Trust Manifesto principle).
-- **Collaboration**: Open-source and extensible, inviting community contributions to evolve the dashboard (Data Trust Manifesto principle).
-- **Engineering Rigor**: Built with robust, lightweight tools (Chart.js for HTML, Plotly for Streamlit), compatible with [Apache Superset](https://superset.apache.org) for scalability (Data Trust Manifesto principle).
+**Practical Integration**:
+- **Trust**: Transparent metrics help teams understand and improve their AI systems.
+- **Collaboration**: Open-source and extensible, encouraging community contributions and improvements.
+- **Engineering Focus**: Built with robust, accessible tools that can be adapted to different environments.
 
 The dashboards are housed in `/tools/data-trust-dashboard/` and can be extended with APIs or additional metrics.
 
@@ -37,14 +39,14 @@ The dashboards are housed in `/tools/data-trust-dashboard/` and can be extended 
 2. **Explore the Code**:
    - File: `DTE_Trust_Dashboard.html`
    - Tech Stack: HTML, JavaScript, Chart.js
-   - Customization: Modify Chart.js configurations or add metrics (e.g., bias-variance tradeoffs) via pull requests.
+   - Customization: Modify Chart.js configurations or add metrics via pull requests.
 
 ### Streamlit Version
 1. **Run the Dashboard**:
    - Follow `instructions.md` for detailed setup.
    - Briefly:
      ```bash
-     cd /Users/brianbrewer/Code/datatrustengineering/static/tools/data-trust-dashboard
+     cd tools/data-trust-dashboard
      python3 -m venv venv
      source venv/bin/activate  # On Windows: venv\Scripts\activate
      pip install -r requirements.txt
@@ -60,46 +62,63 @@ The dashboards are housed in `/tools/data-trust-dashboard/` and can be extended 
 
 3. **Integrate with Tools**:
    - **Data Quality**: Use [Great Expectations](https://greatexpectations.io) for automated validation.
-   - **Lineage**: OpenLineage
+   - **Lineage**: OpenLineage for metadata tracking
    - **AI Governance**: Connect to Fairlearn (fairness), Evidently AI (explainability/drift), MLflow (performance), or [SDV](https://sdv.dev) (synthetic data).
+
+### Docker Deployment (Optional)
+```bash
+# Quick start with Docker
+docker-compose up --build
+
+# Or run individual containers
+docker build -t dte-dashboard .
+docker run -p 8501:8501 dte-dashboard
+```
 
 ## Contributing
 
-Join the #DTERevolution by contributing to the DTE Trust Dashboard! We welcome:
-- Enhancements to either dashboard (e.g., API integration, new metrics).
-- Case studies showing DTE in action (add to `/docs/case-studies`).
-- Tools or patterns for data quality, lineage, or AI governance (add to `/tools`).
+Help improve the DTE Trust Dashboard! We welcome community contributions that enhance its practical value:
 
-See [CONTRIBUTING.md](/CONTRIBUTING.md) for guidelines. Submit pull requests to `/tools/data-trust-dashboard` or start a discussion on [X](https://x.com) with #DTERevolution.
+- Enhancements to either dashboard (e.g., API integration, new metrics).
+- Documentation improvements and usage examples.
+- Integration with additional monitoring tools.
+- Performance optimizations and accessibility improvements.
+
+See [CONTRIBUTING.md](/community/CONTRIBUTING.md) for guidelines. Submit pull requests to `/tools/data-trust-dashboard` or start a discussion on GitHub.
 
 ## Why It Matters
 
-Traditional data governance fails 70-85% of the time (Gartner, 2025) due to bureaucracy and misalignment with modern data needs. The DTE Trust Dashboard, guided by the [Data Trust Manifesto](https://datatrustmanifesto.org)’s focus on trust, engineering rigor, and AI-readiness, empowers data teams to:
-- Build **trust** with transparent metrics for fairness and observability.
-- Enable **AI-readiness** by monitoring explainability and performance.
-- Scale with **cloud-native** architectures, aligning with shared responsibility models.
-- Foster **collaboration**, inviting community contributions to evolve DTE.
+The DTE Trust Dashboard provides practical value by:
+
+- **Building Understanding**: Clear visualizations help teams grasp complex AI governance concepts.
+- **Enabling AI-Readiness**: Demonstrates monitoring approaches that support reliable AI deployment.
+- **Supporting Collaboration**: Open-source foundation encourages community improvements and shared learning.
+- **Fostering Best Practices**: Working example that can be adapted to different organizational needs.
 
 ## Setup Instructions
 
 1. **Clone the Repo**:
    ```bash
-   git clone https://github.com/[YourUsername]/DataTrustEngineering.git
+   git clone https://github.com/datatrustengineering/DataTrustEngineering.git
    ```
+
 2. **Navigate to the Dashboard**:
    ```bash
    cd tools/data-trust-dashboard
    ```
+
 3. **Run the HTML Version**:
    - Open `DTE_Trust_Dashboard.html` in a browser or deploy to a server.
    - Customize data sources by updating the `refreshData()` function with API endpoints.
+
 4. **Run the Streamlit Version**:
    - See `instructions.md` for detailed steps, including virtual environment setup and dependency installation.
    - Run `streamlit run app.py` and access `http://localhost:8501`.
    - Customize data sources by updating `app.py` with API calls (e.g., Fairlearn, Evidently AI, MLflow).
 
 ## Community and Support
-See [CONTACT.md](/CONTACT.md).
+
+See [CONTACT.md](/CONTACT.md) for support channels.
 
 ## License
 
@@ -107,20 +126,17 @@ This project is licensed under the MIT License. See [LICENSE.md](/LICENSE) for d
 
 ## Community Resources
 
-- [DTE Manifesto](manifesto.md): Our vision for trusted, AI-ready data systems.  
-- [Contributing Guide](community/CONTRIBUTING.md): How to submit artifacts, case studies, or updates.  
-- [Code of Conduct](community/CODE_OF_CONDUCT.md): Standards for a respectful community.  
-- [Governance](community/GOVERNANCE.md): How we make decisions and manage contributions.  
-- [Case Study Template](docs/case-studies/template.md): Share your DTE success story.  
-- [Contributors](community/CONTRIBUTORS.md): Meet the community shaping DTE.  
-- [Support](SUPPORT.md): How to get help or contact us.  
-- [Security](SECURITY.md): Report vulnerabilities or sensitive issues.  
-- [Report Issues & Propose Features](https://github.com/datatrustengineering/DataTrustEngineering/issues): Submit bug reports or suggest new artifacts.  
-
-
+- [DTE Manifesto](/Manifesto.md): Core principles and philosophy.
+- [Contributing Guide](/community/CONTRIBUTING.md): How to contribute effectively.
+- [Code of Conduct](/community/CODE_OF_CONDUCT.md): Community standards.
+- [Governance](/community/GOVERNANCE.md): Decision-making processes.
+- [Case Study Template](/docs/case-studies/template.md): Share implementation experiences.
+- [Report Issues](https://github.com/datatrustengineering/DataTrustEngineering/issues): Bug reports and feature requests.
 
 ## Acknowledgments
 
-The DTE Trust Dashboard is a cornerstone of the [Data Trust Manifesto](https://datatrustmanifesto.org), driving a collaborative, automation-driven approach to data management. We thank the DTE community for inspiring and contributing to the #DTERevolution.
+The DTE Trust Dashboard demonstrates practical approaches to AI governance and monitoring. We thank the community for feedback, contributions, and collaboration that help improve these tools for everyone.
 
-#DTERevolution
+---
+
+*Built with Data Trust Engineering principles of collaboration and practical implementation.*

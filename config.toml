@@ -29,7 +29,7 @@ site_domain = "datatrustmanifesto.org"
   url = "/tools/data-trust-dashboard/DTE_Trust_Dashboard"
   weight = 3
 [[menu.main]]
-  name = "Contribute"
+  name = "Github"
   url = "https://github.com/datatrustengineering/DataTrustEngineering"
   weight = 4
 [[menu.main]]

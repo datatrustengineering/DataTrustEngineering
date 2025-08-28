@@ -2,9 +2,7 @@
 title: Governance of Data Trust Engineering (DTE)
 ---
 
-
-
-The **Data Trust Engineering (DTE)** project is a community-driven movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness, as outlined in the [Data Trust Engineering Manifesto](/Manifesto.md). DTE evolves through open-source contributions on GitHub, starting with artifacts like the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard). This `GOVERNANCE.md` file defines how our community makes decisions, manages contributions, and resolves conflicts to ensure a transparent, inclusive, and productive #DTERevolution.
+The **Data Trust Engineering (DTE)** project is a community-driven initiative that provides practical patterns and tools for implementing data trust in AI and analytics systems, as outlined in the [Data Trust Engineering Manifesto](/Manifesto.md). DTE evolves through open-source collaboration on GitHub, with contributions ranging from working artifacts like the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard) to documentation and patterns. This `GOVERNANCE.md` file defines how our community makes decisions, manages contributions, and ensures productive collaboration.
 
 Learn more at [datatrustmanifesto.org](https://datatrustmanifesto.org) or join our [Slack org]([Slack Invite Link]).
 
@@ -20,111 +18,120 @@ Learn more at [datatrustmanifesto.org](https://datatrustmanifesto.org) or join o
 
 ## Guiding Principles
 
-DTE’s governance is rooted in the manifesto’s core principles:
-- **Transparency**: Decisions are made openly, with clear rationale shared in GitHub Issues, Discussions, or Slack.
-- **Collaboration**: Contributions from data professionals, enterprises, SMBs, and hyperscalers shape DTE’s evolution.
-- **Alignment**: All decisions support DTE’s mission to certify data systems by use case, risk, and value, ensuring trust and AI-readiness.
-- **Inclusivity**: We welcome diverse perspectives while maintaining focus, as enforced by our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
-- **Agility**: Inspired by DataOps, we prioritize rapid feedback and iterative improvements.
+DTE's governance is guided by practical principles that support effective community collaboration:
+
+- **Transparency**: Decisions are made openly, with clear rationale documented in GitHub Issues and Discussions.
+- **Collaboration**: Community members from diverse backgrounds contribute tools, patterns, and documentation.
+- **Alignment**: All decisions support DTE's focus on practical engineering approaches to data trust.
+- **Inclusivity**: We welcome diverse perspectives while maintaining productive focus, as outlined in our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+- **Agility**: We prioritize responsive feedback and iterative improvements to serve community needs.
 
 ## Roles and Responsibilities
 
 - **Maintainers**:
-  - **Who**: Initially, Brian Brewer (bbrewer@infolibcorp.com) and future trusted contributors elevated based on active participation.
+  - **Who**: Initially, Brian Brewer (bbrewer@infolibcorp.com) and future contributors elevated based on sustained community contributions.
   - **Responsibilities**:
-    - Review and merge pull requests (PRs) for alignment with the [Manifesto](/Manifesto.md).
+    - Review and merge pull requests (PRs) for alignment with community standards.
     - Moderate discussions, issues, and PRs per [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
-    - Make final decisions on contributions and conflicts, seeking community input where possible.
-    - Update repo structure, roadmap, and governance as DTE grows.
-  - **Selection**: New maintainers are nominated by existing maintainers based on consistent, high-quality contributions (e.g., multiple merged PRs) and community trust. Nominations are discussed in GitHub Discussions and confirmed by consensus.
+    - Make final decisions on contributions and conflicts, incorporating community input.
+    - Maintain repository structure and documentation as the community grows.
+  - **Selection**: New maintainers are nominated by existing maintainers based on consistent, valuable contributions and community trust. Nominations are discussed in GitHub Discussions and confirmed by consensus.
 
 - **Contributors**:
-  - **Who**: Anyone who submits PRs, issues, or participates in Discussions/Slack, from beginners to experts.
+  - **Who**: Anyone who submits PRs, issues, or participates in Discussions/Slack, from newcomers to experienced practitioners.
   - **Responsibilities**:
     - Follow [CONTRIBUTING.md](/community/CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
-    - Propose artifacts (e.g., data quality scripts), case studies, or manifesto updates that advance DTE’s mission.
-    - Engage respectfully and respond to feedback during PR reviews.
+    - Propose artifacts, patterns, or documentation improvements that benefit the community.
+    - Engage constructively and respond to feedback during PR reviews.
 
 - **Community Members**:
-  - **Who**: Anyone participating in GitHub Discussions, Slack, or X (#DTERevolution).
+  - **Who**: Anyone participating in GitHub Discussions, Slack, or community channels.
   - **Responsibilities**:
-    - Provide feedback, propose ideas, and share DTE’s mission.
-    - Report violations of the Code of Conduct to maintainers.
+    - Provide feedback, propose ideas, and help spread awareness of DTE approaches.
+    - Report concerns about community standards to maintainers.
 
 ## Decision-Making Process
 
-Decisions in DTE are made through a **consensus-driven model**, inspired by open-source projects like Rust and Node.js, to balance agility and inclusivity. Key decisions include PR approvals, artifact additions, manifesto updates, and governance changes.
+DTE uses a **consensus-oriented approach** to balance community input with practical decision-making, similar to successful open-source projects. Key decisions include PR approvals, new artifacts, documentation updates, and governance changes.
 
 1. **Proposal**:
-   - Ideas (e.g., new artifact, principle update) are proposed via GitHub Issues or Slack (#contributions).
-   - Use issue templates to ensure clarity (e.g., “New Artifact: Data Lineage Tracker”).
+   - Ideas are proposed via GitHub Issues or community channels.
+   - Use clear issue templates for proposals (e.g., "New Pattern: Data Quality Validation").
 
 2. **Discussion**:
-   - Community members discuss proposals in GitHub Issues, Discussions, or Slack, aiming for consensus.
-   - Maintainers moderate to keep discussions on-topic and respectful.
+   - Community members discuss proposals in GitHub Issues or Discussions.
+   - Maintainers facilitate productive dialogue and keep discussions focused.
 
 3. **Decision**:
-   - For minor changes (e.g., typo fixes, small PRs), maintainers approve or reject based on alignment with the [Manifesto](/Manifesto.md).
-   - For major changes (e.g., new principles, governance updates), maintainers seek community input for 5-7 days via Discussions or Slack. If consensus isn’t reached, maintainers make the final call, explaining the rationale publicly.
-   - Example: Adding a new manifesto principle requires 2+ maintainer approvals and community feedback.
+   - For routine changes (e.g., documentation updates, small PRs), maintainers approve based on alignment with community standards.
+   - For significant changes (e.g., new patterns, governance updates), maintainers seek community input for 5-7 days. If consensus isn't reached, maintainers make the final decision with documented rationale.
+   - Example: Adding a new pattern requires maintainer review and community feedback.
 
 4. **Documentation**:
-   - Decisions are logged in GitHub Issues or Discussions with a clear explanation (e.g., “PR #123 merged to add data quality artifact, aligns with certification principle”).
+   - Decisions are documented in GitHub Issues with clear explanations.
 
 ## Pull Request (PR) Review and Approval
 
-PRs are the primary way to contribute to DTE (e.g., artifacts, case studies, manifesto updates). The process follows [CONTRIBUTING.md](/community/CONTRIBUTING.md):
+PRs are the primary way to contribute to DTE. The process follows [CONTRIBUTING.md](/community/CONTRIBUTING.md):
 
 1. **Submission**:
-   - Contributors fork the repo, create a branch, and submit a PR with a clear description (e.g., “Add Great Expectations script for data quality”).
-   - Link to a related GitHub Issue for context.
+   - Contributors submit PRs with clear descriptions.
+   - Link to related GitHub Issues for context.
 
 2. **Review Criteria**:
-   - **Alignment**: Does the PR advance DTE’s mission (certification, trust, AI-readiness)?
-   - **Quality**: Is the code/documentation clear, functional, and well-documented?
-   - **Relevance**: Does it fit DTE’s scope (e.g., avoids unrelated tech policies)?
-   - Maintainers provide feedback within 5-7 days, requesting changes if needed.
+   - **Alignment**: Does the PR provide practical value to the community?
+   - **Quality**: Is the contribution clear, functional, and well-documented?
+   - **Relevance**: Does it fit DTE's focus on data trust engineering?
+   - Maintainers provide feedback within 5-7 days.
 
 3. **Automated Checks**:
-   - Markdown linting (via GitHub Actions) ensures documentation consistency.
-   - Code-based artifacts (e.g., Python scripts) should include validation steps or tests.
+   - Markdown linting ensures documentation consistency.
+   - Code contributions should include basic validation or examples.
 
 4. **Approval**:
    - PRs require at least one maintainer approval to merge.
-   - Major changes (e.g., manifesto updates) need 2+ approvals and community feedback.
-   - Rejected PRs receive polite feedback (e.g., “This is great but outside DTE’s focus on technical trust”).
+   - Significant changes need additional maintainer review and community feedback.
+   - Feedback is provided constructively for all contributions.
 
 5. **Merge**:
-   - Approved PRs are merged into the main branch, with contributors credited in [CONTRIBUTORS.md](/CONTRIBUTORS.md).
+   - Approved PRs are merged into the main branch, with contributors credited.
 
 ## Conflict Resolution
 
-Conflicts may arise over PRs, principles, or community interactions. We resolve them transparently:
+Conflicts are resolved transparently and constructively:
+
 - **Step 1: Discussion**:
-  - Address conflicts in GitHub Issues, Discussions, or Slack (#general or #contributions).
-  - Maintainers moderate to ensure respectful dialogue per [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+  - Address conflicts in GitHub Issues, Discussions, or community channels.
+  - Maintainers facilitate respectful dialogue per [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+
 - **Step 2: Mediation**:
-  - If consensus isn’t reached within 5 days, maintainers propose a solution (e.g., trial period for a new principle).
-  - Community input is sought via Discussions or Slack.
+  - If consensus isn't reached within 5 days, maintainers propose solutions.
+  - Community input is sought for significant conflicts.
+
 - **Step 3: Final Decision**:
-  - Maintainers make the final call, documenting the rationale in the relevant Issue or Discussion.
-  - Example: If two contributors disagree on a PR’s wording, maintainers may merge a compromise version after discussion.
+  - Maintainers make final decisions when needed, with documented rationale.
+  - Example: Technical disagreements may be resolved through compromise or additional review.
+
 - **Step 4: Enforcement**:
-  - Violations of the Code of Conduct (e.g., harassment) are addressed with warnings, content removal, or bans, as outlined in [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
+  - Code of Conduct violations are addressed with appropriate actions as outlined in [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md).
 
 ## Community Engagement
 
-DTE thrives on community input. To participate:
-- **GitHub Discussions**: Propose ideas, provide feedback, or discuss artifacts like the Trust Dashboard.
-- **Slack**: Join [datatrustengineering]([Slack Invite Link]) for real-time collaboration (#contributions, #trust-dashboard).
-- **X**: Share your contributions with #DTERevolution or tag @bbrewer_infolib.
-- **Good First Issues**: Start with tasks tagged “good first issue” (e.g., typo fixes, case studies) to build skills and join the community.
-- **Recognition**: Contributors are listed in [CONTRIBUTORS.md](/CONTRIBUTORS.md) and highlighted in Slack or X for impactful work.
+DTE thrives on community participation. Ways to engage:
+
+- **GitHub Discussions**: Propose ideas, provide feedback, or discuss artifacts.
+- **Slack**: Join [datatrustengineering]([Slack Invite Link]) for collaboration.
+- **Good First Issues**: Start with beginner-friendly tasks to learn and contribute.
+- **Recognition**: Valuable contributions are acknowledged in community channels.
 
 ## Evolving Governance
 
-As DTE grows, this governance model will evolve:
-- **Feedback**: Community members can propose governance changes via GitHub Issues or Slack.
-- **Updates**: Major changes (e.g., adding new maintainer roles) require 7-10 days of community discussion and 2+ maintainer approvals.
-- **Organization Transition**: If the community scales, we may move the repo to a GitHub Organization for shared ownership, with roles defined here.
+As DTE grows, governance adapts to community needs:
 
+- **Feedback**: Community members can propose governance improvements via GitHub Issues.
+- **Updates**: Significant changes require community discussion and maintainer consensus.
+- **Scaling**: If community size warrants, we may transition to organizational structures while maintaining these principles.
+
+## Contact
+
+For questions about governance or community participation, please reach out through GitHub Issues or community channels.

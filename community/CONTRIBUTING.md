@@ -2,7 +2,7 @@
 title: Contributing to Data Trust Engineering (DTE)
 ---
 
-Welcome to the **Data Trust Engineering (DTE)** community! We're building a movement to replace traditional data governance’s 70-80% failure rate [Gartner, 2025] with engineering-driven trust, certification, and AI-readiness. Inspired by the [DataTrustManifesto.org](https://datatrustmanifesto.org)’s agility and collaboration, DTE invites data professionals, enterprises, SMBs, and hyperscalers to contribute to our open-source ecosystem. Whether you're enhancing the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html), proposing new artifacts, or sharing case studies, your contributions shape the #DTERevolution.
+Welcome to the **Data Trust Engineering (DTE)** community! We're building a collaborative ecosystem of practical patterns and tools that help data teams implement trust and reliability in their AI and data systems. Inspired by successful open-source communities, DTE brings together data professionals from diverse backgrounds to share proven approaches for certification, monitoring, and quality assurance. Whether you're enhancing the [DTE Trust Dashboard](/tools/data-trust-dashboard/DTE_Trust_Dashboard.html), proposing new artifacts, or sharing case studies, your contributions help advance practical data trust engineering.
 
 This guide explains how to contribute to the `DataTrustEngineering` repository, ensuring a productive, inclusive community. Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) or our [Slack org]([Slack Invite Link]).
 
@@ -17,31 +17,31 @@ This guide explains how to contribute to the `DataTrustEngineering` repository, 
 
 ## Code of Conduct
 
-All contributors must follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md), based on the Contributor Covenant. Be respectful, constructive, and focused on DTE’s mission to certify data systems by use case, risk, and value. Harassment, off-topic rants, or disruptive behavior will be addressed by maintainers to keep our community welcoming.
+All contributors must follow our [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md), based on the Contributor Covenant. Be respectful, constructive, and focused on DTE's mission to provide practical engineering patterns for data trust. Harassment, off-topic discussions, or disruptive behavior will be addressed by maintainers to keep our community welcoming.
 
 ## What Can You Contribute?
 
-DTE is a community-driven movement, and we welcome contributions that align with our [Manifesto](/Manifesto.md) and advance trust, engineering rigor, and AI-readiness. Examples include:
+DTE is a community-driven initiative, and we welcome contributions that align with our [Manifesto](/Manifesto.md) and advance practical data trust engineering. Examples include:
 
-- **Artifacts**: Tools and scripts for data quality (e.g., Great Expectations configs), lineage (e.g., Apache Atlas scripts), or AI governance (e.g., Fairlearn integrations). See `/tools`.
-- **Manifesto Updates**: Refine or propose principles in `/Manifesto.md` to strengthen DTE’s vision.
-- **Case Studies**: Share real-world DTE applications (e.g., “Reduced AI bias by 15%”) in `/docs/case-studies`. Use our [template](/docs/case-studies/template).
-- **Patterns and Guides**: Document DTE best practices (e.g., data quality patterns) in `/docs/patterns`.
-- **Trust Dashboard Enhancements**: Add metrics, APIs (e.g., Evidently AI, MLflow), or UI improvements to `/tools/data-trust-dashboard`.
-- **Documentation**: Improve clarity, fix typos, or add tutorials in `/docs`.
-- ** Contribute Code**: Explore [USE_CASES.md](/docs/patterns/USE_CASES.md) to see how to apply DTE principles with open-source code.
+- **Artifacts**: Tools and scripts for data quality (e.g., Great Expectations configurations), lineage tracking (e.g., OpenLineage integrations), or AI governance (e.g., Fairlearn monitoring patterns). See `/tools`.
+- **Patterns and Guides**: Document proven approaches and best practices in `/docs/patterns`.
+- **Case Studies**: Share real-world implementations and lessons learned in `/docs/case-studies`. Use our [template](/docs/case-studies/template).
+- **Trust Dashboard Enhancements**: Add metrics, integrations, or UI improvements to `/tools/data-trust-dashboard`.
+- **Documentation**: Improve clarity, add examples, or create tutorials in `/docs`.
+- **Code Examples**: Contribute working implementations that others can adapt and extend.
 
-**Good First Issues**: New to DTE? Start with issues tagged “good first issue” (e.g., typo fixes, adding a case study). These are great for building skills and joining the #DTERevolution!
+**Good First Issues**: New to DTE? Start with issues tagged "good first issue" (e.g., documentation improvements, adding examples, or fixing typos). These are great ways to learn and contribute to the community!
 
 ## How to Contribute
 
 1. **Explore the Repo**:
-   - Read the [README.md](/README.md) and [Manifesto.md](/Manifesto.md) to understand DTE’s goals.
+   - Read the [README.md](/README.md) and [Manifesto.md](/Manifesto.md) to understand DTE's approach.
    - Check `/tools` and `/docs` for existing artifacts and inspiration.
+   - Review [USE_CASES.md](/docs/patterns/USE_CASES.md) for practical implementation examples.
 
 2. **Discuss Your Idea**:
-   - Open a GitHub Issue to propose your contribution (e.g., “New artifact: Data quality validator”). Use our issue templates for clarity.
-   - Join our [Slack org]([Slack Invite Link]) (#contributions channel) to brainstorm with the community.
+   - Open a GitHub Issue to propose your contribution (e.g., "New pattern: Data quality validation workflow"). Use our issue templates for clarity.
+   - Join our [Slack org]([Slack Invite Link]) (#contributions channel) to discuss ideas with the community.
 
 3. **Fork and Clone**:
    ```bash
@@ -52,8 +52,8 @@ DTE is a community-driven movement, and we welcome contributions that align with
 
 4. **Make Changes**:
    - Create a branch: `git checkout -b feature/your-contribution-name`.
-   - Add your contribution (e.g., a script in `/tools`, a case study in `/docs/case-studies`).
-   - Commit with a clear message: `git commit -m "Add data quality pattern for Great Expectations"`.
+   - Add your contribution (e.g., a pattern in `/docs/patterns`, a script in `/tools`).
+   - Commit with a clear message: `git commit -m "Add data quality validation pattern"`.
 
 5. **Push and Submit a PR**:
    - Push to your fork: `git push origin feature/your-contribution-name`.
@@ -61,42 +61,50 @@ DTE is a community-driven movement, and we welcome contributions that align with
 
 ## Pull Request Process
 
-We review PRs to ensure alignment with DTE’s principles (trust, certification, AI-readiness). Follow these steps:
+We review PRs to ensure alignment with DTE's principles and community standards. Follow these steps:
 
 1. **Create a PR**:
-   - Use a descriptive title (e.g., “Add lineage tracker script using Apache Atlas”).
-   - Link to the related GitHub Issue (e.g., “Closes #123”).
-   - Explain your changes and how they advance DTE’s mission.
+   - Use a descriptive title (e.g., "Add lineage tracking pattern with OpenLineage").
+   - Link to the related GitHub Issue (e.g., "Closes #123").
+   - Explain your changes and how they benefit the community.
 
 2. **Review Process**:
    - Maintainers will review within 5-7 days, checking for:
      - Alignment with the [DTE Manifesto](/Manifesto.md).
-     - Code/documentation quality (e.g., markdown linting, functional scripts).
-     - Relevance to DTE’s goals (e.g., supports certification, cloud-native architectures).
-   - Expect feedback (e.g., “Can you add an example for SMBs?”). Revise as needed.
+     - Code/documentation quality (e.g., markdown linting, functional examples).
+     - Relevance to DTE's goals (e.g., practical implementation patterns).
+   - Expect constructive feedback (e.g., "Can you add an example for cloud deployments?"). Revise as needed.
 
 3. **Automated Checks**:
    - PRs undergo markdown linting (via GitHub Actions) for documentation consistency.
-   - Code-based artifacts (e.g., Python scripts) should include basic tests or validation steps.
+   - Code-based artifacts should include basic validation or example usage.
 
 4. **Approval and Merge**:
    - Approved PRs are merged into the main branch.
-   - If a PR doesn’t fit, we’ll provide feedback and close it politely (e.g., “This is great, but it’s outside DTE’s scope of technical trust”).
+   - If a PR doesn't align with our focus, we'll provide feedback and suggest alternative approaches.
 
 ## Community Guidelines
 
-- **Stay On-Topic**: Contributions should support DTE’s focus on certifying data systems for trust, AI-readiness, and cloud scalability. Off-topic ideas (e.g., unrelated tech policies) may be redirected.
-- **Be Collaborative**: Engage in GitHub Discussions or Slack (#contributions) before submitting large PRs to align with community goals.
-- **Respect Feedback**: Maintainers may request changes to ensure quality. Respond constructively to keep the #DTERevolution moving forward.
-- **Avoid Chaos**: Follow the [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md). Disruptive behavior (e.g., spamming issues) may lead to warnings or blocks.
+- **Stay On-Topic**: Contributions should support DTE's focus on practical data trust engineering. Off-topic ideas may be redirected to more appropriate forums.
+- **Be Collaborative**: Engage in GitHub Discussions or community channels before submitting large changes to align with shared goals.
+- **Respect Feedback**: Maintainers may request changes to ensure quality and consistency. Respond constructively to help improve the contribution.
+- **Avoid Chaos**: Follow the [CODE_OF_CONDUCT.md](/community/CODE_OF_CONDUCT.md). Disruptive behavior may lead to warnings or temporary blocks.
 
 ## Recognition
 
-Your contributions shape DTE! We recognize contributors by:
+Your contributions strengthen the DTE community! We recognize contributors by:
 - Listing you in `CONTRIBUTORS.md` with your permission.
-- Highlighting impactful PRs in Slack (#contributions) and X (#DTERevolution).
-- Offering roles like “DTE Community Guide” for active contributors, boosting your portfolio.
+- Highlighting valuable contributions in community channels.
+- Offering opportunities for deeper involvement based on sustained contributions.
 
 ## Questions or Ideas?
 
 - **GitHub Issues**: Open an issue for questions, ideas, or feedback.
+- **Community Discussion**: Join our Slack channels for real-time conversations.
+- **Documentation**: Check our patterns and guides for implementation examples.
+
+---
+
+**Thank you for contributing to DTE!** Your efforts help build a stronger, more collaborative data trust engineering community. 
+
+#DTERevolution
