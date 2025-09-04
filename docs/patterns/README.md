@@ -83,79 +83,71 @@ This library is the **engineering playbook for trust** — a practical alternati
 
 ## Visual Map
 
+
+
 ```mermaid
+---
+config:
+  layout: elk
+---
 flowchart TB
-  subgraph Sources[Data Sources]
-    S1[Apps & Services]
-    S2[Events/Streams]
-    S3[Files/Lake/Warehouse]
+ subgraph Sources["Data Sources"]
+        S1["Apps & Services"]
+        S2["Events/Streams"]
+        S3["Files/Lake/Warehouse"]
   end
-
-  subgraph Ingestion[Shift-Left Ingestion]
-    C1[Data Contracts\n(jsonschema, SLAs, DQ rules)]
-    V1[Validation @ Edge\n(Great Expectations)]
+ subgraph Ingestion["Shift-Left Ingestion"]
+        C1["Data Contracts: jsonschema, SLAs, DQ rules"]
+        V1["Validation @ Edge: Great Expectations"]
   end
-
-  subgraph Pipelines[Pipelines & Models]
-    P1[dbt Models & Tests]
-    P2[Airflow/Kafka DAGs]
-    CAN[Canonicalization & De-dup\n(Golden Records)]
-    BF[Idempotent Backfills\n(merge/upsert, watermarks)]
+ subgraph Pipelines["Pipelines & Models"]
+        P1["dbt Models & Tests"]
+        P2["Airflow/Kafka DAGs"]
+        CAN["Canonicalization & De-dup: Golden Records"]
+        BF["Idempotent Backfills: merge/upsert, watermarks"]
   end
-
-  subgraph Observability[Observability & Lineage]
-    L1[OpenLineage\n(Lineage Events)]
-    O1[Metrics/Logs/Traces\n(Trust Indicators)]
-    F1[Freshness Budgets]
-    SLO[Trust SLOs & Error Budgets]
+ subgraph Observability["Observability & Lineage"]
+        L1["OpenLineage: Lineage Events"]
+        O1["Metrics/Logs/Traces: Trust Indicators"]
+        F1["Freshness Budgets"]
+        SLO["Trust SLOs & Error Budgets"]
   end
-
-  subgraph Assurance[Assurance & Evidence]
-    CERT[Certification (non-regulatory)\nEvidence Packs]
-    CI[Confidence Indicators\n(Profiling/YData)]
-    DASH[Dashboards/Reports\n(Superset/Metabase)]
+ subgraph Assurance["Assurance & Evidence"]
+        CERT["Certification non-regulatory: Evidence Packs"]
+        CI["Confidence Indicators: Profiling/YData"]
+        DASH["Dashboards/Reports: Superset/Metabase"]
   end
-
-  subgraph AI[AI-Focused]
-    EVALS[AI Evaluations\n(Fairness/Drift/Correctness)]
-    SAFETY[AI Safety Guardrails\n(Toxicity/PII/Jailbreak)]
-    GROUNDED[RAG/GraphRAG\n(Citations ≥95%)]
+ subgraph AI["AI-Focused"]
+        EVALS["AI Evaluations: Fairness/Drift/Correctness"]
+        SAFETY["AI Safety Guardrails: Toxicity/PII/Jailbreak"]
+        GROUNDED["RAG/GraphRAG: Citations ≥95%"]
   end
-
-  subgraph GovernanceInFlow[Governance-in-Flow]
-    TD[Data Debt Ledger]
-    TSP[Teardown Sprints\n(2–4 weeks)]
-    PRC[PR Checklists & CI Gates]
+ subgraph GovernanceInFlow["Governance-in-Flow"]
+        TD["Data Debt Ledger"]
+        TSP["Teardown Sprints: 2–4 weeks"]
+        PRC["PR Checklists & CI Gates"]
   end
-
-  %% Edges
-  S1 --> Ingestion
-  S2 --> Ingestion
-  S3 --> Ingestion
-
-  Ingestion --> Pipelines
-  Pipelines --> Observability
-  Observability --> Assurance
-  Assurance --> AI
-
-  P1 --> CAN
-  P1 --> BF
-  L1 --> DASH
-  O1 --> DASH
-  CI --> DASH
-  EVALS --> CERT
-  SAFETY --> CERT
-  GROUNDED --> EVALS
-
-  %% Feedback Loops
-  AI -->|Issues/Findings| Observability
-  AI -->|Gates| PRC
-  Observability -->|SLO Breach| PRC
-  PRC --> Pipelines
-  PRC --> Ingestion
-  PRC --> TD
-  TD --> TSP
-  TSP --> Pipelines
+    S1 --> Ingestion
+    S2 --> Ingestion
+    S3 --> Ingestion
+    Ingestion --> Pipelines
+    Pipelines --> Observability
+    Observability --> Assurance
+    Assurance --> AI
+    P1 --> CAN & BF
+    L1 --> DASH
+    O1 --> DASH
+    CI --> DASH
+    EVALS --> CERT
+    SAFETY --> CERT
+    GROUNDED --> EVALS
+    AI -- Issues/Findings --> Observability
+    AI -- Gates --> PRC
+    Observability -- SLO Breach --> PRC
+    PRC --> Pipelines & Ingestion & TD
+    TD --> TSP
+    TSP --> Pipelines
+```
 
 ---
 
