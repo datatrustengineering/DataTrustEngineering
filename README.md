@@ -26,7 +26,7 @@
 [![Issues](https://img.shields.io/github/issues/datatrustengineering/DataTrustEngineering)](https://github.com/datatrustengineering/DataTrustEngineering/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-[![#DTERevolution](https://img.shields.io/badge/Join-%23DTERevolution-brightgreen)](https://x.com/hashtag/DTERevolution)
+[![#DataTrustCommunity](https://img.shields.io/badge/Join-%23DataTrustCommunity-brightgreen)](https://x.com/hashtag/DataTrustCommunity)
 [![Slack](https://img.shields.io/badge/Slack-join%20the%20community-4A154B?logo=slack&logoColor=white)](https://join.slack.com/t/datatrustengineering/shared_invite/...)
 
 **Data Trust Engineering (DTE)** is a vendor-neutral, engineering-first approach to building *trusted, AI-ready* data systems.  
@@ -46,7 +46,7 @@ This repo hosts the **Manifesto**, **Patterns**, and the **Trust Dashboard** MVP
 - 🙌 **Contribute**: read [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 
-**Data Trust Engineering (DTE)** is a community-driven approach that empowers data teams to build trusted, AI-ready systems through practical engineering patterns and open-source collaboration. Born from the *Data Trust Engineering Manifesto*, DTE provides actionable frameworks for certifying data systems by use case, risk, and value, blending DataOps principles with hands-on implementation. Our first artifact, the **DTE Trust Dashboard**, demonstrates real-time data and AI trust monitoring—more tools are coming from our community! Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) and fuel the #DTERevolution.
+**Data Trust Engineering (DTE)** is a community-driven approach that empowers data teams to build trusted, AI-ready systems through practical engineering patterns and open-source collaboration. Born from the *Data Trust Engineering Manifesto*, DTE provides actionable frameworks for certifying data systems by use case, risk, and value, blending DataOps principles with hands-on implementation. Our first artifact, the **DTE Trust Dashboard**, demonstrates real-time data and AI trust monitoring—more tools are coming from our community! Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) and fuel the #DataTrustCommunity.
 
 ## Why DTE?
 
@@ -143,7 +143,7 @@ DTE provides practical value through:
 
 **Authors**: Brian Brewer | Founder | https://www.infolibcorp.com
 
-#DTERevolution
+#DataTrustCommunity
 
 
 

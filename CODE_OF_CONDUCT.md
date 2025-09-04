@@ -18,7 +18,7 @@ spirit of the [DataTrustManifesto](https://datatrustmanifesto.org), we aim to
 build a community where data professionals, enterprises, SMBs, and hyperscalers  
 collaborate to certify data systems by use case, risk, and value. This Code of  
 Conduct ensures our community remains respectful, productive, and aligned with  
-the #DTERevolution.
+the #DataTrustCommunity.
 
 ## Our Standards
 
@@ -66,12 +66,12 @@ This Code of Conduct applies to all project spaces, including:
   discussions).  
 - The [datatrustengineering Slack org](https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw)  
   (#general, #contributions, etc.).  
-- Public interactions referencing DTE, such as posts on X with #DTERevolution.  
+- Public interactions referencing DTE, such as posts on X with #DataTrustCommunity.  
 - Any other DTE-related events or platforms (e.g.,  
   [datatrustmanifesto.org](https://datatrustmanifesto.org)).  
 
 It also applies when an individual represents the project in public spaces,  
-such as speaking on behalf of DTE or promoting the #DTERevolution.
+such as speaking on behalf of DTE or promoting the #DataTrustCommunity.
 
 ## Enforcement
 

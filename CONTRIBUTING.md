@@ -107,4 +107,4 @@ Your contributions strengthen the DTE community! We recognize contributors by:
 
 **Thank you for contributing to DTE!** Your efforts help build a stronger, more collaborative data trust engineering community. 
 
-#DTERevolution
+#DataTrustCommunity

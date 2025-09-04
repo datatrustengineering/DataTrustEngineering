@@ -52,4 +52,4 @@ This file is intended to live in Git, evolve with PRs, and link to GitHub Issues
 
 ---
 
-*#DTERevolution — Track debt, make it visible, and turn it into trust.*
+*#DataTrustCommunity — Track debt, make it visible, and turn it into trust.*

@@ -815,4 +815,4 @@ This expansion plan transforms the dashboard from a static AI governance demo in
 
 **Ready to start the expansion?** The plan provides a clear, phased approach that builds community momentum while maintaining technical excellence. 🚀
 
-#DTERevolution
+#DataTrustCommunity

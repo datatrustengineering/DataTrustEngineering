@@ -170,4 +170,4 @@ Many organizations struggle with governance complexity, often because they ignor
 
 *Built with Data Trust Engineering principles of practical collaboration.*
 
-#DTERevolution
+#DataTrustCommunity

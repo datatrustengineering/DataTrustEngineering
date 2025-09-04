@@ -123,5 +123,5 @@ python ai_safety_harness.py
 
 > In DTE, AI Safety is not optional theater — it’s **engineered, observable guardrails** for trusted AI systems.  
 
-#DTERevolution
+#DataTrustCommunity
 

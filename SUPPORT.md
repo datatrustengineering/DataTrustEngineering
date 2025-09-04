@@ -24,4 +24,4 @@ Welcome to **Data Trust Engineering (DTE)**! We’re here to help you engage wit
 - Check [CONTRIBUTING.md](/CONTRIBUTING) for contribution details.
 - Visit [datatrustmanifesto.org](https://datatrustmanifesto.org) for more resources.
 
-Thank you for joining the #DTERevolution!
+Thank you for joining the #DataTrustCommunity!

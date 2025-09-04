@@ -118,4 +118,4 @@ DTE certification **demonstrates** trustworthiness with transparent artifacts.
 - Extend criteria for specific domains (finance, healthcare, AI).  
 - Submit PRs with real-world examples.  
 
-#DTERevolution
+#DataTrustCommunity

@@ -184,4 +184,4 @@ DTE provides practical paths forward for organizations seeking effective data tr
 **License**: MIT License  
 **Contribute**: Submit pull requests on GitHub.  
 
-#DTERevolution
+#DataTrustCommunity
