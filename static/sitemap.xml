@@ -6,7 +6,7 @@
 
   <!-- Homepage - Served by Hugo -->
   <url>
-    <loc>https://datatrustmanifesto.org/</loc>
+    <loc>https://www.datatrustmanifesto.org/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- Manifesto Page - Mounted from Manifesto.md -->
   <url>
-    <loc>https://datatrustmanifesto.org/manifesto/</loc>
+    <loc>https://www.datatrustmanifesto.org/manifesto/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
 
   <!-- Trust Dashboard - Mounted from DTE_Trust_Dashboard.html -->
   <url>
-    <loc>https://datatrustmanifesto.org/tools/data-trust-dashboard/dte-trust-dashboard/</loc>
+    <loc>https://www.datatrustmanifesto.org/tools/data-trust-dashboard/dte-trust-dashboard/</loc>
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
