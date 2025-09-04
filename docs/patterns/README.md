@@ -78,76 +78,18 @@ This library is the **engineering playbook for trust** — a practical alternati
 
 ---
 
+
 ## Visual Map: DTE Patterns
 
+<div style="text-align: center; margin: 2rem auto; max-width: 1200px;">
+  <img src="../../assets/flowchart-patterns.png" 
+       alt="DTE Patterns Flowchart - Data Sources to AI Assurance workflow" 
+       style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <figcaption style="margin-top: 1rem; font-style: italic; color: #666; font-size: 0.9rem;">
+    Data Trust Engineering pattern flow: From data sources through AI assurance with community-driven patterns
+  </figcaption>
+</div>
 
-## Visual Map
-
-
-
-```mermaid
----
-config:
-  layout: elk
----
-flowchart TB
- subgraph Sources["Data Sources"]
-        S1["Apps & Services"]
-        S2["Events/Streams"]
-        S3["Files/Lake/Warehouse"]
-  end
- subgraph Ingestion["Shift-Left Ingestion"]
-        C1["Data Contracts: jsonschema, SLAs, DQ rules"]
-        V1["Validation @ Edge: Great Expectations"]
-  end
- subgraph Pipelines["Pipelines & Models"]
-        P1["dbt Models & Tests"]
-        P2["Airflow/Kafka DAGs"]
-        CAN["Canonicalization & De-dup: Golden Records"]
-        BF["Idempotent Backfills: merge/upsert, watermarks"]
-  end
- subgraph Observability["Observability & Lineage"]
-        L1["OpenLineage: Lineage Events"]
-        O1["Metrics/Logs/Traces: Trust Indicators"]
-        F1["Freshness Budgets"]
-        SLO["Trust SLOs & Error Budgets"]
-  end
- subgraph Assurance["Assurance & Evidence"]
-        CERT["Certification non-regulatory: Evidence Packs"]
-        CI["Confidence Indicators: Profiling/YData"]
-        DASH["Dashboards/Reports: Superset/Metabase"]
-  end
- subgraph AI["AI-Focused"]
-        EVALS["AI Evaluations: Fairness/Drift/Correctness"]
-        SAFETY["AI Safety Guardrails: Toxicity/PII/Jailbreak"]
-        GROUNDED["RAG/GraphRAG: Citations ≥95%"]
-  end
- subgraph GovernanceInFlow["Governance-in-Flow"]
-        TD["Data Debt Ledger"]
-        TSP["Teardown Sprints: 2–4 weeks"]
-        PRC["PR Checklists & CI Gates"]
-  end
-    S1 --> Ingestion
-    S2 --> Ingestion
-    S3 --> Ingestion
-    Ingestion --> Pipelines
-    Pipelines --> Observability
-    Observability --> Assurance
-    Assurance --> AI
-    P1 --> CAN & BF
-    L1 --> DASH
-    O1 --> DASH
-    CI --> DASH
-    EVALS --> CERT
-    SAFETY --> CERT
-    GROUNDED --> EVALS
-    AI -- Issues/Findings --> Observability
-    AI -- Gates --> PRC
-    Observability -- SLO Breach --> PRC
-    PRC --> Pipelines & Ingestion & TD
-    TD --> TSP
-    TSP --> Pipelines
-```
 
 ---
 
