@@ -70,6 +70,17 @@ jobs:
           echo "Checking if CSS was copied:"
           ls -la public/css/ || echo "No public/css directory"
             
+      - name: Deploy Correct Sitemap
+        run: |
+          echo "=== DEPLOYING CORRECT SITEMAP ==="
+          echo "Hugo generated sitemap (likely empty):"
+          head -3 public/sitemap.xml || echo "No sitemap generated"
+          echo "Replacing with correct sitemap from static/:"
+          cp static/sitemap.xml public/sitemap.xml
+          echo "Deployed sitemap:"
+          head -10 public/sitemap.xml
+          echo "=== READY FOR DEPLOYMENT ==="
+            
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
