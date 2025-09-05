@@ -42,8 +42,10 @@ site_domain = "datatrustmanifesto.org"
   home = ["HTML"]
   page = ["HTML"]  
   section = ["HTML"]
-  taxonomy = ["HTML"]
-  term = ["HTML"]
+
 
 # Disable RSS feeds and other auto-generated content
-disableKinds = ["RSS", "sitemap", "taxonomy", "term"]
+disableKinds = ["RSS", "taxonomy", "term", "robotsTXT", "404"]
+
+[sitemap]
+  disable = true
