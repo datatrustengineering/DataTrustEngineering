@@ -1,5 +1,4 @@
 # Hugo static site generator
-public/
 resources/_gen/
 .hugo_build.lock
 content/
@@ -85,3 +84,4 @@ evals/artifacts/tmp/*
 dist/
 build/
 .eggs/
+public/

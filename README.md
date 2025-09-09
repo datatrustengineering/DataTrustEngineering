@@ -34,7 +34,7 @@ This repo hosts the **Manifesto**, **Patterns**, and the **Trust Dashboard** MVP
 
 - 🌐 **Site**: https://datatrustmanifesto.org/
 - 📜 **Manifesto**: [Manifesto.md](Manifesto.md)
-- 🧭 **Patterns**: [docs/patterns/README.md](docs/patterns/README.md)
+- 🧭 **Patterns and Samples**: [docs/patterns/README.md](docs/patterns/README.md)
 - 📊 **Trust Dashboard(s)**: [tools/data-trust-dashboard](tools/data-trust-dashboard)
 
 ## Follow & Join
@@ -47,6 +47,15 @@ This repo hosts the **Manifesto**, **Patterns**, and the **Trust Dashboard** MVP
 
 
 **Data Trust Engineering (DTE)** is a community-driven approach that empowers data teams to build trusted, AI-ready systems through practical engineering patterns and open-source collaboration. Born from the *Data Trust Engineering Manifesto*, DTE provides actionable frameworks for certifying data systems by use case, risk, and value, blending DataOps principles with hands-on implementation. Our first artifact, the **DTE Trust Dashboard**, demonstrates real-time data and AI trust monitoring—more tools are coming from our community! Join us at [datatrustmanifesto.org](https://datatrustmanifesto.org) and fuel the #DataTrustCommunity.
+
+<div style="text-align: center; margin: 2rem auto; max-width: 1200px;">
+  <img src="assets/DTE-Diagram4.png" 
+       alt="DTE Diagram - Data and Application Modernization" 
+       style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <figcaption style="margin-top: 1rem; font-style: italic; color: #666; font-size: 0.9rem;">
+    Data Trust Engineering Data and Application Moderniztion: From data sources through AI assurance with community-driven patterns
+  </figcaption>
+</div>
 
 ## Why DTE?
 
