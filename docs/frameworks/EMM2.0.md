@@ -1,6 +1,18 @@
-# The EMM 2.0 Manifesto: Revitalizing Enterprise Metadata Management
+---
+title: "Enterprise Metadata Management 2.0 Manifesto"
+description: "EMM 2.0 is an open-source framework enabling vendor-neutral enterprise metadata management through modern graph technologies, providing battle-tested patterns and reusable code."
+og_title: "EMM 2.0 Framework"
+og_description: "Vendor-neutral enterprise metadata management through modern graph technologies—battle-tested patterns, reusable code, and user-friendly tools."
+og_image: "/assets/emm2-logo.png"
+layout: "single"
+weight: 1
+---
+
+## Revitalizing Enterprise Metadata Management
 
 *A vendor-neutral framework for federated, AI-ready metadata repositories*
+
+![EMM 2.0](/assets/emm2-logo.svg)
 
 ---
 

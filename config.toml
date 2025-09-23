@@ -1,6 +1,6 @@
 baseURL = "https://datatrustmanifesto.org/"
 languageCode = "en-us"
-title = "Data Trust Engineering + EMM 2.0"
+title = "Data Trust Engineering | EMM 2.0"
 
 [params]
 description = "Data Trust Engineering (DTE): Certify data systems for trust and AI-readiness. Join the #DataTrustCommunity!"
