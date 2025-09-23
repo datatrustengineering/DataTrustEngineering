@@ -5,17 +5,17 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ .Site.Title }}">
   <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:title" content="Data Trust Engineering (DTE)">
-  <meta property="og:description" content="A community-driven movement extending governance with practical, engineering patterns. Certify data by use case, risk, and value—making trust measurable and AI-ready.">
+  <meta property="og:title" content="Data Trust Engineering + EMM 2.0">
+  <meta property="og:description" content="Complete data trust solutions: DTE certifies data systems by use case, risk, and value. EMM 2.0 manages enterprise metadata through modern graph technologies.">
   <meta property="og:image" content="{{ "/assets/dte-lockup-green.png" | absURL }}">
 
   <!-- SEO -->
-  <meta name="description" content="DTE extends governance with engineering-driven patterns—certifying data systems by use case, risk, and value for AI-ready trust.">
+  <meta name="description" content="Complete data trust solutions: DTE certifies data systems by use case, risk, and value. EMM 2.0 manages enterprise metadata through modern graph technologies.">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Data Trust Engineering (DTE)">
-  <meta name="twitter:description" content="DTE extends governance foundations with open-source, engineering-driven patterns—certifying data by use case, risk, and value for measurable trust.">
+  <meta name="twitter:title" content="Data Trust Engineering + EMM 2.0">
+  <meta name="twitter:description" content="Complete data trust solutions: DTE certifies data systems by use case, risk, and value. EMM 2.0 manages enterprise metadata through modern graph technologies.">
   <meta name="twitter:image" content="{{ "/assets/dte-lockup-green.png" | absURL }}">
 {{ end }}
 
@@ -30,12 +30,11 @@
   </div>
   
 
-<h1>Data Trust Engineering (DTE)</h1>
+<h1>Data Trust Engineering + EMM 2.0</h1>
 <!-- Homepage Hero Subheading -->
 <h2 class="hero-subheading">
-  <strong>Data Trust Engineering (DTE)</strong> extends the foundations of governance by certifying data systems by use case, risk, and value—making trust measurable, repeatable, and AI-ready through open-source, engineering-driven practices.
+  <strong>Complete Data Trust Solutions:</strong> DTE certifies data systems by use case, risk, and value. EMM 2.0 manages enterprise metadata through modern graph technologies. Together, they provide comprehensive data trust solutions for AI-ready systems.
 </h2>
-
 
 <style>
 .hero-subheading {
@@ -56,7 +55,7 @@
 
 <div class="takeaway" role="note" aria-label="Key takeaway">
   <strong>Key Takeaway:</strong>
-  Governance defines the “why.” DTE delivers the “how”—certifying data and pipelines by use case, risk, and value so trust becomes measurable, repeatable, advanced analytics and AI-ready.
+  DTE delivers the operational "how" for data certification. EMM 2.0 provides the metadata management foundation. Together, they enable complete data trust solutions that are measurable, repeatable, and AI-ready.
 </div>
 
 <hr>
@@ -80,13 +79,106 @@
 }
 </style>
 
+<!-- Frameworks Overview Section -->
+<div class="section frameworks-overview">
+  <h2>Two Complementary Frameworks</h2>
+  
+  <div class="framework-cards">
+    <div class="framework-card">
+      <h3>Data Trust Engineering (DTE)</h3>
+      <p><strong>Certifies data systems by use case, risk, and value</strong> through practical engineering patterns and open-source collaboration. DTE extends governance foundations with measurable, AI-ready trust solutions.</p>
+      <ul>
+        <li>✅ Real-time trust monitoring and certification</li>
+        <li>✅ 19+ practical patterns with runnable code</li>
+        <li>✅ DTE Trust Dashboard for live monitoring</li>
+        <li>✅ AI safety and bias detection patterns</li>
+      </ul>
+      <a href="{{ "manifesto" | relURL }}" class="button">Read DTE Manifesto</a>
+    </div>
+    
+    <div class="framework-card">
+      <h3>EMM 2.0: Enterprise Metadata Management</h3>
+      <p><strong>Manages enterprise metadata through modern graph technologies</strong> with vendor-neutral patterns, reusable code, and user-friendly tools that work across any platform.</p>
+      <ul>
+        <li>✅ Graph-native metadata repositories</li>
+        <li>✅ Federated and standalone architectures</li>
+        <li>✅ GraphRAG-powered knowledge discovery</li>
+        <li>✅ OpenLineage and graph metamodel integration</li>
+        <li>✅ Open universal metamodel</li>
+      </ul>
+      <a href="{{ "docs/frameworks/EMM2.0" | relURL }}" class="button">Read EMM 2.0 Framework</a>
+    </div>
+  </div>
+</div>
+
+<style>
+.frameworks-overview {
+  margin: 2rem 0;
+}
+
+.framework-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.framework-card {
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.framework-card h3 {
+  margin-top: 0;
+  color: #1f2937;
+  font-size: 1.25rem;
+}
+
+.framework-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.framework-card li {
+  margin: 0.5rem 0;
+  color: #374151;
+}
+
+@media (prefers-color-scheme: dark) {
+  .framework-card {
+    background: #1f2937;
+    border-color: #374151;
+  }
+  
+  .framework-card h3 {
+    color: #f9fafb;
+  }
+  
+  .framework-card li {
+    color: #d1d5db;
+  }
+}
+
+@media (max-width: 768px) {
+  .framework-cards {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
   <p><strong>Data Trust Engineering (DTE)</strong> is a community-driven movement that helps data teams build trusted, data and AI-ready systems through practical engineering patterns and open-source collaboration. Born from the <em>Data Trust Engineering Manifesto</em>, DTE offers actionable frameworks to certify data and pipelines by use case, risk, and value—blending DataOps principles with hands-on implementation across cloud and hybrid environments.</p>
-  <p>Our vendor-neutral community shares tools, patterns, and real-world experience to make trust measurable and repeatable. The initial artifacts include the <strong>DTE Trust Dashboard</strong> for real-time monitoring and <strong>19 practical patterns with code</strong> covering everything from data quality to AI safety—with more community-built tools on the way. Join us, contribute on GitHub, and be part of the #DataTrustCommunity.</p>
+  
+  <p><strong>EMM 2.0</strong> complements DTE by providing the metadata management foundation through modern graph technologies. It enables vendor-neutral enterprise metadata management with battle-tested patterns, reusable code, and user-friendly tools that work across any platform—from genome research to media assets to financial lineage requirements.</p>
+  
+  <p>Our vendor-neutral community shares tools, patterns, and real-world experience to make trust measurable and repeatable. The initial artifacts include the <strong>DTE Trust Dashboard</strong> for real-time monitoring, <strong>19 practical patterns with code</strong> covering everything from data quality to AI safety, and <strong>EMM 2.0 metadata management tools</strong>—with more community-built solutions on the way. Join us, contribute on GitHub, and be part of the #DataTrustCommunity.</p>
   <p><em>Founded by <a href="https://www.linkedin.com/in/brianbrewerfx/" target="_blank" rel="noopener">Brian Brewer</a></em></p>
   
   <div class="section">
     <h2>Join the #DataTrustCommunity</h2>
-    <a href="{{ "manifesto" | relURL }}" class="button">Read the Manifesto</a>
+    <a href="{{ "manifesto" | relURL }}" class="button">Read DTE Manifesto</a>
+    <a href="{{ "docs/frameworks/EMM2.0" | relURL }}" class="button">Read EMM 2.0 Framework</a>
     <a href="{{ "tools/data-trust-dashboard/dte_trust_dashboard" | relURL }}" class="button">Try the Trust Dashboard</a>
     <a href="https://github.com/datatrustengineering/DataTrustEngineering" class="button">Contribute on GitHub</a>
     <a href="https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw" class="button">Join Slack</a>
@@ -102,54 +194,61 @@
       <li><strong>2010s–2020s: Cloud & Big Data Era</strong> — Governance expands to cover privacy, security, and AI ethics, while vendors rebrand catalogs, lineage, and quality tools under the governance banner.</li>
       <li><strong>Today</strong> — Governance continues to play a vital role, but its broad scope often makes it difficult for teams to apply consistently across fast-moving, cloud-native and AI environments.</li>
     </ul>
-    <p><strong>Where do we go from here?</strong> Data Trust Engineering (DTE) builds on these foundations by shifting focus from governing data in the abstract to <em>certifying it</em> by use case, risk, and value — enabling trusted, AI-ready systems that complement compliance goals.</p>
+    <p><strong>Where do we go from here?</strong> Data Trust Engineering (DTE) builds on these foundations by shifting focus from governing data in the abstract to <em>certifying it</em> by use case, risk, and value. EMM 2.0 provides the metadata management foundation through modern graph technologies. Together, they enable trusted, AI-ready systems that complement compliance goals.</p>
   </div>
   
   <div class="section comparison">
-    <h3></h>How DTE Extends Traditional Data Governance</h3>
+    <h3>How DTE + EMM 2.0 Extend Traditional Data Governance</h3>
     <table>
       <thead>
         <tr>
           <th>Criteria</th>
           <th>Traditional Data Governance</th>
-          <th>Data Trust Engineering</th>
+          <th>Data Trust Engineering (DTE)</th>
+          <th>EMM 2.0</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Approach</td>
+          <td>Focus</td>
           <td>Process-heavy frameworks</td>
-          <td>Engineering-driven patterns</td>
+          <td>Engineering-driven certification</td>
+          <td>Graph-native metadata management</td>
         </tr>
         <tr>
           <td>Implementation</td>
           <td>Top-down mandates</td>
           <td>Collaborative, iterative</td>
+          <td>Vendor-neutral, flexible</td>
+        </tr>
+        <tr>
+          <td>Technology</td>
+          <td>Relational databases</td>
+          <td>Cloud-native, API-driven</td>
+          <td>Graph databases, GraphRAG</td>
         </tr>
         <tr>
           <td>Compliance</td>
           <td>Direct ownership</td>
           <td>Indirect support through technical excellence</td>
-        </tr>
-        <tr>
-          <td>Adaptability</td>
-          <td>Limited by rigid policies</td>
-          <td>Flexible, feedback-driven</td>
-        </tr>
-        <tr>
-          <td>Team Focus</td>
-          <td>Process documentation</td>
-          <td>Engineering delivery</td>
+          <td>Metadata integrity and lineage certification</td>
         </tr>
         <tr>
           <td>AI Integration</td>
           <td>Afterthought</td>
           <td>Built-in monitoring and validation</td>
+          <td>Native GraphRAG and knowledge graphs</td>
+        </tr>
+        <tr>
+          <td>Vendor Lock-in</td>
+          <td>Platform dependent</td>
+          <td>Vendor-neutral patterns</td>
+          <td>Zero vendor lock-in</td>
         </tr>
       </tbody>
     </table>
     <br>
-    <p><em>Together, traditional governance provides the strategic “why,” while Data Trust Engineering delivers the operational “how” — turning intent into measurable, certifiable outcomes in real systems.</em></p>
+    <p><em>Together, traditional governance provides the strategic "why," DTE delivers the operational "how" for certification, and EMM 2.0 provides the metadata management foundation—creating complete data trust solutions.</em></p>
 
   </div>
 
@@ -159,7 +258,7 @@
   <!-- How to Contribute Section -->
 <section id="contribute">
   <h2>How to Contribute</h2>
-  <p>Join the #DataTrustCommunity by contributing to the Data Trust Engineering project. Fork the repo, enhance the dashboard, or add DTE tools. See the <a href="https://github.com/datatrustengineering/DataTrustEngineering/blob/main/community/CONTRIBUTING.md">Contributing Guide</a> for details.</p>
+  <p>Join the #DataTrustCommunity by contributing to both Data Trust Engineering and EMM 2.0 projects. Fork the repo, enhance the dashboard, add DTE tools, or contribute to EMM 2.0 metadata management patterns. See the <a href="https://github.com/datatrustengineering/DataTrustEngineering/blob/main/community/CONTRIBUTING.md">Contributing Guide</a> for details.</p>
 </section>
 
 <br><hr><br>

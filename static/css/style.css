@@ -1,3 +1,84 @@
+
+## **Key Additions for EMM 2.0 Markdown Styling:**
+
+### **1. Enhanced List Styling:**
+- **Custom bullets**: Arrow symbols (`▶`, `▸`, `▹`) with blue colors
+- **Numbered lists**: Custom counter styling with blue numbers
+- **Nested lists**: Different symbols for each level
+- **Proper spacing**: Consistent margins and padding
+
+### **2. Code Block Enhancements:**
+- **Inline code**: Blue background with borders
+- **Code blocks**: Enhanced with better contrast and scrolling
+- **Syntax highlighting ready**: Prepared for code highlighting
+- **Monospace font**: Consistent with site theme
+
+### **3. Typography Hierarchy:**
+- **H1-H6**: Progressive color scheme from white to light blue
+- **H2 borders**: Underline styling for section breaks
+- **Consistent spacing**: Proper margins for all heading levels
+
+### **4. Table Styling:**
+- **Modern design**: Rounded corners and shadows
+- **Blue theme**: Consistent with site colors 
+- **Hover effects**: Interactive row highlighting
+- **Responsive**: Mobile-friendly sizing
+
+### **5. Additional Markdown Elements:**
+- **Blockquotes**: Blue left border with italic styling
+- **Horizontal rules**: Gradient lines
+- **Strong/Em**: Enhanced contrast and styling
+- **Definition lists**: Proper indentation and colors
+- **Keyboard keys**: Styled like actual keys
+
+### **6. Mobile Responsiveness:**
+- **Scaled fonts**: Smaller text on mobile
+- **Adjusted spacing**: Optimized for small screens
+- **Table scrolling**: Horizontal scroll for wide tables
+
+This comprehensive styling will make your EMM 2.0 framework page look professional and consistent with the rest of your site's dark blue theme.
+
+## **Key Changes for Sub-bullet Styling:**
+
+### **1. Special Sub-bullet Handling:**
+```css
+/* Special handling for sub-bullets under numbered lists */
+ol li ul {
+  margin: 5px 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+ol li ul li {
+  counter-increment: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+ol li ul li:before {
+  content: '•';
+  color: #93c5fd;
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+```
+
+### **2. What This Does:**
+- **Main principles (1, 2, 3, 4, 5)**: Keep their numbered styling
+- **Sub-bullets under numbered items**: Use bullet points (`•`) instead of numbers
+- **Different color**: Sub-bullets use a lighter blue (`#93c5fd`) to show hierarchy
+- **No counter increment**: Prevents sub-bullets from being numbered
+- **Proper indentation**: Sub-bullets are properly indented under their parent
+
+### **3. Visual Hierarchy:**
+- **Main principles**: Blue numbers (`#60a5fa`)
+- **Sub-bullets**: Lighter blue bullets (`#93c5fd`)
+- **Further nesting**: Even lighter blue (`#bfdbfe`)
+
+This will give you the exact structure you want: numbered main principles with unnumbered bullet sub-items underneath.
+
 /* Reset default styles */
 * {
   margin: 0;
@@ -5,13 +86,14 @@
   box-sizing: border-box;
 }
 
-/* Body: Dark cobalt-inspired background */
+/* Body: Dark blue background */
 body {
-  background: #1a1a1a; /* Near-black for modern look */
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%); /* Dark blue gradient */
   color: #d4d4d4; /* Light gray for readability */
   font-family: 'JetBrains Mono', 'Fira Code', monospace; /* Developer-friendly font */
   line-height: 1.6;
   font-size: 16px;
+  min-height: 100vh; /* Ensure gradient covers full height */
 }
 
 /* Container: Centered content with max width */
@@ -19,17 +101,22 @@ body {
   max-width: 900px;
   margin: 80px auto 20px;
   padding: 0 20px;
+  background: rgba(15, 23, 42, 0.8); /* Semi-transparent dark blue overlay */
+  border-radius: 12px;
+  backdrop-filter: blur(10px); /* Modern glass effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 /* Header: Fixed, horizontal nav with cobalt gradient */
 header {
-  background: linear-gradient(90deg, #002b6b, #1a1a1a); /* Cobalt blue to dark */
+  background: linear-gradient(90deg, #1e3a8a, #1e40af); /* Dark blue gradient */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 87, 216, 0.2);
+  box-shadow: 0 2px 4px rgba(30, 58, 138, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 /* Navigation: Horizontal menu */
@@ -41,14 +128,14 @@ nav ul {
 }
 
 nav ul li a {
-  color: #00d787; /* Neon green for links */
+  color: #60a5fa; /* Light blue for links */
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #40ffa0; /* Brighter green on hover */
+  color: #93c5fd; /* Brighter blue on hover */
 }
 
 /* Headings */
@@ -57,54 +144,323 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-  color: #00d787; /* Neon green for section headers */
+  color: #60a5fa; /* Light blue for section headers */
   font-size: 1.8rem;
   margin: 20px 0 10px;
+  border-bottom: 2px solid rgba(96, 165, 250, 0.3);
+  padding-bottom: 8px;
+}
+
+h3 {
+  color: #93c5fd; /* Brighter blue for sub-headers */
+  font-size: 1.4rem;
+  margin: 18px 0 8px;
+}
+
+h4 {
+  color: #bfdbfe; /* Even brighter blue for h4 */
+  font-size: 1.2rem;
+  margin: 16px 0 6px;
+}
+
+h5, h6 {
+  color: #dbeafe; /* Lightest blue for h5/h6 */
+  font-size: 1.1rem;
+  margin: 14px 0 4px;
 }
 
 /* Paragraphs */
 p {
-  color: #d4d4d4;
+  color: #e2e8f0; /* Lighter gray for better contrast on blue */
   margin-bottom: 15px;
 }
 
 /* Links */
 a {
-  color: #0057d8; /* Cobalt blue for links */
+  color: #60a5fa; /* Light blue for links */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #40c4ff; /* Lighter blue on hover */
+  color: #93c5fd; /* Brighter blue on hover */
 }
 
 /* Buttons */
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background: #0057d8; /* Cobalt blue */
+  background: linear-gradient(135deg, #1e40af, #3b82f6); /* Blue gradient */
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 0 8px rgba(0, 87, 216, 0.5); /* Neon glow */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
 .button:hover {
-  background: #007bff; /* Lighter cobalt */
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
   transform: translateY(-2px);
-  box-shadow: 0 0 12px rgba(0, 123, 255, 0.7);
+  box-shadow: 0 6px 16px rgba(30, 64, 175, 0.6);
 }
 
 /* Section */
 .section {
   margin: 30px 0;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.6); /* Semi-transparent dark blue */
+  border-radius: 8px;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+/* Lists - Enhanced styling for markdown */
+ul, ol {
+  margin: 15px 0;
+  padding-left: 25px;
+  color: #e2e8f0;
+}
+
+/* Unordered lists */
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+ul li:before {
+  content: '▶';
+  color: #60a5fa;
+  position: absolute;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+/* Ordered lists - main numbered items (prevent double numbers) */
+ol {
+  list-style: none;           /* hide default numbers */
+  counter-reset: item;
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+ol li {
+  counter-increment: item;
+  margin: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+ol li:before {
+  content: counter(item) '.';
+  color: #60a5fa;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Sub-bullets under numbered items (keep as bullets) */
+ol li ul {
+  list-style: none;
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+ol li ul li {
+  counter-increment: none !important;
+  position: relative;
+  padding-left: 20px;
+}
+
+ol li ul li:before {
+  content: '•' !important;
+  color: #93c5fd !important;
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+  font-weight: normal !important;
+}
+
+/* Additional fix for any nested ul under ol */
+ol ul {
+  list-style: none !important;
+  counter-reset: none !important;
+}
+
+ol ul li {
+  counter-increment: none !important;
+}
+
+ol ul li:before {
+  content: '•' !important;
+  color: #93c5fd !important;
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+  font-weight: normal !important;
+}
+
+/* Nested lists */
+ul ul, ol ol, ul ol, ol ul {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+ul ul li:before {
+  content: '▸';
+  color: #93c5fd;
+}
+
+ul ul ul li:before {
+  content: '▹';
+  color: #bfdbfe;
+}
+
+/* Code blocks and inline code */
+code {
+  background: rgba(15, 23, 42, 0.9);
+  color: #60a5fa;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.9em;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+pre {
+  background: rgba(15, 23, 42, 0.9);
+  color: #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.9rem;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #60a5fa;
+  background: rgba(30, 58, 138, 0.2);
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #bfdbfe;
+}
+
+blockquote p {
+  margin: 0;
+  color: #bfdbfe;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(15, 23, 42, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: #e2e8f0;
+}
+
+th {
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background: rgba(30, 58, 138, 0.2);
+}
+
+tr:hover {
+  background: rgba(30, 64, 175, 0.3);
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #60a5fa, transparent);
+  margin: 30px 0;
+}
+
+/* Strong and emphasis */
+strong, b {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+em, i {
+  color: #bfdbfe;
+  font-style: italic;
+}
+
+/* Mark/highlight */
+mark {
+  background: rgba(96, 165, 250, 0.3);
+  color: #ffffff;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Keyboard keys */
+kbd {
+  background: rgba(15, 23, 42, 0.9);
+  color: #60a5fa;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  border: 1px solid rgba(96, 165, 250, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Definition lists */
+dl {
+  margin: 15px 0;
+}
+
+dt {
+  color: #60a5fa;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+dd {
+  color: #e2e8f0;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 /* Timeline Section */
@@ -123,7 +479,7 @@ a:hover {
 
 .section.timeline ul li:before {
   content: '•';
-  color: #00d787; /* Neon green bullet */
+  color: #60a5fa; /* Light blue bullet */
   position: absolute;
   left: 0;
   font-size: 1.5rem;
@@ -143,37 +499,37 @@ a:hover {
   width: 100%;
   max-width: 900px;
   border-collapse: collapse;
-  background: #0d1117; /* Dark code block, GitHub-like */
-  box-shadow: inset 0 0 10px rgba(0, 87, 216, 0.3); /* Subtle neon glow */
-  border-radius: 5px;
+  background: rgba(15, 23, 42, 0.8); /* Dark blue background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
   overflow: hidden;
+  border: 1px solid rgba(96, 165, 250, 0.3);
 }
 
 .section.comparison th,
 .section.comparison td {
   padding: 12px;
   text-align: left;
-  border: 0.5px solid #00d787; /* Thinner neon green borders */
-  color: #d4d4d4; /* Light gray text */
+  border: 1px solid rgba(96, 165, 250, 0.3); /* Light blue borders */
+  color: #e2e8f0; /* Light gray text */
 }
 
 .section.comparison th {
-  background: #002b6b; /* Cobalt blue header */
+  background: linear-gradient(135deg, #1e3a8a, #1e40af); /* Blue gradient header */
   color: #ffffff; /* White for contrast */
   font-weight: 600;
 }
 
 .section.comparison tr:nth-child(even) {
-  background: #141922; /* Slightly lighter dark for alternating rows */
+  background: rgba(30, 58, 138, 0.2); /* Subtle blue for alternating rows */
 }
 
 .section.comparison tr:hover {
-  background: #1c2526; /* Subtle hover effect */
+  background: rgba(30, 64, 175, 0.3); /* Blue hover effect */
 }
 
 /* space around buttons so wrapped rows aren't tight */
 .section .button { margin: 6px 10px 0 0; }
-
 
 /* Lists */
 ul:not(.timeline ul) {
@@ -183,27 +539,28 @@ ul:not(.timeline ul) {
 
 li:not(.timeline ul li) {
   margin: 10px 0;
-  color: #d4d4d4;
+  color: #e2e8f0; /* Lighter gray for better contrast */
 }
 
 /* ASCII Art (pre) */
 pre {
-  background: #0d1117; /* Dark code block, GitHub-like */
-  color: #00d787; /* Neon green for code */
+  background: rgba(15, 23, 42, 0.9); /* Dark blue background */
+  color: #60a5fa; /* Light blue for code */
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 20px;
-  box-shadow: inset 0 0 10px rgba(0, 87, 216, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(96, 165, 250, 0.3);
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px 0;
-  color: #8b949e; /* Muted gray for footer */
+  color: #94a3b8; /* Muted blue-gray for footer */
   font-size: 0.9rem;
 }
 
@@ -229,6 +586,14 @@ footer {
     font-size: 1.5rem;
   }
 
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
   .button {
     padding: 8px 15px;
     font-size: 0.9rem;
@@ -245,11 +610,44 @@ footer {
   .section.comparison th,
   .section.comparison td {
     padding: 8px;
-    border: 0.5px solid #00d787; /* Thinner borders on mobile */
+    border: 1px solid rgba(96, 165, 250, 0.3);
+  }
+
+  pre {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 8px 10px;
   }
 }
 
 /* Ensure content is not hidden behind fixed header */
 main {
   padding-top: 60px; /* Match header height */
+}
+
+/* Dark mode support for framework cards */
+@media (prefers-color-scheme: dark) {
+  .framework-card {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    border-color: #3b82f6;
+  }
+  
+  .framework-card h3 {
+    color: #f8fafc;
+  }
+  
+  .framework-card p {
+    color: #e2e8f0;
+  }
+  
+  .framework-card li {
+    color: #f1f5f9;
+  }
 }

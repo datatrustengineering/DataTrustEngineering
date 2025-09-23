@@ -1,6 +1,6 @@
 baseURL = "https://datatrustmanifesto.org/"
 languageCode = "en-us"
-title = "Data Trust Engineering"
+title = "Data Trust Engineering + EMM 2.0"
 
 [params]
 description = "Data Trust Engineering (DTE): Certify data systems for trust and AI-readiness. Join the #DataTrustCommunity!"
@@ -24,6 +24,7 @@ site_domain = "datatrustmanifesto.org"
   name = "Manifesto"
   url = "/Manifesto"
   weight = 2
+
 [[menu.main]]
   name = "Trust Dashboard"
   url = "/tools/data-trust-dashboard/DTE_Trust_Dashboard"
@@ -36,6 +37,18 @@ site_domain = "datatrustmanifesto.org"
   name = "Slack"
   url = "https://join.slack.com/t/datatrustengineering/shared_invite/zt-3br05le6v-pxGSBeJGLpVgOsNM9ejGuw"
   weight = 5
+
+# Add EMM2.0.md to mounts
+[[module.mounts]]
+  source = "docs/frameworks"
+  target = "content/docs/frameworks"
+  includeFiles = ["EMM2.0.md"]
+
+# Fix the menu URL
+[[menu.main]]
+  name = "Frameworks"
+  url = "/docs/frameworks/EMM2.0/"
+  weight = 3
 
 # Disable Hugo's automatic sitemap generation
 [outputs]
