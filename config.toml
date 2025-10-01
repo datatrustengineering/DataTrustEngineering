@@ -42,12 +42,12 @@ site_domain = "datatrustmanifesto.org"
 [[module.mounts]]
   source = "docs/frameworks"
   target = "content/docs/frameworks"
-  includeFiles = ["EMM2.0.md"]
+  includeFiles = ["EMM20.md"]
 
 # Fix the menu URL
 [[menu.main]]
   name = "Frameworks"
-  url = "/docs/frameworks/EMM2.0/"
+  url = "/docs/frameworks/EMM20/"
   weight = 3
 
 # Disable Hugo's automatic sitemap generation
