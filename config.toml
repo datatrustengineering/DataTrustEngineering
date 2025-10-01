@@ -47,7 +47,7 @@ site_domain = "datatrustmanifesto.org"
 # Fix the menu URL
 [[menu.main]]
   name = "Frameworks"
-  url = "/docs/frameworks/EMM20/"
+  url = "/docs/frameworks/emm20/"
   weight = 3
 
 # Disable Hugo's automatic sitemap generation
