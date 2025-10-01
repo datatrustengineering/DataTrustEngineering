@@ -1288,7 +1288,7 @@ CREATE (source:RawFootage {name: "original_shoot_4k"})-[:PROCESSED_INTO {
 
 ---
 
-*This Architecture Guide provides the technical foundation for implementing EMM 2.0. For strategic guidance and business case development, see the [EMM 2.0 Manifesto](EMM2.0.md).*
+*This Architecture Guide provides the technical foundation for implementing EMM 2.0. For strategic guidance and business case development, see the [EMM 2.0 Manifesto](EMM20.md).*
 
 **Join the movement: #EMM2Point0** 🚀
 
